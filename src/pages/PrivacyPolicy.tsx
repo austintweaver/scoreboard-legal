@@ -6,7 +6,7 @@ const PrivacyPolicy = () => (
       <h1 className="text-4xl font-heading font-bold mb-6 text-brand-red">Privacy Policy</h1>
       <p className="text-gray-600 mb-2">Effective Date: 7/10/2025</p>
       <p className="text-gray-600 mb-6">Last Updated: 7/10/2025</p>
-      <p className="mb-6 text-gray-700">Scoreboard Strategy, LLC ("Company," "we," "us," or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, share, and safeguard your information when you visit our website and interact with our services.</p>
+      <p className="mb-6 text-gray-700">Scoreboard Legal, PLLC ("Company," "we," "us," or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, share, and safeguard your information when you visit our website and interact with our services.</p>
       <ol className="list-decimal list-inside space-y-6 text-gray-700">
         <li>
           <strong>Information We Collect</strong>
@@ -71,7 +71,7 @@ const PrivacyPolicy = () => (
               <ul className="list-disc list-inside ml-6">
                 <li>Right to know, access, and delete personal data</li>
                 <li>Right to opt out of sale/share (we do not sell personal data)</li>
-                <li>To exercise your rights, contact us at: <a href="mailto:contact@scoreboardstrategy.com" className="text-brand-red underline">contact@scoreboardstrategy.com</a></li>
+                <li>To exercise your rights, contact us at: <a href="mailto:contact@scoreboardlegal.com" className="text-brand-red underline">contact@scoreboardlegal.com</a></li>
               </ul>
             </li>
             <li>
@@ -80,7 +80,7 @@ const PrivacyPolicy = () => (
                 <li>Right to access, correct, or delete your data</li>
                 <li>Right to object to processing or withdraw consent</li>
                 <li>Right to data portability</li>
-                <li>To exercise these rights, contact us at: <a href="mailto:contact@scoreboardstrategy.com" className="text-brand-red underline">contact@scoreboardstrategy.com</a></li>
+                <li>To exercise these rights, contact us at: <a href="mailto:contact@scoreboardlegal.com" className="text-brand-red underline">contact@scoreboardlegal.com</a></li>
               </ul>
             </li>
           </ul>
@@ -104,7 +104,7 @@ const PrivacyPolicy = () => (
         <li>
           <strong>Contact Us</strong>
           <p className="mt-2">If you have questions or would like to exercise your privacy rights, please contact us at:</p>
-          <p>Scoreboard Strategy, LLC<br />Email: <a href="mailto:contact@scoreboardstrategy.com" className="text-brand-red underline">contact@scoreboardstrategy.com</a></p>
+          <p>Scoreboard Legal, PLLC<br />Email: <a href="mailto:contact@scoreboardlegal.com" className="text-brand-red underline">contact@scoreboardlegal.com</a></p>
         </li>
         <li>
           <strong>Do Not Track (DNT)</strong>

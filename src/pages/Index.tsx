@@ -96,16 +96,9 @@ const Index = () => {
           {/* Supporting Body Text */}
           <div className="text-base sm:text-lg md:text-xl text-white font-medium space-y-2 mb-10 max-w-full break-words">
             <p className="leading-snug">
-              <span className="font-semibold text-white">We advise.</span> <span className="font-semibold text-white">We represent.</span> <span className="font-semibold text-white">We execute.</span>
-            </p>
-            <p className="leading-snug">
-              From the locker room to the boardroom, we help <span className="font-bold text-brand-red">athletes</span>, <span className="font-bold text-brand-red">coaches</span>, <span className="font-bold text-brand-red">entertainers</span>, <span className="font-bold text-brand-red">entrepreneurs</span>, and <span className="font-bold text-brand-red">executives</span> win where it counts.
-            </p>
-            <p className="leading-snug break-words">
-              Legal expertise. Business strategy. Operational leadership. <span className="font-bold text-white">All in one place.</span>
-            </p>
-            <p className="leading-snug text-white">
-              No commissions. No billable hours. <span className="font-bold">Just outcomes.</span>
+              We advise. We advocate. We protect.<br /><br />
+              From the locker room to the boardroom, we help <span className="text-brand-red font-bold">athletes</span>, <span className="text-brand-red font-bold">coaches</span>, <span className="text-brand-red font-bold">entertainers</span>, <span className="text-brand-red font-bold">entrepreneurs</span>, and <span className="text-brand-red font-bold">executives</span> navigate legal challenges and safeguard what they’ve built.<br /><br />
+              No billable hours. No surprises. Just solutions.
             </p>
           </div>
           {/* CTA Button */}
@@ -126,9 +119,11 @@ const Index = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-heading font-bold text-gray-900 mb-8">
-              About <span className="text-brand-red">Scoreboard Strategy</span>
+              About <span className="text-brand-red">Scoreboard Legal</span>
             </h2>
-            <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto mb-12">Winning requires more than talent — it takes strategy. Scoreboard Strategy provides the legal, business, and operational support athletes, coaches, entertainers, and organizations need to navigate every challenge and seize every opportunity.</p>
+            <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto mb-12">
+              Success isn’t just earned — it’s protected. Scoreboard Legal partners with athletes, coaches, entertainers, and business leaders to provide the legal strategies that guard their interests and position them to win in every arena.
+            </p>
             {/* Values content moved here */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
               <div className="text-center">
@@ -177,52 +172,52 @@ const Index = () => {
               Our <span className="text-brand-red">Core Strengths</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Built on a foundation of excellence, integrity, and results-driven strategies.
+              Built on expertise. Led by integrity. Measured by results.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Legal Expertise */}
+            {/* Legal Expertise (now Sports & Entertainment Law) */}
             <div className="group bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
               <div className="text-center">
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-brand-red/10 rounded-full mb-6 group-hover:bg-brand-red/20 transition-colors duration-300">
                   <Scale className="h-8 w-8 text-brand-red" />
                 </div>
                 <h3 className="text-2xl font-heading font-bold text-gray-900 mb-4">
-                  Legal Expertise
+                  Sports & Entertainment Law
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                Comprehensive legal solutions for sports and business — ensuring every deal, decision, and defense is built for success.
+                  We represent athletes, coaches, entertainers, and creators — providing tailored legal counsel on contracts, endorsements, media rights, and brand protection to safeguard careers on and off the field.
                 </p>
               </div>
             </div>
 
-            {/* Sports Agency Services */}
+            {/* Start-Up & Venture Advisory */}
             <div className="group bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
               <div className="text-center">
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-brand-red/10 rounded-full mb-6 group-hover:bg-brand-red/20 transition-colors duration-300">
                   <Users className="h-8 w-8 text-brand-red" />
                 </div>
                 <h3 className="text-2xl font-heading font-bold text-gray-900 mb-4">
-                  All-In Representation
+                  Start-Up & Venture Advisory
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                Full-circle representation — contracts, endorsements, and career strategy, all aligned to your goals.
+                  From formation to funding, we advise emerging companies and entrepreneurs on corporate structuring, governance, capital raises, and strategic partnerships — ensuring legal readiness at every growth stage.
                 </p>
               </div>
             </div>
 
-            {/* Business Operations & Strategy */}
+            {/* Business Transactions & Growth */}
             <div className="group bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
               <div className="text-center">
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-brand-red/10 rounded-full mb-6 group-hover:bg-brand-red/20 transition-colors duration-300">
                   <TrendingUp className="h-8 w-8 text-brand-red" />
                 </div>
                 <h3 className="text-2xl font-heading font-bold text-gray-900 mb-4">
-                Fractional Leadership
+                  Business Transactions & Growth
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                Providing expert insight, structure, and strategy to streamline operations, optimize performance, and position your organization for sustained growth.
+                  Whether you're scaling operations, acquiring assets, or restructuring, we provide transactional expertise to help businesses navigate deals, manage risk, and drive sustainable growth.
                 </p>
               </div>
             </div>

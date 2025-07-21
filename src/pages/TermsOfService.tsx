@@ -4,47 +4,54 @@ const TermsOfService = () => (
   <div className="min-h-screen pt-16 bg-white">
     <section className="max-w-3xl mx-auto px-4 py-16">
       <h1 className="text-4xl font-heading font-bold mb-6 text-brand-red">Terms of Service</h1>
-      <p className="text-gray-600 mb-6">Effective Date: July 10, 2025</p>
-      <p className="mb-6 text-gray-700">These Terms of Service (“Terms”) govern your access to and use of the website operated by Scoreboard Strategy, LLC (“Company,” “we,” or “us”). By accessing or using our website, you agree to be bound by these Terms and our Privacy Policy.</p>
-      <ol className="list-decimal list-inside space-y-6 text-gray-700">
-        <li>
-          <strong>Use of the Site</strong>
-          <p className="mt-2">You may use this site for lawful purposes only. You agree not to use the site in any way that could damage the website or interfere with anyone else’s use of it.</p>
-        </li>
-        <li>
-          <strong>Scheduling and Communication</strong>
-          <p className="mt-2">When scheduling a consultation or sending us an email through our website, you agree to provide accurate and truthful information. Communications initiated through our site do not create an attorney-client or advisor-client relationship unless and until explicitly agreed in writing.</p>
-        </li>
-        <li>
-          <strong>Intellectual Property</strong>
-          <p className="mt-2">All content on this site—including text, graphics, logos, and design—is the property of Scoreboard Strategy, LLC or its licensors and is protected by intellectual property laws. You may not reproduce, distribute, or create derivative works without our express written permission.</p>
-        </li>
-        <li>
-          <strong>Disclaimer</strong>
-          <p className="mt-2">The information provided on this site is for general informational purposes only and does not constitute legal, business, or financial advice. You use the site and its content at your own risk.</p>
-        </li>
-        <li>
-          <strong>Limitation of Liability</strong>
-          <p className="mt-2">To the fullest extent permitted by law, Scoreboard Strategy, LLC shall not be liable for any damages arising from your use of the site, including but not limited to direct, indirect, incidental, or consequential damages.</p>
-        </li>
-        <li>
-          <strong>Third-Party Links</strong>
-          <p className="mt-2">This site may contain links to third-party websites or services. We are not responsible for the content, privacy practices, or accuracy of any third-party sites.</p>
-        </li>
-        <li>
-          <strong>Modifications</strong>
-          <p className="mt-2">We may modify these Terms at any time. The updated version will be posted on this page with a new effective date. Your continued use of the site after changes are posted constitutes your acceptance of the revised Terms.</p>
-        </li>
-        <li>
-          <strong>Governing Law</strong>
-          <p className="mt-2">These Terms are governed by the laws of the State of Illinois, without regard to its conflict of laws principles.</p>
-        </li>
-        <li>
-          <strong>Contact</strong>
-          <p className="mt-2">If you have any questions about these Terms, please contact us at:</p>
-          <p>Scoreboard Strategy, LLC<br />Email: <a href="mailto:contact@scoreboardstrategy.com" className="text-brand-red underline">contact@scoreboardstrategy.com</a></p>
-        </li>
-      </ol>
+      <p className="text-gray-600 mb-2"><strong>Effective Date:</strong> July 21, 2025</p>
+      <p className="mb-6 text-gray-700">Welcome to Scoreboard Legal, PLLC’s website (“Site”). Scoreboard Legal, PLLC (“Firm,” “we,” “us,” or “our”) is a Florida professional limited liability company providing legal services. By accessing or using this Site, you agree to these Terms of Service and our <a href="/privacy-policy" className="text-brand-red underline">Privacy Policy</a>. Please read them carefully.</p>
+
+      <h2 className="text-2xl font-bold mt-8 mb-2 text-gray-900">1. Use of the Site</h2>
+      <p className="mb-4 text-gray-700">This Site provides general information about Scoreboard Legal, PLLC and its legal services. The content is for informational purposes only and does not create an attorney-client relationship.</p>
+
+      <h2 className="text-2xl font-bold mt-8 mb-2 text-gray-900">2. No Attorney-Client Relationship</h2>
+      <p className="mb-4 text-gray-700">Use of this Site, including submitting any contact information or communications, does not establish an attorney-client relationship. Such a relationship is only formed after a formal written agreement is executed by both you and the Firm.</p>
+
+      <h2 className="text-2xl font-bold mt-8 mb-2 text-gray-900">3. Legal Advice Disclaimer</h2>
+      <p className="mb-4 text-gray-700">Nothing on this Site constitutes legal advice, nor is it a substitute for consulting with a licensed attorney who can evaluate your specific circumstances.</p>
+
+      <h2 className="text-2xl font-bold mt-8 mb-2 text-gray-900">4. Fee Disclaimer</h2>
+      <p className="mb-4 text-gray-700">Any fees or costs mentioned on this Site are estimates only and are subject to change. Actual fees will be disclosed in a written fee agreement. You are responsible for all fees and costs associated with legal services provided by Scoreboard Legal, PLLC, as outlined in the engagement agreement.</p>
+
+      <h2 className="text-2xl font-bold mt-8 mb-2 text-gray-900">5. Payment Terms</h2>
+      <p className="mb-4 text-gray-700">Payments for legal services are due as outlined in your engagement agreement. We accept payment by various methods as specified by the Firm. Failure to timely pay invoices may result in suspension or termination of services.</p>
+
+      <h2 className="text-2xl font-bold mt-8 mb-2 text-gray-900">6. Refund Policy</h2>
+      <p className="mb-4 text-gray-700">Legal fees are generally non-refundable once services are rendered. Any refunds will be considered on a case-by-case basis at the sole discretion of Scoreboard Legal, PLLC.</p>
+
+      <h2 className="text-2xl font-bold mt-8 mb-2 text-gray-900">7. Confidentiality</h2>
+      <p className="mb-4 text-gray-700">Communications through this Site or via email are not secure and may not be confidential. Do not send sensitive or confidential information until an attorney-client relationship is established.</p>
+
+      <h2 className="text-2xl font-bold mt-8 mb-2 text-gray-900">8. Intellectual Property</h2>
+      <p className="mb-4 text-gray-700">All content on the Site, including text, graphics, logos, and images, is the property of Scoreboard Legal, PLLC and is protected by copyright and other intellectual property laws. You may not reproduce or distribute any content without our prior written consent.</p>
+
+      <h2 className="text-2xl font-bold mt-8 mb-2 text-gray-900">9. External Links</h2>
+      <p className="mb-4 text-gray-700">The Site may contain links to third-party websites. We do not endorse or control those sites and are not responsible for their content or practices.</p>
+
+      <h2 className="text-2xl font-bold mt-8 mb-2 text-gray-900">10. Limitation of Liability</h2>
+      <p className="mb-4 text-gray-700">Scoreboard Legal, PLLC shall not be liable for any damages arising out of your use or inability to use the Site, including indirect, incidental, or consequential damages.</p>
+
+      <h2 className="text-2xl font-bold mt-8 mb-2 text-gray-900">11. Dispute Resolution</h2>
+      <p className="mb-4 text-gray-700">Any dispute arising out of or relating to these Terms or the use of the Site shall be resolved through binding arbitration in accordance with the rules of the American Arbitration Association, held in the State of Florida. This provision shall not limit the Firm’s right to seek injunctive relief in a court of competent jurisdiction.</p>
+
+      <h2 className="text-2xl font-bold mt-8 mb-2 text-gray-900">12. Changes to These Terms</h2>
+      <p className="mb-4 text-gray-700">We reserve the right to modify these Terms at any time. Updated versions will be posted on this page with the revised effective date. Your continued use of the Site after changes indicates your acceptance.</p>
+
+      <h2 className="text-2xl font-bold mt-8 mb-2 text-gray-900">13. Governing Law and Jurisdiction</h2>
+      <p className="mb-4 text-gray-700">These Terms shall be governed by and construed in accordance with the laws of the State of Florida, without regard to conflict of law principles. Any disputes arising out of these Terms or your use of the Site shall be subject to the exclusive jurisdiction of the state or federal courts located in Florida.</p>
+
+      <h2 className="text-2xl font-bold mt-8 mb-2 text-gray-900">14. Contact Us</h2>
+      <p className="mb-4 text-gray-700">If you have any questions about these Terms, please contact us at:</p>
+      <p className="mb-4 text-gray-700">
+        Scoreboard Legal, PLLC<br />
+        <strong>Email:</strong> <a href="mailto:info@scoreboardlegal.com" className="text-brand-red underline">info@scoreboardlegal.com</a>
+      </p>
     </section>
   </div>
 );
