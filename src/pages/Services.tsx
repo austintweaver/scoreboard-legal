@@ -222,11 +222,11 @@ const Services = () => {
               </AccordionTrigger>
               <AccordionContent className="p-6">
                 <div className="space-y-8">
-                  {/* Header with "Representation Reinvented" and price */}
-                  <div className="text-center">
-                    <h4 className="text-3xl font-heading font-bold text-gray-900 mb-4">Representation Reinvented</h4>
-                    <div className="text-4xl font-bold text-brand-red mb-2">{gamePlanCategory.price}</div>
-                    <div className="text-gray-600">Subscription-based representation</div>
+                  {/* Description at the top */}
+                  <div className="space-y-4 text-gray-700 max-w-4xl mx-auto mb-8">
+                    <p>
+                      We offer subscription-based support for athletes, coaches, administrators, entertainers, and creators — delivering expert guidance without the commissions or conflicts of traditional representation.
+                    </p>
                   </div>
 
                   {/* GAME Components in horizontal layout */}
@@ -264,19 +264,24 @@ const Services = () => {
                     </div>
                   </div>
 
-                  {/* Description */}
+                  {/* Additional description paragraphs */}
                   <div className="space-y-4 text-gray-700 max-w-4xl mx-auto">
-                    <p>
-                      We offer subscription-based support for athletes, coaches, administrators, entertainers, and creators — delivering expert guidance without the commissions or conflicts of traditional representation.
-                    </p>
-                    
                     <p>
                       Our approach is built for the full scope of your career and business journey. From navigating NIL deals and contract negotiations to career progression, brand building, and professional growth — we're with you at every stage. Our model ensures you have access to legal expertise, strategic advice, and business management whenever you need it — all within a transparent, predictable subscription.
                     </p>
-                    
                     <p className="font-semibold text-gray-900 text-center text-lg">
                       We don't take a percentage of your success — we help you build it.
                     </p>
+                  </div>
+
+                  {/* Pricing at the bottom */}
+                  <div className="text-center mt-8">
+                    <div className="text-4xl font-bold text-brand-red mb-2">{gamePlanCategory.price}</div>
+                    <div className="text-gray-600">Subscription-based representation</div>
+                  </div>
+                  {/* Footnote */}
+                  <div className="mt-4 text-xs text-gray-500 text-right">
+                    * Monthly fee includes credit for additional legal services and a discount on additional legal services.
                   </div>
                 </div>
               </AccordionContent>
