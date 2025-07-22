@@ -33,7 +33,7 @@ const Services = () => {
         },
         {
           name: "Purchase Agreement Drafting",
-          price: "Starting $2,000",
+          price: "Starting at $2,000",
           description: "Business sales/acquisitions"
         }
       ]
