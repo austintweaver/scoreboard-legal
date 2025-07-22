@@ -74,7 +74,7 @@ const Services = () => {
       services: [
         {
           name: "Data Privacy Policy Drafting",
-          price: "Starting at $2,500",
+          price: "Starting at $1,500",
           description: "GDPR/CCPA focus"
         },
         {
