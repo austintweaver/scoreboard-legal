@@ -13,7 +13,7 @@ const Services = () => {
       services: [
         {
           name: "NDA Drafting",
-          price: "$750",
+          price: "Starting at $750",
           description: "Basic unilateral or mutual NDA"
         },
         {
