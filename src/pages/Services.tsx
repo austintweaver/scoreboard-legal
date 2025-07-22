@@ -224,7 +224,7 @@ const Services = () => {
                 <div className="space-y-8">
                   {/* Description at the top */}
                   <div className="space-y-4 text-gray-700 max-w-4xl mx-auto mb-8">
-                    <p>
+                    <p className="text-center text-2xl font-semibold">
                       We offer subscription-based support for athletes, coaches, administrators, entertainers, and creators — delivering expert guidance without the commissions or conflicts of traditional representation.
                     </p>
                   </div>
