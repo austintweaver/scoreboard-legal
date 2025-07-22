@@ -50,7 +50,7 @@ const TermsOfService = () => (
       <p className="mb-4 text-gray-700">If you have any questions about these Terms, please contact us at:</p>
       <p className="mb-4 text-gray-700">
         Scoreboard Legal, PLLC<br />
-        <strong>Email:</strong> <a href="mailto:info@scoreboardlegal.com" className="text-brand-red underline">info@scoreboardlegal.com</a>
+        <strong>Email:</strong> <a href="mailto:contact@scoreboardlegal.com" className="text-brand-red underline">contact@scoreboardlegal.com</a>
       </p>
     </section>
   </div>

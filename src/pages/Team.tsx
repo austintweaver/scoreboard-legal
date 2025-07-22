@@ -12,7 +12,7 @@ const Team = () => {
     title: "Founder",
     image: "/assets/weaver-headshot.jpeg",
     bio: "Austin is the Founder of Scoreboard Legal. He brings years of experience in business strategy, law, operations, and leadership — all driven by a passion for helping athletes, entertainers, and organizations reach their full potential. His mission is to deliver strategic support that empowers clients to win on and off the field.",
-    email: "contact@scoreboardstrategy.com",
+    email: "contact@scoreboardlegal.com",
     linkedin: "https://www.linkedin.com/in/austintweaver/"
   };
 
