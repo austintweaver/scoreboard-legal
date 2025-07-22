@@ -30,6 +30,11 @@ const Services = () => {
           name: "Independent Contractor Agreements",
           price: "Starting at $1,000",
           description: "Contractor or freelancer agreements"
+        },
+        {
+          name: "Purchase Agreement Drafting",
+          price: "Starting $2,000",
+          description: "Business sales/acquisitions"
         }
       ]
     },
@@ -81,23 +86,6 @@ const Services = () => {
           name: "Terms of Service Drafting",
           price: "Starting at $1,500",
           description: "Website/app user agreements"
-        }
-      ]
-    },
-    {
-      title: "Transactional & Dispute",
-      icon: Gavel,
-      color: "bg-red-500",
-      services: [
-        {
-          name: "Purchase Agreement Drafting",
-          price: "Starting $2,000",
-          description: "Business sales/acquisitions"
-        },
-        {
-          name: "Dispute Resolution Consultation",
-          price: "$1,000",
-          description: "Fixed consultation fee"
         }
       ]
     }
