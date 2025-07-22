@@ -13,27 +13,22 @@ const Services = () => {
       services: [
         {
           name: "NDA Drafting",
-          price: "$850",
+          price: "$750",
           description: "Basic unilateral or mutual NDA"
         },
         {
-          name: "Contract Drafting (Simple)",
-          price: "$1,250",
+          name: "Contract Drafting, Review & Revisions",
+          price: "Starting at $1,250",
           description: "Service, vendor, sales contracts"
         },
         {
-          name: "Contract Review & Revision",
-          price: "$1,250",
-          description: "Per contract"
-        },
-        {
           name: "Employment Agreement Drafting",
-          price: "$1,700",
+          price: "Starting at $1,500",
           description: "Per employee agreement"
         },
         {
           name: "Independent Contractor Agreements",
-          price: "$1,200",
+          price: "Starting at $1,000",
           description: "Contractor or freelancer agreements"
         }
       ]
@@ -44,13 +39,13 @@ const Services = () => {
       color: "bg-green-500",
       services: [
         {
-          name: "Business Formation (LLC, Corp)",
-          price: "$1,900",
+          name: "Business Formations",
+          price: "Starting at $2,000",
           description: "Includes operating agreement/bylaws"
         },
         {
           name: "Investor Agreements",
-          price: "$3,200",
+          price: "Starting at $3,000",
           description: "SAFE notes, convertible notes"
         }
       ]
@@ -62,12 +57,12 @@ const Services = () => {
       services: [
         {
           name: "Trademark Filing Assistance",
-          price: "$2,200",
+          price: "Starting at $1,500",
           description: "Includes USPTO filing fees"
         },
         {
           name: "Intellectual Property Agreements",
-          price: "$2,000",
+          price: "Starting at $1,500",
           description: "Licensing or IP assignment"
         }
       ]
@@ -78,18 +73,13 @@ const Services = () => {
       color: "bg-orange-500",
       services: [
         {
-          name: "Legal Compliance Audit",
-          price: "$3,200",
-          description: "Thorough legal compliance review"
-        },
-        {
           name: "Data Privacy Policy Drafting",
-          price: "$2,500",
+          price: "Starting at $2,500",
           description: "GDPR/CCPA focus"
         },
         {
           name: "Terms of Service Drafting",
-          price: "$1,600",
+          price: "Starting at $1,500",
           description: "Website/app user agreements"
         }
       ]
@@ -101,7 +91,7 @@ const Services = () => {
       services: [
         {
           name: "Purchase Agreement Drafting",
-          price: "$2,400",
+          price: "Starting $2,000",
           description: "Business sales/acquisitions"
         },
         {
@@ -224,7 +214,7 @@ const Services = () => {
                 <div className="space-y-8">
                   {/* Description at the top */}
                   <div className="space-y-4 text-gray-700 max-w-4xl mx-auto mb-8">
-                    <p className="text-center text-2xl font-semibold">
+                    <p className="text-center text-xl font-semibold">
                       We offer subscription-based support for athletes, coaches, administrators, entertainers, and creators — delivering expert guidance without the commissions or conflicts of traditional representation.
                     </p>
                   </div>
@@ -266,7 +256,7 @@ const Services = () => {
 
                   {/* Additional description paragraphs */}
                   <div className="space-y-4 text-gray-700 max-w-4xl mx-auto">
-                    <p>
+                    <p className="text-center">
                       Our approach is built for the full scope of your career and business journey. From navigating NIL deals and contract negotiations to career progression, brand building, and professional growth — we're with you at every stage. Our model ensures you have access to legal expertise, strategic advice, and business management whenever you need it — all within a transparent, predictable subscription.
                     </p>
                     <p className="font-semibold text-gray-900 text-center text-lg">
