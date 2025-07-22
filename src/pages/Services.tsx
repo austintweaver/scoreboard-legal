@@ -1,4 +1,4 @@
-import { FileText, Shield, Briefcase, Scale, Users, Eye, Gavel, Building, DollarSign, Target } from "lucide-react";
+import { FileText, Shield, Briefcase, Scale, Users, Eye, Gavel, Building, DollarSign, Target, Navigation, UserCheck, BarChart3, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
@@ -131,7 +131,6 @@ const Services = () => {
     title: "The GAME Plan",
     icon: Target,
     color: "bg-brand-red",
-    subtitle: "Representation Reinvented",
     price: "$500/month"
   };
 
@@ -216,73 +215,57 @@ const Services = () => {
                   <div className="inline-flex items-center justify-center w-12 h-12 bg-brand-red rounded-full mr-4">
                     <Target className="h-6 w-6 text-white" />
                   </div>
-                  <div>
-                    <h3 className="text-2xl font-heading font-bold text-gray-900">
-                      {gamePlanCategory.title}
-                    </h3>
-                    <p className="text-lg text-gray-600 font-medium">
-                      {gamePlanCategory.subtitle}
-                    </p>
-                  </div>
+                  <h3 className="text-2xl font-heading font-bold text-gray-900">
+                    {gamePlanCategory.title}
+                  </h3>
                 </div>
               </AccordionTrigger>
               <AccordionContent className="p-6">
                 <div className="space-y-8">
-                  {/* Price Display */}
-                  <div className="text-center bg-brand-red/5 rounded-lg p-6">
+                  {/* Header with "Representation Reinvented" and price */}
+                  <div className="text-center">
+                    <h4 className="text-3xl font-heading font-bold text-gray-900 mb-4">Representation Reinvented</h4>
                     <div className="text-4xl font-bold text-brand-red mb-2">{gamePlanCategory.price}</div>
                     <div className="text-gray-600">Subscription-based representation</div>
                   </div>
 
-                  {/* GAME Components */}
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <div className="space-y-4">
-                      <div className="flex items-start space-x-4">
-                        <div className="flex-shrink-0 w-12 h-12 bg-brand-red rounded-full flex items-center justify-center">
-                          <span className="text-white font-bold text-lg">G</span>
-                        </div>
-                        <div>
-                          <h4 className="text-xl font-bold text-gray-900 mb-2">Guidance</h4>
-                          <p className="text-gray-700">Expert advice to help navigate your journey.</p>
-                        </div>
+                  {/* GAME Components in horizontal layout */}
+                  <div className="grid grid-cols-1 md:grid-cols-4 gap-8 py-8">
+                    <div className="text-center">
+                      <div className="inline-flex items-center justify-center w-20 h-20 bg-white rounded-full shadow-lg mb-4 border border-gray-100">
+                        <Navigation className="h-10 w-10 text-brand-red" />
                       </div>
-
-                      <div className="flex items-start space-x-4">
-                        <div className="flex-shrink-0 w-12 h-12 bg-brand-red rounded-full flex items-center justify-center">
-                          <span className="text-white font-bold text-lg">A</span>
-                        </div>
-                        <div>
-                          <h4 className="text-xl font-bold text-gray-900 mb-2">Advocacy</h4>
-                          <p className="text-gray-700">Protecting your interests and rights.</p>
-                        </div>
-                      </div>
+                      <h5 className="text-xl font-bold text-gray-900 mb-2">Guidance</h5>
+                      <p className="text-gray-700 text-sm">Expert advice to help navigate your journey.</p>
                     </div>
 
-                    <div className="space-y-4">
-                      <div className="flex items-start space-x-4">
-                        <div className="flex-shrink-0 w-12 h-12 bg-brand-red rounded-full flex items-center justify-center">
-                          <span className="text-white font-bold text-lg">M</span>
-                        </div>
-                        <div>
-                          <h4 className="text-xl font-bold text-gray-900 mb-2">Management</h4>
-                          <p className="text-gray-700">Professional oversight of your business matters.</p>
-                        </div>
+                    <div className="text-center">
+                      <div className="inline-flex items-center justify-center w-20 h-20 bg-white rounded-full shadow-lg mb-4 border border-gray-100">
+                        <Shield className="h-10 w-10 text-brand-red" />
                       </div>
+                      <h5 className="text-xl font-bold text-gray-900 mb-2">Advocacy</h5>
+                      <p className="text-gray-700 text-sm">Protecting your interests and rights.</p>
+                    </div>
 
-                      <div className="flex items-start space-x-4">
-                        <div className="flex-shrink-0 w-12 h-12 bg-brand-red rounded-full flex items-center justify-center">
-                          <span className="text-white font-bold text-lg">E</span>
-                        </div>
-                        <div>
-                          <h4 className="text-xl font-bold text-gray-900 mb-2">Execution</h4>
-                          <p className="text-gray-700">Implementation of strategies for your success.</p>
-                        </div>
+                    <div className="text-center">
+                      <div className="inline-flex items-center justify-center w-20 h-20 bg-white rounded-full shadow-lg mb-4 border border-gray-100">
+                        <BarChart3 className="h-10 w-10 text-brand-red" />
                       </div>
+                      <h5 className="text-xl font-bold text-gray-900 mb-2">Management</h5>
+                      <p className="text-gray-700 text-sm">Professional oversight of your business matters.</p>
+                    </div>
+
+                    <div className="text-center">
+                      <div className="inline-flex items-center justify-center w-20 h-20 bg-white rounded-full shadow-lg mb-4 border border-gray-100">
+                        <Zap className="h-10 w-10 text-brand-red" />
+                      </div>
+                      <h5 className="text-xl font-bold text-gray-900 mb-2">Execution</h5>
+                      <p className="text-gray-700 text-sm">Implementation of strategies for your success.</p>
                     </div>
                   </div>
 
                   {/* Description */}
-                  <div className="space-y-4 text-gray-700">
+                  <div className="space-y-4 text-gray-700 max-w-4xl mx-auto">
                     <p>
                       We offer subscription-based support for athletes, coaches, administrators, entertainers, and creators — delivering expert guidance without the commissions or conflicts of traditional representation.
                     </p>
@@ -291,17 +274,9 @@ const Services = () => {
                       Our approach is built for the full scope of your career and business journey. From navigating NIL deals and contract negotiations to career progression, brand building, and professional growth — we're with you at every stage. Our model ensures you have access to legal expertise, strategic advice, and business management whenever you need it — all within a transparent, predictable subscription.
                     </p>
                     
-                    <p className="font-semibold text-gray-900">
+                    <p className="font-semibold text-gray-900 text-center text-lg">
                       We don't take a percentage of your success — we help you build it.
                     </p>
-                  </div>
-
-                  <div className="text-center">
-                    <Link to="/contact">
-                      <Button size="lg" className="bg-brand-red hover:bg-red-700 text-white font-semibold px-8 py-4 text-lg transition-all duration-300 transform hover:scale-105">
-                        Learn About The GAME Plan
-                      </Button>
-                    </Link>
                   </div>
                 </div>
               </AccordionContent>
