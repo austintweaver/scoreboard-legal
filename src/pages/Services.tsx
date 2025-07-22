@@ -88,7 +88,7 @@ const Services = () => {
           description: "Website/app user agreements"
         },
         {
-          name: "Company Handbook",
+          name: "Company Handbook Drafting",
           price: "Starting at $1,500",
           description: "Custom employee handbook for company policies and compliance"
         }
