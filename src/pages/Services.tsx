@@ -114,7 +114,7 @@ const Services = () => {
     title: "The GAME Plan",
     icon: Target,
     color: "bg-brand-red",
-    price: "$500/month"
+    price: "Starting at $500/month"
   };
 
   return (
