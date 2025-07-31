@@ -6,20 +6,38 @@ interface PerformanceOptimizerProps {
 
 export const PerformanceOptimizer: React.FC<PerformanceOptimizerProps> = ({ children }) => {
   useEffect(() => {
-    // Preload critical images
+    // Preload critical images with WebP support
     const preloadImages = () => {
       const criticalImages = [
-        '/assets/scoreboardhome.jpg',
-        '/assets/blacklogo.png',
-        '/assets/whitelogo.png'
+        {
+          src: '/assets/scoreboardhome.jpg',
+          webp: '/assets/optimized/scoreboardhome.webp'
+        },
+        {
+          src: '/assets/blacklogo.png',
+          webp: '/assets/optimized/blacklogo.webp'
+        },
+        {
+          src: '/assets/whitelogo.png',
+          webp: '/assets/optimized/whitelogo.webp'
+        }
       ];
       
-      criticalImages.forEach(src => {
-        const link = document.createElement('link');
-        link.rel = 'preload';
-        link.as = 'image';
-        link.href = src;
-        document.head.appendChild(link);
+      criticalImages.forEach(({ src, webp }) => {
+        // Preload WebP version for modern browsers
+        const webpLink = document.createElement('link');
+        webpLink.rel = 'preload';
+        webpLink.as = 'image';
+        webpLink.href = webp;
+        webpLink.type = 'image/webp';
+        document.head.appendChild(webpLink);
+        
+        // Preload fallback version
+        const fallbackLink = document.createElement('link');
+        fallbackLink.rel = 'preload';
+        fallbackLink.as = 'image';
+        fallbackLink.href = src;
+        document.head.appendChild(fallbackLink);
       });
     };
 
