@@ -8,9 +8,15 @@
     <meta name="description" content="Premier sports management, legal counsel, and business strategy services for athletes, coaches, and sports organizations." />
     <meta name="author" content="Scoreboard Legal" />
 
+    <!-- Preconnect to external domains for faster resource loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://www.clarity.ms">
+    <link rel="preconnect" href="https://assets.calendly.com">
+    
+    <!-- Preload critical fonts with display=swap for better performance -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
 
     <meta property="og:title" content="Scoreboard Legal" />
     <meta property="og:description" content="Premier sports management, legal counsel, and business strategy services for athletes, coaches, and sports organizations." />
@@ -20,17 +26,33 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@ScoreboardLegal" />
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    
+    <!-- Performance optimizations -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#DC2626">
+    
+    <!-- DNS prefetch for external domains -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="dns-prefetch" href="//www.clarity.ms">
+    <link rel="dns-prefetch" href="//assets.calendly.com">
   </head>
 
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <!-- Defer Microsoft Clarity to avoid blocking initial render -->
     <script type="text/javascript">
-      (function(c,l,a,r,i,t,y){
-          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-      })(window, document, "clarity", "script", "sil4ndstt8");
+      // Defer Clarity loading until after page load
+      window.addEventListener('load', function() {
+        if (localStorage.getItem('cookieConsent') === 'accepted') {
+          (function(c,l,a,r,i,t,y){
+              c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+              t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+              y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+          })(window, document, "clarity", "script", "sil4ndstt8");
+        }
+      });
     </script>
   </body>
 </html>

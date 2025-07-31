@@ -4,16 +4,26 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
-import Index from "./pages/Index";
-import Services from "./pages/Services";
-import Team from "./pages/Team";
-import Contact from "./pages/Contact";
-import NotFound from "./pages/NotFound";
+import { lazy, Suspense, useEffect, useState } from "react";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
-import { useEffect, useState } from "react";
-import PrivacyPolicy from "./pages/PrivacyPolicy";
-import TermsOfService from "./pages/TermsOfService";
+import { PerformanceOptimizer } from "./components/PerformanceOptimizer";
+
+// Lazy load pages to reduce initial bundle size
+const Index = lazy(() => import("./pages/Index"));
+const Services = lazy(() => import("./pages/Services"));
+const Team = lazy(() => import("./pages/Team"));
+const Contact = lazy(() => import("./pages/Contact"));
+const NotFound = lazy(() => import("./pages/NotFound"));
+const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
+const TermsOfService = lazy(() => import("./pages/TermsOfService"));
+
+// Loading component for lazy-loaded routes
+const PageLoader = () => (
+  <div className="flex items-center justify-center min-h-[400px]">
+    <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-red-600"></div>
+  </div>
+);
 
 declare global {
   interface Window {
@@ -22,7 +32,14 @@ declare global {
   }
 }
 
-const queryClient = new QueryClient();
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      staleTime: 5 * 60 * 1000, // 5 minutes
+      gcTime: 10 * 60 * 1000, // 10 minutes
+    },
+  },
+});
 
 const CookieBanner = () => {
   const [visible, setVisible] = useState(() => {
@@ -75,42 +92,51 @@ function ScrollToTop() {
 
 const App = () => {
   useEffect(() => {
-    // Only inject Calendly badge on non-mobile devices
-    const isMobile = () => /Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-    if (isMobile()) return;
-    // Inject Calendly CSS
-    if (!document.getElementById('calendly-badge-css')) {
-      const link = document.createElement('link');
-      link.id = 'calendly-badge-css';
-      link.rel = 'stylesheet';
-      link.href = 'https://assets.calendly.com/assets/external/widget.css';
-      document.head.appendChild(link);
-    }
-    // Inject Calendly script
-    if (!document.getElementById('calendly-badge-script')) {
-      const script = document.createElement('script');
-      script.id = 'calendly-badge-script';
-      script.src = 'https://assets.calendly.com/assets/external/widget.js';
-      script.async = true;
-      script.onload = () => {
-        if (window.Calendly) {
-          window.Calendly.initBadgeWidget({
-            url: 'https://calendly.com/austin-scoreboardstrategy/30min?hide_event_type_details=1',
-            text: 'Schedule a Call',
-            color: '#DC2626',
-            textColor: '#ffffff'
-          });
-        }
-      };
-      document.body.appendChild(script);
-    } else if (window.Calendly) {
-      window.Calendly.initBadgeWidget({
-        url: 'https://calendly.com/austin-scoreboardstrategy/30min?hide_event_type_details=1',
-        text: 'Schedule a Call',
-        color: '#DC2626',
-        textColor: '#ffffff'
-      });
-    }
+    // Defer Calendly loading to after initial page load
+    const loadCalendly = () => {
+      // Only inject Calendly badge on non-mobile devices
+      const isMobile = () => /Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      if (isMobile()) return;
+      
+      // Inject Calendly CSS
+      if (!document.getElementById('calendly-badge-css')) {
+        const link = document.createElement('link');
+        link.id = 'calendly-badge-css';
+        link.rel = 'stylesheet';
+        link.href = 'https://assets.calendly.com/assets/external/widget.css';
+        document.head.appendChild(link);
+      }
+      
+      // Inject Calendly script
+      if (!document.getElementById('calendly-badge-script')) {
+        const script = document.createElement('script');
+        script.id = 'calendly-badge-script';
+        script.src = 'https://assets.calendly.com/assets/external/widget.js';
+        script.async = true;
+        script.onload = () => {
+          if (window.Calendly) {
+            window.Calendly.initBadgeWidget({
+              url: 'https://calendly.com/austin-scoreboardstrategy/30min?hide_event_type_details=1',
+              text: 'Schedule a Call',
+              color: '#DC2626',
+              textColor: '#ffffff'
+            });
+          }
+        };
+        document.body.appendChild(script);
+      } else if (window.Calendly) {
+        window.Calendly.initBadgeWidget({
+          url: 'https://calendly.com/austin-scoreboardstrategy/30min?hide_event_type_details=1',
+          text: 'Schedule a Call',
+          color: '#DC2626',
+          textColor: '#ffffff'
+        });
+      }
+    };
+
+    // Load Calendly after a short delay to prioritize initial content
+    const timer = setTimeout(loadCalendly, 1000);
+    return () => clearTimeout(timer);
   }, []);
 
   return (
@@ -120,20 +146,24 @@ const App = () => {
         <Sonner />
         <BrowserRouter>
           <ScrollToTop />
-          <div className="min-h-screen bg-white">
-            <Navigation />
-            <Routes>
-              <Route path="/" element={<Index />} />
-              <Route path="/services" element={<Services />} />
-              <Route path="/team" element={<Team />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-              <Route path="/terms-of-service" element={<TermsOfService />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-            <Footer />
-            <CookieBanner />
-          </div>
+          <PerformanceOptimizer>
+            <div className="min-h-screen bg-white">
+              <Navigation />
+              <Suspense fallback={<PageLoader />}>
+                <Routes>
+                  <Route path="/" element={<Index />} />
+                  <Route path="/services" element={<Services />} />
+                  <Route path="/team" element={<Team />} />
+                  <Route path="/contact" element={<Contact />} />
+                  <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+                  <Route path="/terms-of-service" element={<TermsOfService />} />
+                  <Route path="*" element={<NotFound />} />
+                </Routes>
+              </Suspense>
+              <Footer />
+              <CookieBanner />
+            </div>
+          </PerformanceOptimizer>
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>
