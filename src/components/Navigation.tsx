@@ -26,7 +26,7 @@ const Navigation = () => {
 
   // Determine which logo to use and its size
   const isHome = location.pathname === "/";
-  const logoSrc = isHome && !isScrolled ? "/assets/whitelogolegal.png" : "/assets/blacklogo.png";
+  const logoSrc = "/assets/whitelogolegal.png"; // Use new logo on all pages
   const logoAlt = "Scoreboard Strategy Logo";
   const logoClass = isHome && !isScrolled ? "h-20 pt-2" : "h-14";
 
