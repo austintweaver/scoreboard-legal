@@ -14,8 +14,8 @@ export const PerformanceOptimizer: React.FC<PerformanceOptimizerProps> = ({ chil
           webp: '/assets/optimized/scoreboardhome.webp'
         },
         {
-          src: '/assets/blacklogo.png',
-          webp: '/assets/optimized/blacklogo.webp'
+          src: '/assets/blacklogolegal.png',
+          webp: '/assets/optimized/blacklogolegal.webp'
         },
         {
           src: '/assets/whitelogolegal.png',

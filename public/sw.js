@@ -4,7 +4,7 @@ const IMAGE_CACHE = 'images-v2';
 
 const urlsToCache = [
   '/',
-  '/assets/blacklogo.png',
+  '/assets/blacklogolegal.png',
   '/assets/whitelogolegal.png',
   '/assets/scoreboardhome.jpg',
   '/assets/weaver-headshot.jpeg'
