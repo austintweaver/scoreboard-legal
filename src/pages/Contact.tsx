@@ -68,6 +68,42 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen pt-16">
+      {/* Structured Data for better contact recognition */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Person',
+            name: 'Austin Weaver',
+            jobTitle: 'Founder',
+            email: 'mailto:contact@scoreboardlegal.com',
+            telephone: '+1-813-708-8744',
+            url: 'https://www.scoreboardlegal.com/',
+            image: 'https://www.scoreboardlegal.com/public/assets/weaver-headshot-600.jpeg',
+            sameAs: [
+              'https://www.linkedin.com/in/austintweaver/'
+            ],
+            worksFor: {
+              '@type': 'Organization',
+              name: 'Scoreboard Legal, PLLC',
+              url: 'https://www.scoreboardlegal.com/'
+            }
+          })
+        }}
+      />
+
+      {/* Hidden h-card to influence iOS contact suggestions */}
+      <div className="hidden">
+        <div className="h-card">
+          <span className="p-name">Austin Weaver</span>
+          <span className="p-org">Scoreboard Legal, PLLC</span>
+          <a className="u-url" href="https://www.scoreboardlegal.com/">https://www.scoreboardlegal.com/</a>
+          <a className="u-email" href="mailto:contact@scoreboardlegal.com">contact@scoreboardlegal.com</a>
+          <span className="p-tel">+1-813-708-8744</span>
+          <img className="u-photo" alt="Austin Weaver" src="/assets/optimized/weaver-headshot-600.jpeg" />
+        </div>
+      </div>
       {/* Header Section */}
       <section className="bg-gray-900 text-white py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
