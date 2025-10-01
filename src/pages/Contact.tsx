@@ -90,6 +90,11 @@ const Contact = () => {
               </h2>
               <p className="text-lg text-gray-600 mb-8">
               </p>
+              <div className="mb-6">
+                <a href="/austin-weaver.vcf" download>
+                  <Button className="bg-gray-900 hover:bg-gray-800 text-white">Save Contact</Button>
+                </a>
+              </div>
               {/* Calendly Embed */}
               <div
                 className="calendly-inline-widget"
