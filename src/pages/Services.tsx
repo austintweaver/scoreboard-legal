@@ -264,25 +264,29 @@ const Services = () => {
                         <thead>
                           <tr>
                             <th className="px-6 py-3 border-b text-left text-lg font-bold text-gray-900 align-middle whitespace-nowrap">Tier</th>
-                            <th className="px-6 py-3 border-b text-left text-lg font-bold text-gray-900 align-middle whitespace-nowrap">Description</th>
-                            <th className="px-6 py-3 border-b text-right text-lg font-bold text-gray-900 align-middle whitespace-nowrap">Starting Price</th>
+                            <th className="px-6 py-3 border-b text-left text-lg font-bold text-gray-900 align-middle whitespace-nowrap">Starting Price</th>
+                            <th className="px-6 py-3 border-b text-center text-lg font-bold text-gray-900 align-middle whitespace-nowrap">Support Level</th>
+                            <th className="px-6 py-3 border-b text-right text-lg font-bold text-gray-900 align-middle whitespace-nowrap">Description & Coverage</th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
                             <td className="px-6 py-4 border-b text-gray-900 font-semibold">Entry</td>
-                            <td className="px-6 py-4 border-b text-gray-700">Your first step to professional guidance and support. Provides essential advice and practical strategies to help you confidently handle deals, sponsorships, and early career opportunities.</td>
-                            <td className="px-6 py-4 border-b text-gray-700 text-right">$500/month+</td>
+                            <td className="px-6 py-4 border-b text-gray-700">$500/month+</td>
+                            <td className="px-6 py-4 border-b text-gray-700 text-center">Essential</td>
+                            <td className="px-6 py-4 border-b text-gray-700 text-right">Your first step to professional guidance and support. Provides essential advice and practical strategies to help you confidently handle deals, sponsorships, and early career opportunities.</td>
                           </tr>
                           <tr>
                             <td className="px-6 py-4 border-b text-gray-900 font-semibold">Momentum</td>
-                            <td className="px-6 py-4 border-b text-gray-700">For individuals actively building their career or brand. Offers regular guidance, contract review, and strategic business support for opportunities like multi-brand partnerships, playing opportunities, and content collaborations.</td>
-                            <td className="px-6 py-4 border-b text-gray-700 text-right">~$1,000/month+</td>
+                            <td className="px-6 py-4 border-b text-gray-700">~$1,000/month+</td>
+                            <td className="px-6 py-4 border-b text-gray-700 text-center">Active</td>
+                            <td className="px-6 py-4 border-b text-gray-700 text-right">For individuals actively building their career or brand. Offers regular guidance, contract review, and strategic business support for opportunities like multi-brand partnerships, playing opportunities, and content collaborations.</td>
                           </tr>
                           <tr>
                             <td className="px-6 py-4 border-b text-gray-900 font-semibold">Custom</td>
-                            <td className="px-6 py-4 border-b text-gray-700">Fully tailored support for high-profile or complex opportunities. Integrates business and operational guidance for managing NIL deals, sponsorship portfolios, multi-team agreements, and comprehensive career strategy.</td>
-                            <td className="px-6 py-4 border-b text-gray-700 text-right">Custom / Quote</td>
+                            <td className="px-6 py-4 border-b text-gray-700">Custom / Quote</td>
+                            <td className="px-6 py-4 border-b text-gray-700 text-center">Comprehensive</td>
+                            <td className="px-6 py-4 border-b text-gray-700 text-right">Fully tailored support for high-profile or complex opportunities. Integrates business and operational guidance for managing NIL deals, sponsorship portfolios, multi-team agreements, and comprehensive career strategy.</td>
                           </tr>
                         </tbody>
                       </table>
