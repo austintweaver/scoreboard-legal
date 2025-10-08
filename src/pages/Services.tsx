@@ -257,14 +257,36 @@ const Services = () => {
                     </p>
                   </div>
 
-                  {/* Pricing at the bottom */}
-                  <div className="text-center mt-8">
-                    <div className="text-4xl font-bold text-brand-red mb-2">{gamePlanCategory.price}</div>
-                    <div className="text-gray-600">Subscription-based representation</div>
-                  </div>
-                  {/* Footnote */}
-                  <div className="mt-4 text-xs text-gray-500 text-right">
-                    * Monthly fee includes credit for additional legal services and a discount on additional legal services.
+                  {/* Pricing Table */}
+                  <div className="mt-8">
+                    <div className="overflow-x-auto">
+                      <table className="min-w-full bg-white border border-gray-200 rounded-lg">
+                        <thead>
+                          <tr>
+                            <th className="px-6 py-3 border-b text-left text-lg font-bold text-gray-900 align-middle whitespace-nowrap">Tier</th>
+                            <th className="px-6 py-3 border-b text-left text-lg font-bold text-gray-900 align-middle whitespace-nowrap">Description</th>
+                            <th className="px-6 py-3 border-b text-right text-lg font-bold text-gray-900 align-middle whitespace-nowrap">Starting Price</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td className="px-6 py-4 border-b text-gray-900 font-semibold">Entry</td>
+                            <td className="px-6 py-4 border-b text-gray-700">Your first step to professional guidance and support. Provides essential advice and practical strategies to help you confidently handle deals, sponsorships, and early career opportunities.</td>
+                            <td className="px-6 py-4 border-b text-gray-700 text-right">$500/month+</td>
+                          </tr>
+                          <tr>
+                            <td className="px-6 py-4 border-b text-gray-900 font-semibold">Momentum</td>
+                            <td className="px-6 py-4 border-b text-gray-700">For individuals actively building their career or brand. Offers regular guidance, contract review, and strategic business support for opportunities like multi-brand partnerships, playing opportunities, and content collaborations.</td>
+                            <td className="px-6 py-4 border-b text-gray-700 text-right">~$1,000/month+</td>
+                          </tr>
+                          <tr>
+                            <td className="px-6 py-4 border-b text-gray-900 font-semibold">Custom</td>
+                            <td className="px-6 py-4 border-b text-gray-700">Fully tailored support for high-profile or complex opportunities. Integrates business and operational guidance for managing NIL deals, sponsorship portfolios, multi-team agreements, and comprehensive career strategy.</td>
+                            <td className="px-6 py-4 border-b text-gray-700 text-right">Custom / Quote</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                   </div>
                 </div>
               </AccordionContent>
