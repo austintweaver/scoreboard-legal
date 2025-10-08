@@ -280,13 +280,13 @@ const Services = () => {
                             <td className="px-6 py-4 border-b text-gray-900 font-semibold">Momentum</td>
                             <td className="px-6 py-4 border-b text-gray-700">$1,000/month</td>
                             <td className="px-6 py-4 border-b text-gray-700 text-center">15%</td>
-                            <td className="px-6 py-4 border-b text-gray-700 text-right">For individuals actively building their career or brand. Offers regular guidance, contract review, and strategic business support for opportunities like multi-brand partnerships, playing opportunities, and content collaborations.</td>
+                            <td className="px-6 py-4 border-b text-gray-700 text-right">For individuals actively building their career or brand. Offers regular guidance, contract review, and strategic business support for opportunities like brand partnerships, playing opportunities, and content collaborations.</td>
                           </tr>
                           <tr>
                             <td className="px-6 py-4 border-b text-gray-900 font-semibold">Custom</td>
                             <td className="px-6 py-4 border-b text-gray-700">Custom Pricing</td>
                             <td className="px-6 py-4 border-b text-gray-700 text-center">Custom</td>
-                            <td className="px-6 py-4 border-b text-gray-700 text-right">Fully tailored support for high-profile or complex opportunities. Integrates business and operational guidance for managing NIL deals, sponsorship portfolios, multi-team agreements, and comprehensive career strategy.</td>
+                            <td className="px-6 py-4 border-b text-gray-700 text-right">Fully tailored support for high-profile or complex opportunities. Integrates business and operational guidance for managing NIL deals, sponsorship portfolios, team agreements, and comprehensive career strategy.</td>
                           </tr>
                         </tbody>
                       </table>
