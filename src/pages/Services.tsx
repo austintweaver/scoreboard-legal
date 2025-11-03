@@ -168,7 +168,7 @@ const Services = () => {
                       </tr>
                       <tr>
                         <td className="px-6 py-4 border-b text-gray-900 font-semibold">Partner</td>
-                        <td className="px-6 py-4 border-b text-gray-700">$3,000</td>
+                        <td className="px-6 py-4 border-b text-gray-700">$4,000</td>
                         <td className="px-6 py-4 border-b text-gray-700 text-center">15%</td>
                         <td className="px-6 py-4 border-b text-gray-700 text-right">Strategic legal counsel with expanded contract support and ongoing guidance for complex legal needs</td>
                       </tr>
