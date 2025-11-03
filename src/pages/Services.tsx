@@ -162,7 +162,7 @@ const Services = () => {
                     <tbody>
                       <tr>
                         <td className="px-6 py-4 border-b text-gray-900 font-semibold">Advisor</td>
-                        <td className="px-6 py-4 border-b text-gray-700">$1,500</td>
+                        <td className="px-6 py-4 border-b text-gray-700">$2,000</td>
                         <td className="px-6 py-4 border-b text-gray-700 text-center">10%</td>
                         <td className="px-6 py-4 border-b text-gray-700 text-right">Basic legal support, scheduled meetings with attorney, document review</td>
                       </tr>
