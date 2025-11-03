@@ -78,7 +78,7 @@ const Index = () => {
       <section
         className="relative h-screen flex items-center justify-center bg-black bg-cover bg-center bg-scroll overflow-x-hidden"
         style={{
-          backgroundImage: `linear-gradient(rgba(0,0,0,0.82), rgba(0,0,0,0.82)), url('/assets/scoreboardhome.jpg')`
+          backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/assets/scoreboardhome.jpg')`
         }}
       >
         <div className="z-10 w-full max-w-4xl mx-auto px-4 sm:px-6 flex flex-col items-center justify-center text-center">
