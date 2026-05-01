@@ -19,7 +19,7 @@ const Team = () => {
   return (
     <div className="min-h-screen pt-16">
       {/* Header Section */}
-      <section className="bg-gray-900 text-white py-20">
+      <section className="bg-gradient-to-br from-gray-50 to-gray-100 text-gray-900 py-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl md:text-6xl font-heading font-bold mb-6">
             Meet Our <span className="text-brand-red">Team</span>
@@ -32,7 +32,7 @@ const Team = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-center">
             <div 
-              className="group relative bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 max-w-md w-full"
+              className="group relative bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 max-w-md w-full"
               onMouseEnter={() => setHoveredMember(0)}
               onMouseLeave={() => setHoveredMember(null)}
             >
@@ -45,19 +45,19 @@ const Team = () => {
                 
                 {/* Overlay with bio on hover */}
                 <div className={`absolute inset-0 bg-black bg-opacity-90 p-6 flex flex-col justify-center transition-opacity duration-300 ${hoveredMember === 0 ? 'opacity-100' : 'opacity-0'}`}>
-                  <p className="text-white text-sm leading-relaxed mb-4">
+                  <p className="text-gray-900 text-sm leading-relaxed mb-4">
                     {teamMember.bio}
                   </p>
                   <div className="flex space-x-3">
                     <a 
                       href={`mailto:${teamMember.email}`} 
-                      className="text-white hover:text-brand-red transition-colors duration-200"
+                      className="text-gray-900 hover:text-brand-red transition-colors duration-200"
                     >
                       <Mail className="h-5 w-5" />
                     </a>
                     <a 
                       href={teamMember.linkedin} 
-                      className="text-white hover:text-brand-red transition-colors duration-200"
+                      className="text-gray-900 hover:text-brand-red transition-colors duration-200"
                     >
                       <Linkedin className="h-5 w-5" />
                     </a>
@@ -131,14 +131,14 @@ const Team = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-10 bg-gray-900">
+      <section className="py-10 bg-gradient-to-br from-gray-50 to-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mb-8">
+          <h2 className="text-4xl md:text-5xl font-heading font-bold text-gray-900 mb-8">
             Ready to <span className="text-brand-red">Win</span><br />
             Where It <span className="text-brand-red">Matters Most</span>?
           </h2>
           <Link to="/contact">
-            <Button size="lg" className="bg-brand-red hover:bg-red-700 text-white font-semibold px-8 py-4 text-lg transition-all duration-300 transform hover:scale-105">
+            <Button size="lg" className="bg-brand-red hover:bg-green-800 text-gray-900 font-semibold px-8 py-4 text-lg transition-all duration-300 transform hover:scale-105">
               Let's Get to Work
             </Button>
           </Link>

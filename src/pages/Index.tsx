@@ -84,20 +84,20 @@ const Index = () => {
         <div className="z-10 w-full max-w-4xl mx-auto px-4 sm:px-6 flex flex-col items-center justify-center text-center">
           {/* Headline */}
           <h1 className="font-extrabold text-white text-3xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight mb-4 tracking-tight break-words">
-            <span className="inline-block pb-2 border-b-4 border-brand-red">
+            <span className="inline-block pb-2 border-b-4 border-white">
               Built to Win.<br />
               Designed to Deliver.
             </span>
           </h1>
           {/* Subheadline */}
-          <h2 className="text-brand-red text-xl sm:text-2xl md:text-4xl font-bold mb-6 mt-2 tracking-wide uppercase break-words">
+          <h2 className="text-white text-xl sm:text-2xl md:text-4xl font-black mb-6 mt-2 tracking-wide uppercase break-words">
             We partner with competitors, creators and builders.
           </h2>
           {/* Supporting Body Text */}
           <div className="text-base sm:text-lg md:text-xl text-white font-medium space-y-2 mb-10 max-w-full break-words">
             <p className="leading-snug">
               We advise. We advocate. We protect.<br /><br />
-              From the locker room to the boardroom, we help <span className="text-brand-red font-bold">athletes</span>, <span className="text-brand-red font-bold">coaches</span>, <span className="text-brand-red font-bold">entertainers</span>, <span className="text-brand-red font-bold">entrepreneurs</span>, and <span className="text-brand-red font-bold">executives</span> navigate legal challenges and safeguard what they’ve built.<br /><br />
+              From the locker room to the boardroom, we help <span className="font-black">athletes</span>, <span className="font-black">coaches</span>, <span className="font-black">entertainers</span>, <span className="font-black">entrepreneurs</span>, and <span className="font-black">executives</span> navigate legal challenges and safeguard what they've built.<br /><br />
               No billable hours. No surprises. Just solutions.
             </p>
           </div>
@@ -105,7 +105,7 @@ const Index = () => {
           <Link to="/contact">
             <Button
               size="lg"
-              className="bg-brand-red hover:bg-red-700 text-white font-extrabold px-12 py-5 text-2xl shadow-xl rounded-full transition-all duration-300 tracking-wide uppercase"
+              className="bg-brand-red hover:bg-green-800 text-white font-extrabold px-12 py-5 text-2xl shadow-xl rounded-full transition-all duration-300 tracking-wide uppercase"
               style={{ letterSpacing: '0.05em' }}
             >
               Let's Get to Work
@@ -226,16 +226,16 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-10 bg-gray-900">
+      <section className="py-10 bg-gradient-to-br from-gray-50 to-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mb-8">
+          <h2 className="text-4xl md:text-5xl font-heading font-bold text-gray-900 mb-8">
             Ready to <span className="text-brand-red">Win</span><br />
             Where It <span className="text-brand-red">Matters Most</span>?
           </h2>
-          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
           </p>
           <Link to="/contact">
-            <Button size="lg" className="bg-brand-red hover:bg-red-700 text-white font-semibold px-8 py-4 text-lg transition-all duration-300 transform hover:scale-105">
+            <Button size="lg" className="bg-brand-red hover:bg-green-800 text-white font-semibold px-8 py-4 text-lg transition-all duration-300 transform hover:scale-105">
               Let's Get to Work
             </Button>
           </Link>

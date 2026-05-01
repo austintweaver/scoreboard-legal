@@ -105,12 +105,12 @@ const Contact = () => {
         </div>
       </div>
       {/* Header Section */}
-      <section className="bg-gray-900 text-white py-20">
+      <section className="bg-gradient-to-br from-gray-50 to-gray-100 text-gray-900 py-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl md:text-6xl font-heading font-bold mb-6">
             Get In <span className="text-brand-red">Touch</span>
           </h1>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
           </p>
         </div>
       </section>
@@ -135,7 +135,7 @@ const Contact = () => {
             </div>
 
             {/* Contact Form */}
-            <div className="bg-white rounded-lg shadow-lg p-8">
+            <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg shadow-lg p-8">
               <h3 className="text-2xl font-heading font-bold text-gray-900 mb-6">
                 Send us a Message
               </h3>
@@ -220,7 +220,7 @@ const Contact = () => {
 
                 <Button
                   type="submit"
-                  className="w-full bg-brand-red hover:bg-red-700 text-white font-semibold py-3 text-lg transition-colors duration-300"
+                  className="w-full bg-brand-red hover:bg-green-800 text-gray-900 font-semibold py-3 text-lg transition-colors duration-300"
                 >
                   Send Message
                 </Button>
