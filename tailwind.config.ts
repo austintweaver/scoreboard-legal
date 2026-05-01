@@ -67,10 +67,11 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				brand: {
-					red: '#DC2626',
-					black: '#000000',
-					orange: '#EA580C'
+			brand: {
+  red: '#1B2F6E',
+  black: '#000000',
+  orange: '#EA580C'
+}
 				}
 			},
 			borderRadius: {
