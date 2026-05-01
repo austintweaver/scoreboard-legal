@@ -68,9 +68,10 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 			brand: {
-  red: '#1B2F6E',
-  black: '#000000',
-  orange: '#EA580C'
+  					red: '#1B2F6E',
+  					black: '#000000',
+ 					 orange: '#EA580C'
+}
 }
 				}
 			},
