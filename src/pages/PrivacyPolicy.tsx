@@ -14,7 +14,7 @@ const PrivacyPolicy = () => (
             <li>
               <strong>a. Personal Information You Provide</strong>
               <ul className="list-disc list-inside ml-6">
-                <li>Name and email address when scheduling a call via Calendly</li>
+                <li>Name and email address when booking a consultation</li>
                 <li>Information you provide via the "Email Me" button</li>
               </ul>
             </li>
@@ -49,8 +49,7 @@ const PrivacyPolicy = () => (
         <li>
           <strong>Third-Party Services</strong>
           <ul className="list-disc list-inside ml-6 mt-2">
-            <li>Calendly: Privacy Policy</li>
-            <li>Microsoft Clarity: Privacy Policy</li>
+                        <li>Microsoft Clarity: Privacy Policy</li>
             <li>Email Provider: for receiving and storing email inquiries</li>
           </ul>
         </li>

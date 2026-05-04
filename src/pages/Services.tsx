@@ -45,7 +45,7 @@ const Services = () => {
   return (
     <div className="min-h-screen pt-16">
       {/* Header Section */}
-      <section className="bg-gradient-to-br from-gray-50 to-gray-100 text-gray-900 py-12">
+      <section className="bg-gradient-to-br from-gray-50 to-gray-100 text-gray-900 pt-20 pb-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl md:text-6xl font-heading font-bold mb-6">
             Practice <span className="text-brand-red">Areas</span>
@@ -93,39 +93,32 @@ const Services = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 text-gray-700 mb-10">
                 <div className="group">
                   <div className="flex items-center justify-center w-16 h-16 bg-brand-red rounded-full mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <span className="text-gray-900 text-2xl font-bold">G</span>
+                    <span className="text-white text-2xl font-bold">G</span>
                   </div>
                   <div className="font-semibold text-gray-900 text-xl mb-2">Guidance</div>
                   <div className="text-gray-600">Expert advice to help navigate your journey.</div>
                 </div>
                 <div className="group">
                   <div className="flex items-center justify-center w-16 h-16 bg-brand-red rounded-full mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <span className="text-gray-900 text-2xl font-bold">A</span>
+                    <span className="text-white text-2xl font-bold">A</span>
                   </div>
                   <div className="font-semibold text-gray-900 text-xl mb-2">Advocacy</div>
                   <div className="text-gray-600">Protecting your interests and rights.</div>
                 </div>
                 <div className="group">
                   <div className="flex items-center justify-center w-16 h-16 bg-brand-red rounded-full mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <span className="text-gray-900 text-2xl font-bold">M</span>
+                    <span className="text-white text-2xl font-bold">M</span>
                   </div>
                   <div className="font-semibold text-gray-900 text-xl mb-2">Management</div>
                   <div className="text-gray-600">Professional oversight of your business matters.</div>
                 </div>
                 <div className="group">
                   <div className="flex items-center justify-center w-16 h-16 bg-brand-red rounded-full mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <span className="text-gray-900 text-2xl font-bold">E</span>
+                    <span className="text-white text-2xl font-bold">E</span>
                   </div>
                   <div className="font-semibold text-gray-900 text-xl mb-2">Execution</div>
                   <div className="text-gray-600">Implementation of strategies for your success.</div>
                 </div>
-              </div>
-              <div>
-                <Link to="/contact">
-                  <Button className="bg-brand-red hover:bg-green-800 text-gray-900 font-semibold px-8 py-3 transition-all duration-300 hover:scale-105">
-                    Inquire About The GAME Plan
-                  </Button>
-                </Link>
               </div>
             </div>
           </div>
@@ -144,7 +137,7 @@ const Services = () => {
             No billable hours. No surprises. Just transparent, flat-fee legal services when you need them.
           </p>
           <Link to="/contact">
-            <Button size="lg" className="bg-brand-red hover:bg-green-800 text-gray-900 font-semibold px-8 py-4 text-lg transition-all duration-300 transform hover:scale-105">
+            <Button size="lg" className="bg-brand-red hover:bg-green-800 text-white font-semibold px-8 py-4 text-lg transition-all duration-300 transform hover:scale-105">
               Get Started Today
             </Button>
           </Link>

@@ -1,16 +1,5 @@
-import { useState, useEffect } from "react";
-import { ChevronDown, Scale, Users, TrendingUp, Target, Rocket, Shield } from "lucide-react";
+import { Scale, Users, TrendingUp, Target, Rocket, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { useToast } from "@/hooks/use-toast";
-import {
-  Dialog,
-  DialogTrigger,
-  DialogContent,
-  DialogHeader,
-  DialogTitle
-} from "@/components/ui/dialog";
 import { Link } from "react-router-dom";
 
 const Index = () => {
@@ -20,59 +9,7 @@ const Index = () => {
     });
   };
 
-  // Modal state
-  const [open, setOpen] = useState(false);
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    subject: "",
-    message: ""
-  });
-  const { toast } = useToast();
-
-  const handleInputChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    toast({
-      title: "Message Sent!",
-      description: "We'll get back to you within 24 hours."
-    });
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      subject: "",
-      message: ""
-    });
-    setOpen(false);
-  };
-
-  // Calendly script loader for modal
-  useEffect(() => {
-    if (!open) return;
-    const scriptId = 'calendly-widget-script';
-    if (!document.getElementById(scriptId)) {
-      const script = document.createElement('script');
-      script.id = scriptId;
-      script.src = 'https://assets.calendly.com/assets/external/widget.js';
-      script.async = true;
-      script.onload = () => {
-        window.Calendly?.initInlineWidgets();
-      };
-      document.body.appendChild(script);
-    } else {
-      // Script already present, manually initialize widgets
-      window.Calendly?.initInlineWidgets();
-    }
-  }, [open]);
-
+  
   return <div className="min-h-screen">
       {/* Hero Section */}
       <section
@@ -115,7 +52,7 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="bg-white py-[45px]">
+      <section id="about" className="bg-white py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-heading font-bold text-gray-900 mb-8">
@@ -165,7 +102,7 @@ const Index = () => {
       </section>
 
       {/* Three Pillars Section (restored as its own section) */}
-      <section className="bg-gray-50 mx-0 py-[45px]">
+      <section className="bg-gray-50 mx-0 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-heading font-bold text-gray-900 mb-4">
@@ -226,7 +163,7 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-10 bg-gradient-to-br from-gray-50 to-gray-100">
+      <section className="py-16 bg-gradient-to-br from-gray-50 to-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-gray-900 mb-8">
             Ready to <span className="text-brand-red">Win</span><br />

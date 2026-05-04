@@ -131,14 +131,14 @@ const Team = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-10 bg-gradient-to-br from-gray-50 to-gray-100">
+      <section className="py-16 bg-gradient-to-br from-gray-50 to-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-gray-900 mb-8">
             Ready to <span className="text-brand-red">Win</span><br />
             Where It <span className="text-brand-red">Matters Most</span>?
           </h2>
           <Link to="/contact">
-            <Button size="lg" className="bg-brand-red hover:bg-green-800 text-gray-900 font-semibold px-8 py-4 text-lg transition-all duration-300 transform hover:scale-105">
+            <Button size="lg" className="bg-brand-red hover:bg-green-800 text-white font-semibold px-8 py-4 text-lg transition-all duration-300 transform hover:scale-105">
               Let's Get to Work
             </Button>
           </Link>
