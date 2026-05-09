@@ -1,5 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const BusinessDisputes = () => {
   return (
@@ -113,9 +119,9 @@ const BusinessDisputes = () => {
           <div className="text-center mb-8">
             <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto mb-8">
               Business disputes can create operational disruption, financial exposure, and long-term business challenges if not handled strategically.
-              Scoreboard Legal assists businesses, founders, executives, and organizations with business disputes involving contracts, partnerships, operations, and commercial relationships.
+              Scoreboard Legal assists businesses, founders, executives, and organizations with business disputes involving contracts, partnerships, operations, and commercial relationships. Many disputes can be prevented through proper <Link to="/commercial-transactions" className="text-brand-red hover:underline">commercial transaction</Link> drafting and <Link to="/employment" className="text-brand-red hover:underline">employment</Link> practices.
               <br /><br />
-              Our approach prioritizes practical problem-solving, business protection, and strategic resolution while remaining focused on broader operational and business objectives.
+              Our approach prioritizes practical problem-solving, business protection, and strategic resolution while remaining focused on broader operational and business objectives. Our <Link to="/fractional-general-counsel" className="text-brand-red hover:underline">fractional general counsel</Link> services can help identify and mitigate risks before they become disputes.
             </p>
                       </div>
         </div>
@@ -230,6 +236,85 @@ const BusinessDisputes = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Related Services Section */}
+      <section className="bg-white py-12">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl md:text-3xl font-heading font-bold text-gray-900 mb-8 text-center">
+            Related Services
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <Link 
+              to="/commercial-transactions" 
+              className="block p-6 bg-gray-50 rounded-lg border border-gray-100 hover:shadow-md hover:border-brand-red/20 transition-all duration-300"
+            >
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                Commercial Transactions
+              </h3>
+              <p className="text-gray-600 text-sm">
+                Practical support for business transactions
+              </p>
+            </Link>
+            <Link 
+              to="/employment" 
+              className="block p-6 bg-gray-50 rounded-lg border border-gray-100 hover:shadow-md hover:border-brand-red/20 transition-all duration-300"
+            >
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                Employment & Workforce
+              </h3>
+              <p className="text-gray-600 text-sm">
+                Guidance on hiring and workforce matters
+              </p>
+            </Link>
+            <Link 
+              to="/fractional-general-counsel" 
+              className="block p-6 bg-gray-50 rounded-lg border border-gray-100 hover:shadow-md hover:border-brand-red/20 transition-all duration-300"
+            >
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                Fractional General Counsel
+              </h3>
+              <p className="text-gray-600 text-sm">
+                Ongoing legal support for growing businesses
+              </p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="bg-white py-16">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-900 mb-8 text-center">
+            Frequently Asked Questions
+          </h2>
+          <Accordion type="single" collapsible className="bg-gray-50 rounded-xl border border-gray-200 px-6">
+            <AccordionItem value="item-1">
+              <AccordionTrigger className="text-left text-base font-semibold text-gray-900 hover:no-underline py-5">
+                How do you approach business disputes?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 leading-relaxed pb-5">
+                We take a pragmatic, business-focused approach that prioritizes protecting your interests while maintaining operational continuity. We explore resolution options including negotiation, mediation, and arbitration before resorting to litigation when necessary. Our goal is to achieve the best outcome while minimizing disruption to your business.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-2">
+              <AccordionTrigger className="text-left text-base font-semibold text-gray-900 hover:no-underline py-5">
+                What dispute resolution methods do you use?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 leading-relaxed pb-5">
+                We handle disputes through various methods depending on the situation: direct negotiation, mediation, arbitration, and litigation in state and federal courts. We help you understand the pros and cons of each approach and recommend the strategy most likely to achieve your business objectives.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-3">
+              <AccordionTrigger className="text-left text-base font-semibold text-gray-900 hover:no-underline py-5">
+                Can disputes be resolved without going to court?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 leading-relaxed pb-5">
+                Yes, many business disputes can be resolved through alternative dispute resolution methods like mediation or arbitration, which are often faster and less expensive than litigation. These methods also offer more confidentiality and flexibility. We work to resolve disputes efficiently while protecting your interests.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
       </section>
 

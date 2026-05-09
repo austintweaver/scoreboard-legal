@@ -1,5 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const FractionalGeneralCounsel = () => {
   return (
@@ -104,9 +110,9 @@ const FractionalGeneralCounsel = () => {
             <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto mb-8">
               Businesses often reach a point where they need consistent legal guidance, strategic support, and operational oversight without adding a full-time in-house legal department.
               <br /><br />
-              Scoreboard Legal provides fractional general counsel services for founders, executives, startups, agencies, sports and entertainment businesses, and growing companies that need experienced legal support integrated into day-to-day business operations.
+              Scoreboard Legal provides fractional general counsel services for founders, executives, startups, agencies, sports and entertainment businesses, and growing companies that need experienced legal support integrated into day-to-day business operations. Our <Link to="/commercial-transactions" className="text-brand-red hover:underline">commercial transactions</Link> practice complements this by handling the day-to-day contract work that arises from these relationships.
               <br /><br />
-              Our approach combines legal guidance with practical business thinking to help clients navigate contracts, operations, partnerships, risk management, and growth initiatives with confidence.
+              Our approach combines legal guidance with practical business thinking to help clients navigate contracts, operations, partnerships, risk management, and growth initiatives with confidence. We also work closely with clients on <Link to="/employment" className="text-brand-red hover:underline">employment matters</Link> and <Link to="/corporate-formation-governance" className="text-brand-red hover:underline">corporate governance</Link> issues that often arise as businesses scale.
             </p>
                       </div>
         </div>
@@ -206,6 +212,50 @@ const FractionalGeneralCounsel = () => {
         </div>
       </section>
 
+      {/* Related Services Section */}
+      <section className="bg-white py-12">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl md:text-3xl font-heading font-bold text-gray-900 mb-8 text-center">
+            Related Services
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <Link 
+              to="/commercial-transactions" 
+              className="block p-6 bg-gray-50 rounded-lg border border-gray-100 hover:shadow-md hover:border-brand-red/20 transition-all duration-300"
+            >
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                Commercial Transactions
+              </h3>
+              <p className="text-gray-600 text-sm">
+                Practical support for business transactions and agreements
+              </p>
+            </Link>
+            <Link 
+              to="/employment" 
+              className="block p-6 bg-gray-50 rounded-lg border border-gray-100 hover:shadow-md hover:border-brand-red/20 transition-all duration-300"
+            >
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                Employment & Workforce
+              </h3>
+              <p className="text-gray-600 text-sm">
+                Guidance on hiring, contractors, and workforce matters
+              </p>
+            </Link>
+            <Link 
+              to="/corporate-formation-governance" 
+              className="block p-6 bg-gray-50 rounded-lg border border-gray-100 hover:shadow-md hover:border-brand-red/20 transition-all duration-300"
+            >
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                Corporate Formation & Governance
+              </h3>
+              <p className="text-gray-600 text-sm">
+                Building strong legal foundations for businesses
+              </p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Our Approach Section */}
       <section className="bg-gray-50 py-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -246,6 +296,41 @@ const FractionalGeneralCounsel = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="bg-white py-16">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-900 mb-8 text-center">
+            Frequently Asked Questions
+          </h2>
+          <Accordion type="single" collapsible className="bg-gray-50 rounded-xl border border-gray-200 px-6">
+            <AccordionItem value="item-1">
+              <AccordionTrigger className="text-left text-base font-semibold text-gray-900 hover:no-underline py-5">
+                What is a fractional general counsel?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 leading-relaxed pb-5">
+                A fractional general counsel provides ongoing legal counsel and strategic guidance on a part-time or as-needed basis, giving businesses access to experienced legal leadership without the cost of a full-time in-house attorney. This model is ideal for growing companies that need consistent legal support but don't require a dedicated in-house counsel.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-2">
+              <AccordionTrigger className="text-left text-base font-semibold text-gray-900 hover:no-underline py-5">
+                When should a business hire fractional counsel?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 leading-relaxed pb-5">
+                Businesses typically consider fractional counsel when they outgrow ad-hoc legal support but aren't ready for a full-time general counsel. Signs include frequent legal questions, growing contract volume, need for strategic legal planning, or wanting a trusted advisor integrated into business decisions.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-3">
+              <AccordionTrigger className="text-left text-base font-semibold text-gray-900 hover:no-underline py-5">
+                How does fractional counsel differ from traditional outside counsel?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 leading-relaxed pb-5">
+                Traditional outside counsel typically handles specific matters on a project basis and may not have deep familiarity with your business. Fractional counsel becomes an integrated part of your leadership team, providing ongoing strategic guidance, proactive risk management, and a deeper understanding of your operations, industry, and goals.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
       </section>
 

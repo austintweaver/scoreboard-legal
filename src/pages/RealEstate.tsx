@@ -1,5 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const RealEstate = () => {
   return (
@@ -246,6 +252,85 @@ const RealEstate = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Related Services Section */}
+      <section className="bg-white py-12">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl md:text-3xl font-heading font-bold text-gray-900 mb-8 text-center">
+            Related Services
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <Link 
+              to="/commercial-transactions" 
+              className="block p-6 bg-gray-50 rounded-lg border border-gray-100 hover:shadow-md hover:border-brand-red/20 transition-all duration-300"
+            >
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                Commercial Transactions
+              </h3>
+              <p className="text-gray-600 text-sm">
+                Practical support for business transactions
+              </p>
+            </Link>
+            <Link 
+              to="/corporate-formation-governance" 
+              className="block p-6 bg-gray-50 rounded-lg border border-gray-100 hover:shadow-md hover:border-brand-red/20 transition-all duration-300"
+            >
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                Corporate Formation & Governance
+              </h3>
+              <p className="text-gray-600 text-sm">
+                Building strong legal foundations for businesses
+              </p>
+            </Link>
+            <Link 
+              to="/fractional-general-counsel" 
+              className="block p-6 bg-gray-50 rounded-lg border border-gray-100 hover:shadow-md hover:border-brand-red/20 transition-all duration-300"
+            >
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                Fractional General Counsel
+              </h3>
+              <p className="text-gray-600 text-sm">
+                Ongoing legal support for growing businesses
+              </p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="bg-white py-16">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-900 mb-8 text-center">
+            Frequently Asked Questions
+          </h2>
+          <Accordion type="single" collapsible className="bg-gray-50 rounded-xl border border-gray-200 px-6">
+            <AccordionItem value="item-1">
+              <AccordionTrigger className="text-left text-base font-semibold text-gray-900 hover:no-underline py-5">
+                What types of real estate transactions do you handle?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 leading-relaxed pb-5">
+                We handle commercial real estate transactions including purchases and sales, leases, lease negotiations, development agreements, real estate financing, and entity structuring for real estate investments. We work with businesses, investors, and property owners on a wide range of commercial real estate matters.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-2">
+              <AccordionTrigger className="text-left text-base font-semibold text-gray-900 hover:no-underline py-5">
+                Why do I need legal counsel for real estate transactions?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 leading-relaxed pb-5">
+                Real estate transactions involve significant financial investment and complex legal considerations. An attorney helps identify and mitigate risks, ensures clear title, negotiates favorable terms, and ensures all documents properly protect your interests. Without proper legal review, you may face unexpected liabilities or disputes.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-3">
+              <AccordionTrigger className="text-left text-base font-semibold text-gray-900 hover:no-underline py-5">
+                Do you handle commercial lease negotiations?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 leading-relaxed pb-5">
+                Yes, we represent both landlords and tenants in commercial lease negotiations. We help ensure lease terms are favorable, address your specific business needs, and avoid unfavorable provisions. Our experience includes retail, office, industrial, and mixed-use leases.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
       </section>
 

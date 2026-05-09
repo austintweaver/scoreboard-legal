@@ -1,5 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const CommercialTransactions = () => {
   return (
@@ -109,9 +115,9 @@ const CommercialTransactions = () => {
             <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto mb-8">
               Commercial agreements are the foundation of how businesses operate, generate revenue, and manage relationships.
               <br /><br />
-              Scoreboard Legal works with businesses, founders, operators, agencies, athletes, and creators to structure, negotiate, and manage a wide range of commercial transactions with a practical and business-focused approach.
+              Scoreboard Legal works with businesses, founders, operators, agencies, athletes, and creators to structure, negotiate, and manage a wide range of commercial transactions with a practical and business-focused approach. For larger transactions, we often collaborate with our <Link to="/mergers-acquisitions" className="text-brand-red hover:underline">mergers and acquisitions</Link> team to ensure seamless execution.
               <br /><br />
-              We help clients move deals forward efficiently while protecting long-term business interests and operational flexibility.
+              We help clients move deals forward efficiently while protecting long-term business interests and operational flexibility. Our <Link to="/intellectual-property" className="text-brand-red hover:underline">intellectual property</Link> practice ensures that IP considerations are properly addressed in commercial agreements, while our <Link to="/fractional-general-counsel" className="text-brand-red hover:underline">fractional general counsel</Link> services provide ongoing support for businesses with recurring transaction needs.
             </p>
                       </div>
         </div>
@@ -260,6 +266,85 @@ const CommercialTransactions = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Related Services Section */}
+      <section className="bg-white py-12">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl md:text-3xl font-heading font-bold text-gray-900 mb-8 text-center">
+            Related Services
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <Link 
+              to="/mergers-acquisitions" 
+              className="block p-6 bg-gray-50 rounded-lg border border-gray-100 hover:shadow-md hover:border-brand-red/20 transition-all duration-300"
+            >
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                Mergers & Acquisitions
+              </h3>
+              <p className="text-gray-600 text-sm">
+                Strategic guidance for business transactions
+              </p>
+            </Link>
+            <Link 
+              to="/intellectual-property" 
+              className="block p-6 bg-gray-50 rounded-lg border border-gray-100 hover:shadow-md hover:border-brand-red/20 transition-all duration-300"
+            >
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                Intellectual Property
+              </h3>
+              <p className="text-gray-600 text-sm">
+                Protecting brands, content, and business assets
+              </p>
+            </Link>
+            <Link 
+              to="/fractional-general-counsel" 
+              className="block p-6 bg-gray-50 rounded-lg border border-gray-100 hover:shadow-md hover:border-brand-red/20 transition-all duration-300"
+            >
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                Fractional General Counsel
+              </h3>
+              <p className="text-gray-600 text-sm">
+                Ongoing legal support for growing businesses
+              </p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="bg-white py-16">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-900 mb-8 text-center">
+            Frequently Asked Questions
+          </h2>
+          <Accordion type="single" collapsible className="bg-gray-50 rounded-xl border border-gray-200 px-6">
+            <AccordionItem value="item-1">
+              <AccordionTrigger className="text-left text-base font-semibold text-gray-900 hover:no-underline py-5">
+                What types of commercial agreements do you handle?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 leading-relaxed pb-5">
+                We handle a wide range of commercial agreements including vendor and service agreements, sponsorship and partnership agreements, licensing arrangements, consulting and advisory agreements, SaaS and technology agreements, revenue share arrangements, and custom commercial contracts tailored to your business needs.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-2">
+              <AccordionTrigger className="text-left text-base font-semibold text-gray-900 hover:no-underline py-5">
+                Why are well-structured contracts important?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 leading-relaxed pb-5">
+                Well-structured contracts protect your business interests, define clear rights and obligations, minimize disputes, and provide a framework for successful business relationships. They help ensure both parties understand expectations and provide recourse if things go wrong.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-3">
+              <AccordionTrigger className="text-left text-base font-semibold text-gray-900 hover:no-underline py-5">
+                Do you negotiate agreements on behalf of clients?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 leading-relaxed pb-5">
+                Yes, we actively negotiate commercial agreements on behalf of our clients. We work to achieve favorable terms while maintaining productive business relationships. Our goal is to protect your interests while helping deals move forward efficiently.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
       </section>
 

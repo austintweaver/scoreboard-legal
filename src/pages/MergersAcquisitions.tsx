@@ -1,5 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const MergersAcquisitions = () => {
   return (
@@ -109,9 +115,9 @@ const MergersAcquisitions = () => {
             <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto mb-8">
               Acquisitions, investments, and strategic transactions require legal guidance that balances deal execution with long-term business considerations.
               <br /><br />
-              Scoreboard Legal assists businesses, founders, operators, investors, and strategic transactions with mergers, acquisitions, strategic transactions, and related business matters.
+              Scoreboard Legal assists businesses, founders, operators, investors, and strategic transactions with mergers, acquisitions, strategic transactions, and related business matters. Our <Link to="/commercial-transactions" className="text-brand-red hover:underline">commercial transactions</Link> practice supports the underlying agreements that make deals work, while our <Link to="/corporate-formation-governance" className="text-brand-red hover:underline">corporate governance</Link> expertise ensures proper structure for complex transactions.
               <br /><br />
-              We work closely with clients to help manage negotiations, diligence, transaction structuring, and operational considerations throughout the deal process.
+              We work closely with clients to help manage negotiations, diligence, transaction structuring, and operational considerations throughout the deal process. Our <Link to="/fractional-general-counsel" className="text-brand-red hover:underline">fractional general counsel</Link> services provide ongoing strategic guidance for businesses navigating growth and transition.
             </p>
                       </div>
         </div>
@@ -260,6 +266,85 @@ const MergersAcquisitions = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Related Services Section */}
+      <section className="bg-white py-12">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl md:text-3xl font-heading font-bold text-gray-900 mb-8 text-center">
+            Related Services
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <Link 
+              to="/commercial-transactions" 
+              className="block p-6 bg-gray-50 rounded-lg border border-gray-100 hover:shadow-md hover:border-brand-red/20 transition-all duration-300"
+            >
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                Commercial Transactions
+              </h3>
+              <p className="text-gray-600 text-sm">
+                Practical support for business transactions
+              </p>
+            </Link>
+            <Link 
+              to="/corporate-formation-governance" 
+              className="block p-6 bg-gray-50 rounded-lg border border-gray-100 hover:shadow-md hover:border-brand-red/20 transition-all duration-300"
+            >
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                Corporate Formation & Governance
+              </h3>
+              <p className="text-gray-600 text-sm">
+                Building strong legal foundations for businesses
+              </p>
+            </Link>
+            <Link 
+              to="/fractional-general-counsel" 
+              className="block p-6 bg-gray-50 rounded-lg border border-gray-100 hover:shadow-md hover:border-brand-red/20 transition-all duration-300"
+            >
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                Fractional General Counsel
+              </h3>
+              <p className="text-gray-600 text-sm">
+                Ongoing legal support for growing businesses
+              </p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="bg-white py-16">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-900 mb-8 text-center">
+            Frequently Asked Questions
+          </h2>
+          <Accordion type="single" collapsible className="bg-gray-50 rounded-xl border border-gray-200 px-6">
+            <AccordionItem value="item-1">
+              <AccordionTrigger className="text-left text-base font-semibold text-gray-900 hover:no-underline py-5">
+                What types of M&A transactions do you handle?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 leading-relaxed pb-5">
+                We handle asset purchases, stock purchases, mergers, strategic acquisitions, and joint ventures. Whether you're buying or selling a business, acquiring a competitor, or structuring a strategic partnership, we guide you through the entire transaction process.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-2">
+              <AccordionTrigger className="text-left text-base font-semibold text-gray-900 hover:no-underline py-5">
+                Why is due diligence important in M&A?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 leading-relaxed pb-5">
+                Due diligence reveals the true condition of a target business, identifying liabilities, risks, and opportunities that may not be apparent from surface-level review. Thorough due diligence helps you make informed decisions, negotiate appropriate terms, and avoid costly surprises after closing.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-3">
+              <AccordionTrigger className="text-left text-base font-semibold text-gray-900 hover:no-underline py-5">
+                How long does an M&A transaction take?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 leading-relaxed pb-5">
+                The timeline varies significantly based on transaction complexity, due diligence requirements, financing, and regulatory approvals. Simple transactions may close in a few weeks, while complex deals can take several months. We work efficiently to keep deals moving forward while ensuring thoroughness.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
       </section>
 

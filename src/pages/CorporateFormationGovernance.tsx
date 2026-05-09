@@ -1,5 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const CorporateFormationGovernance = () => {
   return (
@@ -109,9 +115,9 @@ const CorporateFormationGovernance = () => {
             <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto mb-8">
               The way a business is structured impacts operations, governance, financing opportunities, ownership rights, and long-term growth.
               <br /><br />
-              Scoreboard Legal works with founders, startups, investors, and growing businesses to establish practical legal structures and governance frameworks designed to support both current operations and future scalability.
+              Scoreboard Legal works with founders, startups, investors, and growing businesses to establish practical legal structures and governance frameworks designed to support both current operations and future scalability. For startups raising capital, we coordinate with our <Link to="/emerging-companies-venture-financings" className="text-brand-red hover:underline">emerging companies and venture financings</Link> practice to ensure formation supports fundraising efforts.
               <br /><br />
-              We help clients navigate formation decisions, ownership structures, governance matters, and organizational planning with a business-minded perspective.
+              We help clients navigate formation decisions, ownership structures, governance matters, and organizational planning with a business-minded perspective. Our <Link to="/mergers-acquisitions" className="text-brand-red hover:underline">mergers and acquisitions</Link> experience also informs our governance advice, ensuring structures are built to support future exit opportunities, while our <Link to="/fractional-general-counsel" className="text-brand-red hover:underline">fractional general counsel</Link> services help maintain compliance as businesses grow.
             </p>
           </div>
         </div>
@@ -260,6 +266,85 @@ const CorporateFormationGovernance = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Related Services Section */}
+      <section className="bg-white py-12">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl md:text-3xl font-heading font-bold text-gray-900 mb-8 text-center">
+            Related Services
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <Link 
+              to="/emerging-companies-venture-financings" 
+              className="block p-6 bg-gray-50 rounded-lg border border-gray-100 hover:shadow-md hover:border-brand-red/20 transition-all duration-300"
+            >
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                Emerging Companies & Venture Financing
+              </h3>
+              <p className="text-gray-600 text-sm">
+                Legal support for growth-stage businesses
+              </p>
+            </Link>
+            <Link 
+              to="/mergers-acquisitions" 
+              className="block p-6 bg-gray-50 rounded-lg border border-gray-100 hover:shadow-md hover:border-brand-red/20 transition-all duration-300"
+            >
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                Mergers & Acquisitions
+              </h3>
+              <p className="text-gray-600 text-sm">
+                Strategic guidance for business transactions
+              </p>
+            </Link>
+            <Link 
+              to="/fractional-general-counsel" 
+              className="block p-6 bg-gray-50 rounded-lg border border-gray-100 hover:shadow-md hover:border-brand-red/20 transition-all duration-300"
+            >
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                Fractional General Counsel
+              </h3>
+              <p className="text-gray-600 text-sm">
+                Ongoing legal support for growing businesses
+              </p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="bg-white py-16">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-900 mb-8 text-center">
+            Frequently Asked Questions
+          </h2>
+          <Accordion type="single" collapsible className="bg-gray-50 rounded-xl border border-gray-200 px-6">
+            <AccordionItem value="item-1">
+              <AccordionTrigger className="text-left text-base font-semibold text-gray-900 hover:no-underline py-5">
+                What entity structure is best for my business?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 leading-relaxed pb-5">
+                The best entity structure depends on your specific situation including ownership, liability concerns, tax implications, and future plans. Common options include LLCs, C-Corporations, and S-Corporations. We help you evaluate the pros and cons of each structure in the context of your business goals.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-2">
+              <AccordionTrigger className="text-left text-base font-semibold text-gray-900 hover:no-underline py-5">
+                Why is corporate governance important?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 leading-relaxed pb-5">
+                Strong corporate governance provides a framework for decision-making, protects shareholder interests, ensures compliance with laws and regulations, and creates a foundation for future growth or investment. It also helps limit personal liability for directors and officers.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-3">
+              <AccordionTrigger className="text-left text-base font-semibold text-gray-900 hover:no-underline py-5">
+                Do I need operating agreements or bylaws?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 leading-relaxed pb-5">
+                Yes, operating agreements (for LLCs) and bylaws (for corporations) are essential documents that govern how your company makes decisions, distributes profits, handles disputes, and manages ownership changes. These documents provide clarity and protection for all stakeholders.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
       </section>
 

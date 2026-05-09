@@ -1,5 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const IntellectualProperty = () => {
   return (
@@ -109,9 +115,9 @@ const IntellectualProperty = () => {
             <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto mb-8">
               A company's intellectual property is often one of its most valuable business assets.
               <br /><br />
-              Scoreboard Legal helps businesses, creators, athletes, entrepreneurs, and organizations protect and manage intellectual property related to brands, content, marketing, media, partnerships, and commercial operations.
+              Scoreboard Legal helps businesses, creators, athletes, entrepreneurs, and organizations protect and manage intellectual property related to brands, content, marketing, media, partnerships, and commercial operations. Our <Link to="/commercial-transactions" className="text-brand-red hover:underline">commercial transactions</Link> practice ensures IP is properly addressed in licensing and partnership agreements.
               <br /><br />
-              We provide practical guidance designed to help clients safeguard ownership rights while supporting long-term business growth and commercialization opportunities.
+              We provide practical guidance designed to help clients safeguard ownership rights while supporting long-term business growth and commercialization opportunities. For businesses with ongoing IP needs, our <Link to="/fractional-general-counsel" className="text-brand-red hover:underline">fractional general counsel</Link> services provide comprehensive IP strategy and management.
             </p>
                       </div>
         </div>
@@ -260,6 +266,85 @@ const IntellectualProperty = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Related Services Section */}
+      <section className="bg-white py-12">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl md:text-3xl font-heading font-bold text-gray-900 mb-8 text-center">
+            Related Services
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <Link 
+              to="/commercial-transactions" 
+              className="block p-6 bg-gray-50 rounded-lg border border-gray-100 hover:shadow-md hover:border-brand-red/20 transition-all duration-300"
+            >
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                Commercial Transactions
+              </h3>
+              <p className="text-gray-600 text-sm">
+                Practical support for business transactions
+              </p>
+            </Link>
+            <Link 
+              to="/fractional-general-counsel" 
+              className="block p-6 bg-gray-50 rounded-lg border border-gray-100 hover:shadow-md hover:border-brand-red/20 transition-all duration-300"
+            >
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                Fractional General Counsel
+              </h3>
+              <p className="text-gray-600 text-sm">
+                Ongoing legal support for growing businesses
+              </p>
+            </Link>
+            <Link 
+              to="/corporate-formation-governance" 
+              className="block p-6 bg-gray-50 rounded-lg border border-gray-100 hover:shadow-md hover:border-brand-red/20 transition-all duration-300"
+            >
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                Corporate Formation & Governance
+              </h3>
+              <p className="text-gray-600 text-sm">
+                Building strong legal foundations for businesses
+              </p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="bg-white py-16">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-900 mb-8 text-center">
+            Frequently Asked Questions
+          </h2>
+          <Accordion type="single" collapsible className="bg-gray-50 rounded-xl border border-gray-200 px-6">
+            <AccordionItem value="item-1">
+              <AccordionTrigger className="text-left text-base font-semibold text-gray-900 hover:no-underline py-5">
+                What types of intellectual property can be protected?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 leading-relaxed pb-5">
+                The main types of IP protection include trademarks (brand names, logos, slogans), copyrights (creative works, content, software), trade secrets (confidential business information), and patents (inventions, processes). Each type of protection serves different purposes and has different requirements.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-2">
+              <AccordionTrigger className="text-left text-base font-semibold text-gray-900 hover:no-underline py-5">
+                Why is IP protection important for businesses?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 leading-relaxed pb-5">
+                IP is often one of your most valuable business assets. Proper protection prevents competitors from copying your brand, products, or innovations. It also creates enforceable rights that can be licensed, sold, or used to attract investment. Without proper protection, you may lose the ability to control and monetize your intellectual property.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-3">
+              <AccordionTrigger className="text-left text-base font-semibold text-gray-900 hover:no-underline py-5">
+                Do I need to register my trademarks?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 leading-relaxed pb-5">
+                While you can establish common law rights through use, federal trademark registration provides significant advantages including nationwide protection, the ability to use the ® symbol, access to federal courts, and constructive notice of your claim. We can help you evaluate the best registration strategy for your brand.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
       </section>
 

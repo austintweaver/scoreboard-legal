@@ -312,6 +312,62 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Representative Matters */}
+      <section className="bg-white py-24">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-heading font-bold text-gray-900 mb-4">
+              Representative Matters
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Representative experience across complex business, transactional, operational, and strategic legal matters.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="bg-gray-50 rounded-lg p-5 border border-gray-100 transition-all duration-300 hover:shadow-md hover:border-brand-red/20">
+              <p className="text-gray-900 font-medium">
+                Advising growth-stage companies on commercial transactions and operational matters
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-lg p-5 border border-gray-100 transition-all duration-300 hover:shadow-md hover:border-brand-red/20">
+              <p className="text-gray-900 font-medium">
+                Structuring sponsorship and partnership agreements
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-lg p-5 border border-gray-100 transition-all duration-300 hover:shadow-md hover:border-brand-red/20">
+              <p className="text-gray-900 font-medium">
+                Supporting venture financing and fundraising initiatives
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-lg p-5 border border-gray-100 transition-all duration-300 hover:shadow-md hover:border-brand-red/20">
+              <p className="text-gray-900 font-medium">
+                Negotiating media, licensing, and production-related agreements
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-lg p-5 border border-gray-100 transition-all duration-300 hover:shadow-md hover:border-brand-red/20">
+              <p className="text-gray-900 font-medium">
+                Providing outside general counsel support for businesses and executives
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-lg p-5 border border-gray-100 transition-all duration-300 hover:shadow-md hover:border-brand-red/20">
+              <p className="text-gray-900 font-medium">
+                Advising on governance, operational strategy, and organizational growth
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-lg p-5 border border-gray-100 transition-all duration-300 hover:shadow-md hover:border-brand-red/20">
+              <p className="text-gray-900 font-medium">
+                Drafting and negotiating complex commercial agreements
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-lg p-5 border border-gray-100 transition-all duration-300 hover:shadow-md hover:border-brand-red/20">
+              <p className="text-gray-900 font-medium">
+                Supporting businesses, founders, athletes, creators, and executives across evolving industries
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Our Values */}
       <section className="bg-gray-50 py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

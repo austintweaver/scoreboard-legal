@@ -1,5 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const Employment = () => {
   return (
@@ -104,9 +110,9 @@ const Employment = () => {
             <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto mb-8">
               Employment and workforce decisions impact every part of a business, from operations and culture to compliance and long-term growth.
               <br /><br />
-              Scoreboard Legal works with businesses, founders, operators, agencies, athletes, and creators on employment-related legal matters involving hiring, contractor relationships, workplace policies, and operational workforce considerations.
+              Scoreboard Legal works with businesses, founders, operators, agencies, athletes, and creators on employment-related legal matters involving hiring, contractor relationships, workplace policies, and operational workforce considerations. Our <Link to="/fractional-general-counsel" className="text-brand-red hover:underline">fractional general counsel</Link> services often include employment advisory as part of comprehensive ongoing support.
               <br /><br />
-              Our approach prioritizes practical problem-solving, business protection, and strategic resolution while remaining focused on broader operational and business objectives.
+              Our approach prioritizes practical problem-solving, business protection, and strategic resolution while remaining focused on broader operational and business objectives. When disputes arise, our <Link to="/business-disputes" className="text-brand-red hover:underline">business disputes</Link> practice provides experienced advocacy to protect your interests.
             </p>
                       </div>
         </div>
@@ -246,6 +252,85 @@ const Employment = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Related Services Section */}
+      <section className="bg-white py-12">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl md:text-3xl font-heading font-bold text-gray-900 mb-8 text-center">
+            Related Services
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <Link 
+              to="/fractional-general-counsel" 
+              className="block p-6 bg-gray-50 rounded-lg border border-gray-100 hover:shadow-md hover:border-brand-red/20 transition-all duration-300"
+            >
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                Fractional General Counsel
+              </h3>
+              <p className="text-gray-600 text-sm">
+                Ongoing legal support for growing businesses
+              </p>
+            </Link>
+            <Link 
+              to="/business-disputes" 
+              className="block p-6 bg-gray-50 rounded-lg border border-gray-100 hover:shadow-md hover:border-brand-red/20 transition-all duration-300"
+            >
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                Business Disputes
+              </h3>
+              <p className="text-gray-600 text-sm">
+                Strategic support for complex disputes
+              </p>
+            </Link>
+            <Link 
+              to="/commercial-transactions" 
+              className="block p-6 bg-gray-50 rounded-lg border border-gray-100 hover:shadow-md hover:border-brand-red/20 transition-all duration-300"
+            >
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                Commercial Transactions
+              </h3>
+              <p className="text-gray-600 text-sm">
+                Practical support for business transactions
+              </p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="bg-white py-16">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-900 mb-8 text-center">
+            Frequently Asked Questions
+          </h2>
+          <Accordion type="single" collapsible className="bg-gray-50 rounded-xl border border-gray-200 px-6">
+            <AccordionItem value="item-1">
+              <AccordionTrigger className="text-left text-base font-semibold text-gray-900 hover:no-underline py-5">
+                Do you prepare employment agreements?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 leading-relaxed pb-5">
+                Yes, we prepare employment agreements, offer letters, and executive compensation arrangements tailored to your business needs. We help ensure these agreements properly protect your business interests while remaining competitive in the talent market.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-2">
+              <AccordionTrigger className="text-left text-base font-semibold text-gray-900 hover:no-underline py-5">
+                What is the difference between an employee and contractor?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 leading-relaxed pb-5">
+                The distinction is critical because misclassification can result in significant liability for unpaid taxes, benefits, and penalties. Key factors include the degree of control over work, independence in how services are performed, and the relationship between the parties. We help you structure workforce arrangements properly.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-3">
+              <AccordionTrigger className="text-left text-base font-semibold text-gray-900 hover:no-underline py-5">
+                Do you advise businesses on workforce matters?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 leading-relaxed pb-5">
+                Yes, we advise on a wide range of workforce matters including hiring best practices, employee handbooks and policies, termination procedures, non-compete and non-solicitation agreements, and strategies for building and managing high-performing teams.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
       </section>
 

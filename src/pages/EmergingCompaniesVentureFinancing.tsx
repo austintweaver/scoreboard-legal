@@ -1,5 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const EmergingCompaniesVentureFinancing = () => {
   return (
@@ -109,9 +115,9 @@ const EmergingCompaniesVentureFinancing = () => {
             <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto mb-8">
               Emerging companies face unique legal and operational challenges as they scale, raise capital, and build long-term business infrastructure.
               <br /><br />
-              Scoreboard Legal works with startups, founders, investors, and growth-stage businesses on strategic legal matters related to company formation, governance, financing structures, commercial operations, and business growth.
+              Scoreboard Legal works with startups, founders, investors, and growth-stage businesses on strategic legal matters related to company formation, governance, financing structures, commercial operations, and business growth. We work closely with our <Link to="/corporate-formation-governance" className="text-brand-red hover:underline">corporate formation and governance</Link> practice to ensure proper entity setup from the start.
               <br /><br />
-              We provide practical legal guidance designed to support both operational flexibility and future financing opportunities.
+              We provide practical legal guidance designed to support both operational flexibility and future financing opportunities. Our <Link to="/commercial-transactions" className="text-brand-red hover:underline">commercial transactions</Link> practice supports the contracts that fuel growth, while our <Link to="/fractional-general-counsel" className="text-brand-red hover:underline">fractional general counsel</Link> services provide ongoing strategic guidance as companies navigate scaling challenges.
             </p>
                       </div>
         </div>
@@ -260,6 +266,85 @@ const EmergingCompaniesVentureFinancing = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Related Services Section */}
+      <section className="bg-white py-12">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl md:text-3xl font-heading font-bold text-gray-900 mb-8 text-center">
+            Related Services
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <Link 
+              to="/corporate-formation-governance" 
+              className="block p-6 bg-gray-50 rounded-lg border border-gray-100 hover:shadow-md hover:border-brand-red/20 transition-all duration-300"
+            >
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                Corporate Formation & Governance
+              </h3>
+              <p className="text-gray-600 text-sm">
+                Building strong legal foundations for businesses
+              </p>
+            </Link>
+            <Link 
+              to="/commercial-transactions" 
+              className="block p-6 bg-gray-50 rounded-lg border border-gray-100 hover:shadow-md hover:border-brand-red/20 transition-all duration-300"
+            >
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                Commercial Transactions
+              </h3>
+              <p className="text-gray-600 text-sm">
+                Practical support for business transactions
+              </p>
+            </Link>
+            <Link 
+              to="/fractional-general-counsel" 
+              className="block p-6 bg-gray-50 rounded-lg border border-gray-100 hover:shadow-md hover:border-brand-red/20 transition-all duration-300"
+            >
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                Fractional General Counsel
+              </h3>
+              <p className="text-gray-600 text-sm">
+                Ongoing legal support for growing businesses
+              </p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="bg-white py-16">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-900 mb-8 text-center">
+            Frequently Asked Questions
+          </h2>
+          <Accordion type="single" collapsible className="bg-gray-50 rounded-xl border border-gray-200 px-6">
+            <AccordionItem value="item-1">
+              <AccordionTrigger className="text-left text-base font-semibold text-gray-900 hover:no-underline py-5">
+                Do startups need legal counsel early?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 leading-relaxed pb-5">
+                Yes, engaging legal counsel early can prevent costly mistakes down the road. Early-stage legal support helps with proper entity formation, founder agreements, intellectual property protection, and preparing for future fundraising. Getting the foundation right from the start saves time and money as the company grows.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-2">
+              <AccordionTrigger className="text-left text-base font-semibold text-gray-900 hover:no-underline py-5">
+                What is a SAFE agreement?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 leading-relaxed pb-5">
+                A SAFE (Simple Agreement for Future Equity) is an investment instrument created by Y Combinator that provides funding in exchange for the right to receive equity in a future financing round. It's designed to be simpler and faster than traditional convertible notes, with no interest or maturity date.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-3">
+              <AccordionTrigger className="text-left text-base font-semibold text-gray-900 hover:no-underline py-5">
+                Should startups form an LLC or corporation?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 leading-relaxed pb-5">
+                Most venture-backed startups form Delaware C-Corporations because they're the standard for startups seeking VC investment, offer clear governance structures, and avoid the potential tax complications of LLCs. However, LLCs may be appropriate for certain businesses or when simplicity and pass-through taxation are priorities. We help you make the right choice for your situation.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
       </section>
 
