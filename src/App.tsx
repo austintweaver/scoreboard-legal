@@ -36,7 +36,7 @@ const PageLoader = () => (
 
 declare global {
   interface Window {
-    clarity?: any;
+    clarity?: unknown;
   }
 }
 
