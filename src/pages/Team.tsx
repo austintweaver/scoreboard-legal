@@ -11,7 +11,7 @@ const Team = () => {
     if (metaDescription) {
       metaDescription.setAttribute(
         "content",
-        "Austin Weaver is a transactional attorney and business operator advising businesses, founders, executives, athletes, creators, and growth-stage organizations on commercial transactions, venture financings, sponsorships, media rights, corporate governance, and strategic legal matters."
+        "Austin Weaver is a transactional attorney and business operator advising businesses, founders, executives, athletes, creators, private clients, and growth-stage organizations on commercial transactions, venture financings, sponsorships, media rights, corporate governance, and strategic legal matters."
       );
     }
 
@@ -57,10 +57,10 @@ const Team = () => {
                 Founder & Principal Attorney
               </p>
               <p className="text-lg text-gray-300 leading-relaxed mb-8">
-                Austin Weaver is a transactional attorney and business operator who advises businesses, founders, executives, athletes, creators, and growth-stage organizations on legal, operational, and strategic matters.
+                Austin Weaver is a transactional attorney and business operator who advises businesses, founders, executives, athletes, creators, private clients, and growth-stage organizations on legal, operational, and strategic matters.
               </p>
               <p className="text-lg text-gray-300 leading-relaxed mb-8">
-                His experience spans commercial transactions, venture financings, sponsorships, media rights, corporate governance, contracts, employment matters, and day-to-day business operations across a range of industries, including sports, entertainment, media, and emerging companies.
+                His experience spans commercial transactions, venture financings, sponsorships, media rights, corporate governance, contracts, employment matters, and day-to-day business operations across a range of industries, including sports, entertainment, media, emerging companies, and private client matters.
               </p>
               <p className="text-base text-gray-400 mb-10">
                 Licensed in Florida and Illinois.
