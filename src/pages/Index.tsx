@@ -183,7 +183,7 @@ const Index = () => {
           backgroundImage: `linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('/assets/scoreboardhome.jpg')`
         }}
       >
-        <div className="relative z-10 w-full max-w-5xl mx-auto px-4 sm:px-6 text-center py-20 pt-8">
+        <div className="relative z-50 w-full max-w-5xl mx-auto px-4 sm:px-6 text-center py-20 pt-32">
           <h1 className="font-bold text-white text-2xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight mb-6 tracking-tight">
             Strategic Counsel for Modern Businesses and Individuals
           </h1>
@@ -371,7 +371,7 @@ const Index = () => {
                 className="flex items-center gap-3 bg-gray-50 rounded-lg px-5 py-4 transition-all duration-300 hover:bg-brand-red/5 hover:border-brand-red/20 border border-transparent"
               >
                 <ind.icon className="h-5 w-5 text-brand-red flex-shrink-0" />
-                <span className="text-sm font-medium text-gray-900">
+                <span className="text-lg font-medium text-gray-900 leading-snug">
                   {ind.label}
                 </span>
               </div>
