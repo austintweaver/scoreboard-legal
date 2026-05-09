@@ -17,6 +17,15 @@ const Contact = lazy(() => import("./pages/Contact"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 const TermsOfService = lazy(() => import("./pages/TermsOfService"));
+const FractionalGeneralCounsel = lazy(() => import("./pages/FractionalGeneralCounsel"));
+const IntellectualProperty = lazy(() => import("./pages/IntellectualProperty"));
+const CommercialTransactions = lazy(() => import("./pages/CommercialTransactions"));
+const CorporateFormationGovernance = lazy(() => import("./pages/CorporateFormationGovernance"));
+const BusinessDisputes = lazy(() => import("./pages/BusinessDisputes"));
+const RealEstate = lazy(() => import("./pages/RealEstate"));
+const EmergingCompaniesVentureFinancing = lazy(() => import("./pages/EmergingCompaniesVentureFinancing"));
+const MergersAcquisitions = lazy(() => import("./pages/MergersAcquisitions"));
+const Employment = lazy(() => import("./pages/Employment"));
 
 // Loading component for lazy-loaded routes
 const PageLoader = () => (
@@ -110,6 +119,15 @@ const App = () => {
                   <Route path="/contact" element={<Contact />} />
                   <Route path="/privacy-policy" element={<PrivacyPolicy />} />
                   <Route path="/terms-of-service" element={<TermsOfService />} />
+                  <Route path="/fractional-general-counsel" element={<FractionalGeneralCounsel />} />
+                  <Route path="/intellectual-property" element={<IntellectualProperty />} />
+                  <Route path="/commercial-transactions" element={<CommercialTransactions />} />
+                  <Route path="/corporate-formation-governance" element={<CorporateFormationGovernance />} />
+                  <Route path="/business-disputes" element={<BusinessDisputes />} />
+                  <Route path="/real-estate" element={<RealEstate />} />
+                  <Route path="/emerging-companies-venture-financings" element={<EmergingCompaniesVentureFinancing />} />
+                  <Route path="/mergers-acquisitions" element={<MergersAcquisitions />} />
+                  <Route path="/employment" element={<Employment />} />
                   <Route path="*" element={<NotFound />} />
                 </Routes>
               </Suspense>

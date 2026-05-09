@@ -39,7 +39,11 @@ const Index = () => {
             </p>
           </div>
           {/* CTA Button */}
-          <Link to="/contact">
+          <a 
+            href="https://scoreboardlegal.cliogrow.com/book" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
             <Button
               size="lg"
               className="bg-brand-red hover:bg-green-800 text-white font-extrabold px-12 py-5 text-2xl shadow-xl rounded-full transition-all duration-300 tracking-wide uppercase"
@@ -47,7 +51,7 @@ const Index = () => {
             >
               Let's Get to Work
             </Button>
-          </Link>
+          </a>
         </div>
       </section>
 
@@ -171,11 +175,15 @@ const Index = () => {
           </h2>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
           </p>
-          <Link to="/contact">
+          <a 
+            href="https://scoreboardlegal.cliogrow.com/book" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
             <Button size="lg" className="bg-brand-red hover:bg-green-800 text-white font-semibold px-8 py-4 text-lg transition-all duration-300 transform hover:scale-105">
               Let's Get to Work
             </Button>
-          </Link>
+          </a>
         </div>
       </section>
     </div>;

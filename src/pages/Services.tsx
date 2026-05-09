@@ -3,42 +3,57 @@ import { Link } from "react-router-dom";
 import { FileText, Shield, Scale, Building, Users, TrendingUp, Handshake, Briefcase, Gavel, Home } from "lucide-react";
 
 const Services = () => {
-  const capabilities = [
+  const firstRowServices = [
     {
       name: "Fractional General Counsel",
-      icon: Users
+      icon: Users,
+      url: "/fractional-general-counsel"
     },
     {
-      name: "Intellectual Property",
-      icon: Shield
+      name: "Intellectual Property", 
+      icon: Shield,
+      url: "/intellectual-property"
     },
     {
       name: "Commercial Transactions",
-      icon: FileText
-    },
+      icon: FileText,
+      url: "/commercial-transactions"
+    }
+  ];
+
+  const secondRowServices = [
     {
       name: "Corporate Formation & Governance",
-      icon: Building
+      icon: Building,
+      url: "/corporate-formation-governance"
     },
     {
       name: "Business Disputes",
-      icon: Gavel
+      icon: Gavel,
+      url: "/business-disputes"
     },
     {
       name: "Real Estate",
-      icon: Home
-    },
+      icon: Home,
+      url: "/real-estate"
+    }
+  ];
+
+  const thirdRowServices = [
     {
       name: "Emerging Companies & Venture Financings",
-      icon: TrendingUp
+      icon: TrendingUp,
+      url: "/emerging-companies-venture-financings"
     },
     {
       name: "Mergers & Acquisitions",
-      icon: Handshake
+      icon: Handshake,
+      url: "/mergers-acquisitions"
     },
     {
       name: "Employment",
-      icon: Briefcase
+      icon: Briefcase,
+      url: "/employment"
     }
   ];
 
@@ -50,8 +65,8 @@ const Services = () => {
           <h1 className="text-5xl md:text-6xl font-heading font-bold mb-6">
             Practice <span className="text-brand-red">Areas</span>
           </h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-          </p>
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
+                      </p>
         </div>
       </section>
 
@@ -60,21 +75,68 @@ const Services = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto mb-16">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {capabilities.map((capability, index) => (
-                <div 
-                  key={capability.name} 
+              {firstRowServices.map((service, index) => (
+                <Link 
+                  to={service.url}
+                  key={service.name} 
                   className="group relative bg-gray-50 border border-gray-200 rounded-lg p-6 text-center transition-all duration-300 hover:shadow-lg hover:border-brand-red hover:-translate-y-1"
                 >
                   <div className="absolute inset-0 bg-gradient-to-br from-brand-red/5 to-transparent rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   <div className="relative">
                     <div className="flex items-center justify-center w-12 h-12 bg-brand-red rounded-full mx-auto mb-3">
-                      <capability.icon className="h-6 w-6 text-white" />
+                      <service.icon className="h-6 w-6 text-white" />
                     </div>
                     <div className="text-lg font-semibold text-gray-900">
-                      {capability.name}
+                      {service.name}
                     </div>
                   </div>
-                </div>
+                </Link>
+              ))}
+            </div>
+
+            <p className="text-center text-gray-600 mb-8">
+                          </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {secondRowServices.map((service, index) => (
+                <Link 
+                  to={service.url}
+                  key={service.name} 
+                  className="group relative bg-gray-50 border border-gray-200 rounded-lg p-6 text-center transition-all duration-300 hover:shadow-lg hover:border-brand-red hover:-translate-y-1"
+                >
+                  <div className="absolute inset-0 bg-gradient-to-br from-brand-red/5 to-transparent rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="relative">
+                    <div className="flex items-center justify-center w-12 h-12 bg-brand-red rounded-full mx-auto mb-3">
+                      <service.icon className="h-6 w-6 text-white" />
+                    </div>
+                    <div className="text-lg font-semibold text-gray-900">
+                      {service.name}
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+
+            <p className="text-center text-gray-600 mb-8">
+                          </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {thirdRowServices.map((service, index) => (
+                <Link 
+                  to={service.url}
+                  key={service.name} 
+                  className="group relative bg-gray-50 border border-gray-200 rounded-lg p-6 text-center transition-all duration-300 hover:shadow-lg hover:border-brand-red hover:-translate-y-1"
+                >
+                  <div className="absolute inset-0 bg-gradient-to-br from-brand-red/5 to-transparent rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="relative">
+                    <div className="flex items-center justify-center w-12 h-12 bg-brand-red rounded-full mx-auto mb-3">
+                      <service.icon className="h-6 w-6 text-white" />
+                    </div>
+                    <div className="text-lg font-semibold text-gray-900">
+                      {service.name}
+                    </div>
+                  </div>
+                </Link>
               ))}
             </div>
           </div>
@@ -136,11 +198,14 @@ const Services = () => {
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
             No billable hours. No surprises. Just transparent, flat-fee legal services when you need them.
           </p>
-          <Link to="/contact">
-            <Button size="lg" className="bg-brand-red hover:bg-green-800 text-white font-semibold px-8 py-4 text-lg transition-all duration-300 transform hover:scale-105">
-              Get Started Today
-            </Button>
-          </Link>
+          <a
+            href="https://scoreboardlegal.cliogrow.com/book"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-brand-red hover:bg-green-800 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 text-lg"
+          >
+            Get Started Today
+          </a>
         </div>
       </section>
     </div>
