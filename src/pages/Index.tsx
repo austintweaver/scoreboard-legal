@@ -35,10 +35,10 @@ const Index = () => {
     { icon: Rocket, label: "Startups & Emerging Companies" },
     { icon: Trophy, label: "Athletes & Sports Businesses" },
     { icon: Clapperboard, label: "Creators & Media Companies" },
-    { icon: Building2, label: "Agencies & Professional Services Firms" },
     { icon: Users, label: "Operators & Executives" },
     { icon: TrendingUp, label: "Growth-Stage Businesses" },
     { icon: ShoppingBag, label: "Consumer Brands" },
+    { icon: Scale, label: "Private Clients" },
   ];
 
   const services = [
@@ -124,7 +124,7 @@ const Index = () => {
     },
     {
       q: "Does Scoreboard Legal bill hourly?",
-      a: "Scoreboard Legal primarily utilizes flat-fee and subscription-based legal structures designed to create predictable and practical legal support.",
+      a: "No. Scoreboard Legal does not bill by the hour. We utilize flat-fee and subscription-based pricing models designed to provide clients with predictable, practical, and business-minded legal support without the uncertainty of traditional hourly billing.",
     },
   ];
 
@@ -138,17 +138,13 @@ const Index = () => {
         }}
       >
         <div className="relative z-10 w-full max-w-5xl mx-auto px-4 sm:px-6 text-center py-20">
-          <h1 className="font-extrabold text-white text-3xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight mb-6 tracking-tight">
-            Business & Transactional Counsel
-            <br />
-            <span className="text-white">Built for Modern Companies,</span>
-            <br />
-            Founders, and Operators
+          <h1 className="font-bold text-white text-2xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight mb-6 tracking-tight">
+            Strategic Counsel for Modern Businesses and Individuals
           </h1>
-          <p className="text-white text-lg sm:text-xl md:text-2xl max-w-4xl mx-auto mb-10 leading-relaxed">
+          <p className="text-white text-base sm:text-lg md:text-xl max-w-4xl mx-auto mb-10 leading-relaxed">
             Scoreboard Legal provides practical legal support across commercial
             transactions, business operations, venture financings, contracts,
-            employment matters, and strategic growth initiatives, with extensive
+            employment matters, personal matters, and strategic initiatives, with extensive
             experience supporting clients in sports, entertainment, media, and
             emerging industries.
           </p>
@@ -185,7 +181,7 @@ const Index = () => {
               Who We Work With
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              We support businesses, founders, operators, and organizations
+              We support businesses, founders, operators, private clients, and organizations
               across a wide range of industries and growth stages.
             </p>
           </div>
@@ -216,7 +212,7 @@ const Index = () => {
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Practical legal guidance designed to support growth, operations,
-              transactions, and long-term business strategy.
+              transactions, and long-term strategy for both business and personal matters.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -260,7 +256,7 @@ const Index = () => {
             While we have significant experience within sports, entertainment,
             and media, our approach is grounded in practical business counsel
             designed to support growing companies, founders, operators, and
-            organizations at every stage of growth.
+            organizations at every stage of growth and across every industry.
           </p>
         </div>
       </section>
@@ -313,14 +309,13 @@ const Index = () => {
       </section>
 
       {/* Final CTA */}
-      <section className="py-24 bg-neutral-900">
+      <section className="py-24 bg-brand-red">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">
-            Discuss Your Business
+            Let's Get To Work
           </h2>
           <p className="text-lg text-gray-300 mb-10 max-w-2xl mx-auto">
-            Schedule a consultation to explore how Scoreboard Legal can support
-            your operations, transactions, and growth initiatives.
+            Let Scoreboard Legal help you Win. Where It Matters Most.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
@@ -330,7 +325,7 @@ const Index = () => {
             >
               <Button
                 size="lg"
-                className="bg-brand-red hover:bg-green-800 text-white font-semibold px-10 py-6 text-lg rounded-lg transition-all duration-300 shadow-lg"
+                className="bg-black hover:bg-neutral-800 text-white font-semibold px-10 py-6 text-lg rounded-lg transition-all duration-300 shadow-lg border border-white/20"
               >
                 Schedule a Consultation
               </Button>
@@ -338,8 +333,7 @@ const Index = () => {
             <Link to="/services">
               <Button
                 size="lg"
-                variant="outline"
-                className="border-white/30 text-white hover:bg-white/10 hover:text-white px-10 py-6 text-lg rounded-lg transition-all duration-300"
+                className="bg-black hover:bg-neutral-800 text-white px-10 py-6 text-lg rounded-lg transition-all duration-300 border border-white/20"
               >
                 Explore Legal Support
               </Button>
