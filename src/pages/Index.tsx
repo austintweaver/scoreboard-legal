@@ -163,9 +163,9 @@ const Index = () => {
         }
       `}</style>
       
-      {/* Floating Logo */}
+      {/* Floating Logo - Desktop Only */}
       <div 
-        className={`fixed top-24 left-1/2 transform -translate-x-1/2 z-40 transition-all duration-500 ${
+        className={`fixed top-24 left-1/2 transform -translate-x-1/2 z-40 transition-all duration-500 hidden md:block ${
           scrolled ? 'opacity-0 scale-0' : 'opacity-100 scale-100'
         }`}
       >
@@ -188,11 +188,7 @@ const Index = () => {
             Strategic Counsel for Modern Businesses and Individuals
           </h1>
           <p className="text-white text-base sm:text-lg md:text-xl max-w-4xl mx-auto mb-10 leading-relaxed">
-            Scoreboard Legal provides practical legal support across commercial
-            transactions, business operations, venture financings, contracts,
-            employment matters, personal matters, and strategic initiatives, with extensive
-            experience supporting clients in sports, entertainment, media, and
-            emerging industries.
+            Scoreboard Legal provides practical legal counsel for businesses and individuals navigating transactions, growth, and complex legal matters.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
