@@ -176,14 +176,23 @@ const Index = () => {
         />
       </div>
 
+      {/* Mobile Logo - Top Left */}
+      <div className="fixed top-4 left-4 z-40 md:hidden">
+        <img 
+          src="/assets/whitelogolegal.png" 
+          alt="Scoreboard Legal Logo" 
+          className="h-16 w-auto"
+        />
+      </div>
+
       {/* Hero Section */}
       <section
-        className="relative min-h-[90vh] flex items-center justify-center bg-black bg-cover bg-center bg-scroll overflow-hidden"
+        className="relative min-h-[80vh] flex items-center justify-center bg-black bg-cover bg-center bg-scroll overflow-hidden"
         style={{
           backgroundImage: `linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('/assets/scoreboardhome.jpg')`
         }}
       >
-        <div className="relative z-50 w-full max-w-5xl mx-auto px-4 sm:px-6 text-center py-20 pt-32">
+        <div className="relative z-50 w-full max-w-5xl mx-auto px-4 sm:px-6 text-center py-16 pt-32">
           <h1 className="font-bold text-white text-2xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight mb-6 tracking-tight">
             Strategic Counsel for Modern Businesses and Individuals
           </h1>
