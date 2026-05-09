@@ -41,7 +41,7 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <img src={logoSrc} alt={logoAlt} className={`${logoClass} w-auto transition-all duration-300`} />
+            <img src={logoSrc} alt={logoAlt} className={`${logoClass} w-auto transition-all duration-300 nav-logo`} />
           </Link>
 
           {/* Dropdown menu button */}

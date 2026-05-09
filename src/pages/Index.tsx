@@ -27,9 +27,35 @@ import {
   Radio,
   PenTool,
   ArrowRight,
+  Target,
 } from "lucide-react";
+import { useState, useEffect } from "react";
 
 const Index = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrolled = window.scrollY > 100;
+      setScrolled(scrolled);
+      
+      // Add/remove class from body to hide/show header logo
+      if (!scrolled) {
+        document.body.classList.add('floating-logo-active');
+      } else {
+        document.body.classList.remove('floating-logo-active');
+      }
+    };
+    
+    // Initial state
+    handleScroll();
+    
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      document.body.classList.remove('floating-logo-active');
+    };
+  }, []);
   const clientTypes = [
     { icon: UserCog, label: "Founders & Entrepreneurs" },
     { icon: Rocket, label: "Startups & Emerging Companies" },
@@ -130,6 +156,26 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
+      {/* CSS to hide header logo when floating logo is visible */}
+      <style>{`
+        .floating-logo-active .nav-logo {
+          opacity: 0 !important;
+        }
+      `}</style>
+      
+      {/* Floating Logo */}
+      <div 
+        className={`fixed top-24 left-1/2 transform -translate-x-1/2 z-40 transition-all duration-500 ${
+          scrolled ? 'opacity-0 scale-0' : 'opacity-100 scale-100'
+        }`}
+      >
+        <img 
+          src="/assets/whitelogolegal.png" 
+          alt="Scoreboard Legal Logo" 
+          className="h-48 w-auto"
+        />
+      </div>
+
       {/* Hero Section */}
       <section
         className="relative min-h-[90vh] flex items-center justify-center bg-black bg-cover bg-center bg-scroll overflow-hidden"
@@ -137,7 +183,7 @@ const Index = () => {
           backgroundImage: `linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('/assets/scoreboardhome.jpg')`
         }}
       >
-        <div className="relative z-10 w-full max-w-5xl mx-auto px-4 sm:px-6 text-center py-20">
+        <div className="relative z-10 w-full max-w-5xl mx-auto px-4 sm:px-6 text-center py-20 pt-8">
           <h1 className="font-bold text-white text-2xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight mb-6 tracking-tight">
             Strategic Counsel for Modern Businesses and Individuals
           </h1>
@@ -258,6 +304,55 @@ const Index = () => {
             designed to support growing companies, founders, operators, and
             organizations at every stage of growth and across every industry.
           </p>
+        </div>
+      </section>
+
+      {/* Our Values */}
+      <section className="bg-gray-50 py-24">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-heading font-bold text-gray-900 mb-4">
+              Our Values
+            </h2>
+            <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto mb-12">
+              Our philosophy guides our work, our relationships, and our commitment to protecting our clients.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-brand-red/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Target className="h-8 w-8 text-brand-red" />
+              </div>
+              <h3 className="text-xl font-heading font-semibold text-gray-900 mb-2">
+                Alignment
+              </h3>
+              <p className="text-gray-600">
+                We succeed when you do. Our model is designed to eliminate conflicts of interest, ensuring that every strategy, negotiation, and action is in full alignment with your goals, not ours.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-brand-red/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Rocket className="h-8 w-8 text-brand-red" />
+              </div>
+              <h3 className="text-xl font-heading font-semibold text-gray-900 mb-2">
+                Execution
+              </h3>
+              <p className="text-gray-600">
+                Great strategies only matter when they're executed well. We bring precision, expertise, and business rigor to every engagement, ensuring plans translate into measurable outcomes.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-brand-red/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Shield className="h-8 w-8 text-brand-red" />
+              </div>
+              <h3 className="text-xl font-heading font-semibold text-gray-900 mb-2">
+                Integrity
+              </h3>
+              <p className="text-gray-600">
+                We operate with transparency, honesty, and accountability — protecting our clients' interests with an uncompromising commitment to integrity and results.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
