@@ -32,7 +32,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-300 mt-4 pt-1 text-center">
         <p className="text-xs text-gray-900 mt-4 max-w-3xl mx-auto">
-            <span className="font-bold">Disclaimer:</span> Scoreboard Legal, PLLC is a Florida law firm. The information provided on this website is for general informational purposes only and does not constitute legal advice. Using this site or contacting Scoreboard Legal, PLLC does not establish an attorney-client relationship. Confidential information should not be sent until such a relationship is formally established.
+            <span className="font-bold">Disclaimer:</span> Scoreboard Legal, PLLC is a Florida law firm with an operational office in Illinois. The information provided on this website is for general informational purposes only and does not constitute legal advice. Using this site or contacting Scoreboard Legal, PLLC does not establish an attorney-client relationship. Confidential information should not be sent until such a relationship is formally established.
           </p>
           <p className="text-xs text-gray-400 mt-4 max-w-3xl mx-auto">
             © 2025 Scoreboard Legal. All rights reserved.
