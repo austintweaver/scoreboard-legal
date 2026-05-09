@@ -87,7 +87,7 @@ const RealEstate = () => {
             Real <span className="text-brand-red">Estate</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
-            Support for Businesses and Commercial Transactions
+            Legal Support for Commercial and Residential Real Estate
           </p>
           <div className="text-center">
             <a 
@@ -108,11 +108,11 @@ const RealEstate = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto mb-8">
-              Real estate transactions and operational matters often play a critical role in business growth and long-term planning.
+              Real estate matters—whether commercial or residential—often play a critical role in business growth, personal finances, and long-term planning.
               <br /><br />
-              Scoreboard Legal provides practical legal support related to commercial real Estate transactions, operational agreements, and strategic business considerations involving real Estate assets and facilities.
+              Scoreboard Legal provides practical legal support for a wide range of real estate matters, from commercial transactions and business leases to residential leases and property-related agreements. We work with businesses, founders, operators, and individuals to navigate real estate matters with confidence.
               <br /><br />
-              We work with businesses, operators, and entrepreneurs to help manage legal and operational considerations tied to real Estate matters.
+              Whether you're leasing office space for your business, negotiating a commercial property transaction, or need assistance with residential lease matters, we provide practical guidance tailored to your specific situation.
             </p>
           </div>
         </div>
@@ -127,6 +127,15 @@ const RealEstate = () => {
             </h2>
             
             <div className="space-y-6">
+              <div className="border-l-4 border-brand-red pl-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                  Residential and Commercial Lease Support
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Assistance with residential leases, commercial lease negotiations, lease renewals, and lease amendments for both businesses and individuals.
+                </p>
+              </div>
+
               <div className="border-l-4 border-brand-red pl-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   Commercial Lease Review and Negotiation
@@ -212,49 +221,6 @@ const RealEstate = () => {
         </div>
       </section>
 
-      {/* Our Approach Section */}
-      <section className="bg-gray-50 py-12">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-8">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-900 mb-6 text-center">
-              Our Perspective
-            </h2>
-            
-            <div className="max-w-3xl mx-auto">
-              <div className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-brand-red rounded-full flex items-center justify-center flex-shrink-0">
-                    <span className="text-white font-bold text-lg">1</span>
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                      Operational Context
-                    </h3>
-                    <p className="text-gray-600 leading-relaxed">
-                      We help clients evaluate Real Estate matters within context of their overall business objectives and operational needs.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-brand-red rounded-full flex items-center justify-center flex-shrink-0">
-                    <span className="text-white font-bold text-lg">2</span>
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                      Strategic Guidance
-                    </h3>
-                    <p className="text-gray-600 leading-relaxed">
-                      Real Estate decisions often impact broader operational and financial strategy.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Related Services Section */}
       <section className="bg-white py-12">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -299,6 +265,49 @@ const RealEstate = () => {
         </div>
       </section>
 
+      {/* Our Approach Section */}
+      <section className="bg-gray-50 py-12">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mb-8">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-900 mb-6 text-center">
+              Our Perspective
+            </h2>
+            
+            <div className="max-w-3xl mx-auto">
+              <div className="space-y-6">
+                <div className="flex items-start space-x-4">
+                  <div className="w-12 h-12 bg-brand-red rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="text-white font-bold text-lg">1</span>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                      Operational Context
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      We help clients evaluate Real Estate matters within context of their overall business objectives and operational needs.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-4">
+                  <div className="w-12 h-12 bg-brand-red rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="text-white font-bold text-lg">2</span>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                      Strategic Guidance
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      Real Estate decisions often impact broader operational and financial strategy.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section className="bg-white py-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -324,10 +333,10 @@ const RealEstate = () => {
             </AccordionItem>
             <AccordionItem value="item-3">
               <AccordionTrigger className="text-left text-base font-semibold text-gray-900 hover:no-underline py-5">
-                Do you handle commercial lease negotiations?
+                Do you handle residential and commercial leases?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 leading-relaxed pb-5">
-                Yes, we represent both landlords and tenants in commercial lease negotiations. We help ensure lease terms are favorable, address your specific business needs, and avoid unfavorable provisions. Our experience includes retail, office, industrial, and mixed-use leases.
+                Yes, we assist with both residential and commercial lease matters. Whether you're a business owner negotiating an office lease, a landlord managing residential properties, or an individual needing help with a residential lease, we provide practical support to protect your interests.
               </AccordionContent>
             </AccordionItem>
           </Accordion>

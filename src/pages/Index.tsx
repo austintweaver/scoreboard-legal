@@ -314,8 +314,8 @@ const Index = () => {
 
       {/* Representative Matters */}
       <section className="bg-white py-24">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-heading font-bold text-gray-900 mb-4">
               Representative Matters
             </h2>
@@ -323,47 +323,22 @@ const Index = () => {
               Representative experience across complex business, transactional, operational, and strategic legal matters.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div className="bg-gray-50 rounded-lg p-5 border border-gray-100 transition-all duration-300 hover:shadow-md hover:border-brand-red/20">
-              <p className="text-gray-900 font-medium">
-                Advising growth-stage companies on commercial transactions and operational matters
-              </p>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-5 border border-gray-100 transition-all duration-300 hover:shadow-md hover:border-brand-red/20">
-              <p className="text-gray-900 font-medium">
-                Structuring sponsorship and partnership agreements
-              </p>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-5 border border-gray-100 transition-all duration-300 hover:shadow-md hover:border-brand-red/20">
-              <p className="text-gray-900 font-medium">
-                Supporting venture financing and fundraising initiatives
-              </p>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-5 border border-gray-100 transition-all duration-300 hover:shadow-md hover:border-brand-red/20">
-              <p className="text-gray-900 font-medium">
-                Negotiating media, licensing, and production-related agreements
-              </p>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-5 border border-gray-100 transition-all duration-300 hover:shadow-md hover:border-brand-red/20">
-              <p className="text-gray-900 font-medium">
-                Providing outside general counsel support for businesses and executives
-              </p>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-5 border border-gray-100 transition-all duration-300 hover:shadow-md hover:border-brand-red/20">
-              <p className="text-gray-900 font-medium">
-                Advising on governance, operational strategy, and organizational growth
-              </p>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-5 border border-gray-100 transition-all duration-300 hover:shadow-md hover:border-brand-red/20">
-              <p className="text-gray-900 font-medium">
-                Drafting and negotiating complex commercial agreements
-              </p>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-5 border border-gray-100 transition-all duration-300 hover:shadow-md hover:border-brand-red/20">
-              <p className="text-gray-900 font-medium">
-                Supporting businesses, founders, athletes, creators, and executives across evolving industries
-              </p>
-            </div>
+          <div className="space-y-0">
+            {[
+              "Advising businesses, executives, founders, athletes, and creators on commercial transactions, operational strategy, and day-to-day legal matters",
+              "Supporting multiple eight-figure financing rounds and growth-stage business initiatives",
+              "Negotiating sponsorship, partnership, licensing, and media-related agreements across sports, entertainment, and emerging industries",
+              "Providing operational and strategic legal support across legal, finance, HR, and business operations functions",
+              "Negotiating and managing complex commercial agreements, SaaS contracts, vendor relationships, and strategic partnerships",
+              "Advising organizations on governance, organizational growth, operational planning, and risk management initiatives",
+              "Supporting acquisitions, investment transactions, and strategic business expansion initiatives",
+              "Advising businesses and stakeholders operating in fast-moving and highly visible industries, including sports, entertainment, media, and technology"
+            ].map((item, index) => (
+              <div key={index} className="flex items-start py-5 border-b border-gray-200 last:border-0">
+                <span className="flex-shrink-0 w-2 h-2 mt-3 rounded-full mr-6 bg-brand-red" />
+                <p className="text-gray-900 text-lg leading-relaxed">{item}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

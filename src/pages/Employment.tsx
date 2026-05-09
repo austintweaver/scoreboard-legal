@@ -212,49 +212,6 @@ const Employment = () => {
         </div>
       </section>
 
-      {/* Our Approach Section */}
-      <section className="bg-gray-50 py-12">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-8">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-900 mb-6 text-center">
-              Our Perspective
-            </h2>
-            
-            <div className="max-w-3xl mx-auto">
-              <div className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-brand-red rounded-full flex items-center justify-center flex-shrink-0">
-                    <span className="text-white font-bold text-lg">1</span>
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                      Practical Judgment
-                    </h3>
-                    <p className="text-gray-600 leading-relaxed">
-                      We believe Employment matters require practical business judgment alongside legal analysis.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-brand-red rounded-full flex items-center justify-center flex-shrink-0">
-                    <span className="text-white font-bold text-lg">2</span>
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                      Strategic Focus
-                    </h3>
-                    <p className="text-gray-600 leading-relaxed">
-                      We help clients navigate workforce-related issues with an approach focused on operations, compliance, and long-term business strategy.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Related Services Section */}
       <section className="bg-white py-12">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -295,6 +252,49 @@ const Employment = () => {
                 Practical support for business transactions
               </p>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Approach Section */}
+      <section className="bg-gray-50 py-12">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mb-8">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-900 mb-6 text-center">
+              Our Perspective
+            </h2>
+            
+            <div className="max-w-3xl mx-auto">
+              <div className="space-y-6">
+                <div className="flex items-start space-x-4">
+                  <div className="w-12 h-12 bg-brand-red rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="text-white font-bold text-lg">1</span>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                      Practical Judgment
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      We believe Employment matters require practical business judgment alongside legal analysis.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-4">
+                  <div className="w-12 h-12 bg-brand-red rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="text-white font-bold text-lg">2</span>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                      Strategic Focus
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      We help clients navigate workforce-related issues with an approach focused on operations, compliance, and long-term business strategy.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
