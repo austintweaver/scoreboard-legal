@@ -67,8 +67,6 @@ const Team = () => {
               </p>
               <a
                 href="https://scoreboardlegal.cliogrow.com/book"
-                target="_blank"
-                rel="noopener noreferrer"
               >
                 <Button
                   size="lg"
@@ -215,8 +213,6 @@ const Team = () => {
           </p>
           <a
             href="https://scoreboardlegal.cliogrow.com/book"
-            target="_blank"
-            rel="noopener noreferrer"
           >
             <Button
               size="lg"

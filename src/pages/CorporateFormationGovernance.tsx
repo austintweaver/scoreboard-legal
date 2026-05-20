@@ -358,9 +358,7 @@ const CorporateFormationGovernance = () => {
             Schedule a consultation to explore how proper corporate formation and governance can support your business growth and operational needs.
           </p>
           <a 
-            href="https://scoreboardlegal.cliogrow.com/book" 
-            target="_blank" 
-            rel="noopener noreferrer"
+            href="https://scoreboardlegal.cliogrow.com/book"
             className="inline-block bg-brand-red hover:bg-green-800 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 text-lg"
           >
             Book a Call
