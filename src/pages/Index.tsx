@@ -202,8 +202,6 @@ const Index = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href="https://scoreboardlegal.cliogrow.com/book"
-              target="_blank"
-              rel="noopener noreferrer"
             >
               <Button
                 size="lg"
@@ -451,8 +449,6 @@ const Index = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href="https://scoreboardlegal.cliogrow.com/book"
-              target="_blank"
-              rel="noopener noreferrer"
             >
               <Button
                 size="lg"

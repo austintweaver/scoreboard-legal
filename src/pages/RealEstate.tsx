@@ -353,9 +353,7 @@ const RealEstate = () => {
             Schedule a consultation to explore how real estate legal support can help your business operations and growth strategies.
           </p>
           <a 
-            href="https://scoreboardlegal.cliogrow.com/book" 
-            target="_blank" 
-            rel="noopener noreferrer"
+            href="https://scoreboardlegal.cliogrow.com/book"
             className="inline-block bg-brand-red hover:bg-green-800 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 text-lg"
           >
             Book a Call
