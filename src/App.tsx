@@ -42,9 +42,7 @@ declare global {
 }
 
 // Google Ads conversion tracking for Clio booking link clicks.
-// TODO: Replace REPLACE_WITH_CONVERSION_LABEL with the label from
-// Google Ads → Goals → Conversions → your action (format: AW-18170107582/XXXXXXXX).
-const CONVERSION_SEND_TO = "AW-18170107582/REPLACE_WITH_CONVERSION_LABEL";
+const CONVERSION_SEND_TO = "AW-18170107582/2w3iCPXXkLEcEL6tl9hD";
 
 function ClioConversionTracker() {
   useEffect(() => {
