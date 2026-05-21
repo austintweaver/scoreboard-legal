@@ -33,6 +33,7 @@ import { useState } from "react";
 import { handleClioClick } from "@/lib/clioConversion";
 
 const Index = () => {
+  const clientTypes = [
     { icon: UserCog, label: "Founders & Entrepreneurs" },
     { icon: Rocket, label: "Startups & Emerging Companies" },
     { icon: Trophy, label: "Athletes & Sports Businesses" },
