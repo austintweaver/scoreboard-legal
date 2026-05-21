@@ -37,7 +37,8 @@ const Index = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrolled = window.scrollY > 100;
+      const heroHeight = window.innerHeight * 0.75;
+      const scrolled = window.scrollY > heroHeight;
       setScrolled(scrolled);
       
       // Add/remove class from body to hide/show header logo
