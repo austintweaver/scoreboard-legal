@@ -29,7 +29,7 @@ const Navigation = () => {
   const logoSrc = "/assets/blacklogolegal.png";
   const logoAlt = "Scoreboard Strategy Logo";
   const logoClass = "h-14";
-  const logoHidden = isHome && !isScrolled;
+  const logoVisible = !(isHome && !isScrolled);
 
   // Determine header background
   const navBg = isHome && !isScrolled ? "bg-transparent" : "bg-white/95 backdrop-blur-md shadow-lg";
@@ -42,7 +42,7 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <img src={logoSrc} alt={logoAlt} className={`${logoClass} w-auto transition-all duration-300 nav-logo ${logoHidden ? "opacity-0 pointer-events-none" : "opacity-100"}`} />
+            <img src={logoSrc} alt={logoAlt} className={`${logoClass} w-auto transition-all duration-300 nav-logo ${logoVisible ? "opacity-100" : "opacity-0 pointer-events-none"}`} />
           </Link>
 
           {/* Dropdown menu button */}
