@@ -109,7 +109,7 @@ const App = () => {
         <Sonner />
         <BrowserRouter>
           <ScrollToTop />
-          <ClioConversionTracker />
+          
           <PerformanceOptimizer>
             <div className="min-h-screen bg-white">
               <Navigation />
