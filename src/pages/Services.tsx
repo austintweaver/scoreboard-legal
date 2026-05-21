@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { FileText, Shield, Scale, Building, Users, TrendingUp, Handshake, Briefcase, Gavel, Home } from "lucide-react";
+import { handleClioClick } from "@/lib/clioConversion";
 
 const Services = () => {
   const firstRowServices = [
@@ -203,6 +204,7 @@ const Services = () => {
           </p>
           <a
             href="https://scoreboardlegal.cliogrow.com/book"
+            onClick={handleClioClick}
             className="inline-block bg-brand-red hover:bg-green-800 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 text-lg"
           >
             Get Started Today

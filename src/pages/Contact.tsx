@@ -1,3 +1,4 @@
+import { handleClioClick } from "@/lib/clioConversion";
 
 const Contact = () => {
 
@@ -24,6 +25,7 @@ const Contact = () => {
             </p>
             <a 
               href="https://scoreboardlegal.cliogrow.com/book"
+              onClick={handleClioClick}
               className="inline-block bg-brand-red hover:bg-green-800 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 text-lg"
             >
               Open Booking System
