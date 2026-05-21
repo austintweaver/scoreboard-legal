@@ -77,6 +77,8 @@ function ClioConversionTracker() {
 
       window.gtag("event", "conversion", {
         send_to: CONVERSION_SEND_TO,
+        value: 1.0,
+        currency: "USD",
         event_callback: navigateOnce,
       });
 
