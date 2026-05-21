@@ -26,9 +26,10 @@ const Navigation = () => {
 
   // Determine which logo to use and its size
   const isHome = location.pathname === "/";
-  const logoSrc = isHome && !isScrolled ? "/assets/whitelogolegal.png" : "/assets/blacklogolegal.png";
+  const logoSrc = "/assets/blacklogolegal.png";
   const logoAlt = "Scoreboard Strategy Logo";
-  const logoClass = isHome && !isScrolled ? "h-20 pt-2" : "h-14";
+  const logoClass = "h-14";
+  const logoHidden = isHome && !isScrolled;
 
   // Determine header background
   const navBg = isHome && !isScrolled ? "bg-transparent" : "bg-white/95 backdrop-blur-md shadow-lg";
@@ -41,7 +42,7 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <img src={logoSrc} alt={logoAlt} className={`${logoClass} w-auto transition-all duration-300 nav-logo`} />
+            <img src={logoSrc} alt={logoAlt} className={`${logoClass} w-auto transition-all duration-300 nav-logo ${logoHidden ? "opacity-0 pointer-events-none" : "opacity-100"}`} />
           </Link>
 
           {/* Dropdown menu button */}
