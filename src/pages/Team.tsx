@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Target, Rocket, Shield, Briefcase, Trophy, FileText, Users, Building2, Scale, TrendingUp, Clapperboard } from "lucide-react";
 import { useEffect } from "react";
+import { handleClioClick } from "@/lib/clioConversion";
 
 const Team = () => {
   useEffect(() => {
@@ -67,6 +68,7 @@ const Team = () => {
               </p>
               <a
                 href="https://scoreboardlegal.cliogrow.com/book"
+                onClick={handleClioClick}
               >
                 <Button
                   size="lg"
@@ -213,6 +215,7 @@ const Team = () => {
           </p>
           <a
             href="https://scoreboardlegal.cliogrow.com/book"
+            onClick={handleClioClick}
           >
             <Button
               size="lg"

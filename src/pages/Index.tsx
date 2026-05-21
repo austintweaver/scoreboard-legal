@@ -30,6 +30,7 @@ import {
   Target,
 } from "lucide-react";
 import { useState, useEffect } from "react";
+import { handleClioClick } from "@/lib/clioConversion";
 
 const Index = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -202,6 +203,7 @@ const Index = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href="https://scoreboardlegal.cliogrow.com/book"
+              onClick={handleClioClick}
             >
               <Button
                 size="lg"
@@ -449,6 +451,7 @@ const Index = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href="https://scoreboardlegal.cliogrow.com/book"
+              onClick={handleClioClick}
             >
               <Button
                 size="lg"
