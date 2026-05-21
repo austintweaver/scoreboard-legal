@@ -166,9 +166,10 @@ const Index = () => {
       
       {/* Floating Logo - Desktop Only */}
       <div 
-        className={`fixed top-24 left-1/2 transform -translate-x-1/2 z-40 transition-all duration-500 hidden md:block ${
+        className={`fixed top-24 left-1/2 transform -translate-x-1/2 transition-all duration-500 hidden md:block ${
           scrolled ? 'opacity-0 scale-0' : 'opacity-100 scale-100'
         }`}
+        style={{ zIndex: 60 }}
       >
         <img 
           src="/assets/whitelogolegal.png" 
@@ -193,7 +194,7 @@ const Index = () => {
           backgroundImage: `linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('/assets/scoreboardhome.jpg')`
         }}
       >
-        <div className="relative z-50 w-full max-w-5xl mx-auto px-4 sm:px-6 text-center py-16 pt-32">
+        <div className="relative z-10 w-full max-w-5xl mx-auto px-4 sm:px-6 text-center py-16 pt-32">
           <h1 className="font-bold text-white text-2xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight mb-6 tracking-tight">
             Strategic Counsel for Modern Businesses and Individuals
           </h1>
