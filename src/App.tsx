@@ -37,7 +37,59 @@ const PageLoader = () => (
 declare global {
   interface Window {
     clarity?: unknown;
+    gtag?: (...args: unknown[]) => void;
   }
+}
+
+// Google Ads conversion tracking for Clio booking link clicks.
+// TODO: Replace REPLACE_WITH_CONVERSION_LABEL with the label from
+// Google Ads → Goals → Conversions → your action (format: AW-18170107582/XXXXXXXX).
+const CONVERSION_SEND_TO = "AW-18170107582/REPLACE_WITH_CONVERSION_LABEL";
+
+function ClioConversionTracker() {
+  useEffect(() => {
+    const handler = (e: MouseEvent) => {
+      if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+      const anchor = (e.target as HTMLElement | null)?.closest?.("a");
+      if (!anchor) return;
+      const href = anchor.getAttribute("href");
+      if (!href || !href.includes("cliogrow.com")) return;
+
+      e.preventDefault();
+      const target = anchor.getAttribute("target");
+      const go = () => {
+        if (target === "_blank") {
+          window.open(href, "_blank", "noopener,noreferrer");
+        } else {
+          window.location.href = href;
+        }
+      };
+
+      if (typeof window.gtag !== "function") {
+        go();
+        return;
+      }
+
+      let navigated = false;
+      const navigateOnce = () => {
+        if (navigated) return;
+        navigated = true;
+        go();
+      };
+
+      window.gtag("event", "conversion", {
+        send_to: CONVERSION_SEND_TO,
+        event_callback: navigateOnce,
+      });
+
+      // Fallback in case gtag never fires the callback
+      setTimeout(navigateOnce, 1500);
+    };
+
+    document.addEventListener("click", handler);
+    return () => document.removeEventListener("click", handler);
+  }, []);
+  return null;
 }
 
 const queryClient = new QueryClient({
