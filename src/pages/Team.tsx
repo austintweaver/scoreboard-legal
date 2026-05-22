@@ -67,7 +67,7 @@ const Team = () => {
                 Licensed in Florida and Illinois.
               </p>
               <a
-                href="https://scoreboardlegal.cliogrow.com/book"
+                href="https://scoreboardlegal.cliogrow.com/intake/b73c29a4a400707057c4c05ee6fd4ecc"
                 onClick={handleClioClick}
               >
                 <Button
@@ -214,7 +214,7 @@ const Team = () => {
             The firm's approach is designed to provide sophisticated legal support in a structure that feels collaborative, efficient, and aligned with how modern businesses and individuals operate today.
           </p>
           <a
-            href="https://scoreboardlegal.cliogrow.com/book"
+            href="https://scoreboardlegal.cliogrow.com/intake/b73c29a4a400707057c4c05ee6fd4ecc"
             onClick={handleClioClick}
           >
             <Button
