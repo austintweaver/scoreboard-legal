@@ -25,7 +25,7 @@ const ContractReview = () => {
               'name': 'Scoreboard Legal, PLLC',
               'url': 'https://www.scoreboardlegal.com'
             },
-            'areaServed': 'Florida',
+            'areaServed': ['Florida', 'Illinois'],
             'hasOfferCatalog': {
               '@type': 'OfferCatalog',
               'name': 'Legal Services',
@@ -84,13 +84,10 @@ const ContractReview = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto mb-8">
-              Not every legal situation requires a full engagement. Sometimes you just need an attorney to read the contract, tell you what you're agreeing to, and flag what needs attention before you sign.
+              Sometimes you don't need a full legal engagement. You just need someone to read the contract and tell you what you're agreeing to. For $500, Scoreboard Legal will do exactly that — intake and scope confirmation, a 15-minute Zoom call, a full attorney review, and a written redline with comments returned within 3 business days of your call. Flat fee. No hourly billing. No open-ended engagement.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto mb-8">
-              Scoreboard Legal offers straightforward legal feedback on contracts without the overhead of a traditional engagement. Our flat-fee structure means you know exactly what you're paying before we start.
-            </p>
-            <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto mb-8">
-              Additional services — including negotiation support, additional review rounds, and follow-on advice — are scoped and priced separately, so you stay in control of the cost.
+              Contracts must be submitted in Word format, in English, and may not exceed 10 pages. If you need negotiation support, additional review rounds, or follow-on advice after the redline is returned, we'll scope that separately so you know the cost before we start.
             </p>
           </div>
         </div>
@@ -375,7 +372,7 @@ const ContractReview = () => {
                 What does the $500 fee include?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 leading-relaxed pb-5">
-                The fee covers intake and scope confirmation, a 15-minute attorney call, one full attorney review, and a written redline with comments. It does not include additional review rounds, negotiations, or follow-on legal advice.
+                The fee covers intake and scope confirmation, a 15-minute Zoom call, one full attorney review, and a written redline with comments. It does not include additional review rounds, negotiations, or follow-on legal advice.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
@@ -383,7 +380,7 @@ const ContractReview = () => {
                 How long does the review take?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 leading-relaxed pb-5">
-                You will receive your redline within 5 business days of the attorney call and scope confirmation.
+                You will receive your redline within 3 business days of your Zoom call.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-4">
@@ -399,7 +396,7 @@ const ContractReview = () => {
                 What contracts are excluded from this offering?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 leading-relaxed pb-5">
-                This offering does not cover opinion letters, real estate purchase agreements, settlement agreements, active litigation matters, multi-party agreements, IP assignments and licensing agreements, contracts requiring interpretation of another state's statutes, or non-English language contracts.
+                This offering does not cover opinion letters, real estate purchase agreements, settlement agreements, active litigation matters, multi-party agreements, IP assignments and licensing agreements, or non-English language contracts.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
@@ -419,6 +416,15 @@ const ContractReview = () => {
           >
             Book Your Review
           </a>
+        </div>
+      </section>
+
+      {/* Page-Level Disclaimer */}
+      <section className="py-8 bg-gray-50 border-t border-gray-200">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-xs text-gray-500 leading-relaxed">
+            Attorney advertising. Contract review services do not constitute legal advice regarding the laws of any jurisdiction. Results may vary.
+          </p>
         </div>
       </section>
     </div>
