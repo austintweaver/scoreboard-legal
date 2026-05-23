@@ -84,7 +84,10 @@ const ContractReview = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto mb-8">
-              Sometimes you don't need a full legal engagement. You just need someone to read the contract and tell you what you're agreeing to. For $500, Scoreboard Legal will do exactly that — intake and scope confirmation, a 15-minute Zoom call, a full attorney review, and a written redline with comments returned within 3 business days of your call. Flat fee. No hourly billing. No open-ended engagement.
+              Sometimes you don't need a full legal engagement. You just need someone to read the contract and tell you what you're agreeing to.
+            </p>
+            <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto mb-8">
+              For $500, Scoreboard Legal will do exactly that — intake and scope confirmation, a 15-minute Zoom call, a full attorney review, and a written redline with comments returned within 3 business days of your call. Flat fee. No hourly billing. No open-ended engagement.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto mb-8">
               Contracts must be submitted in Word format, in English, and may not exceed 10 pages. If you need negotiation support, additional review rounds, or follow-on advice after the redline is returned, we'll scope that separately so you know the cost before we start.
