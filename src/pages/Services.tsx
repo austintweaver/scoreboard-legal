@@ -47,9 +47,9 @@ const Services = () => {
       url: "/emerging-companies-venture-financings"
     },
     {
-      name: "Flat-Fee Contract Review",
-      icon: FileEdit,
-      url: "/contract-review"
+      name: "Mergers & Acquisitions",
+      icon: Handshake,
+      url: "/mergers-acquisitions"
     },
     {
       name: "Employment",
@@ -60,9 +60,9 @@ const Services = () => {
 
   const fourthRowServices = [
     {
-      name: "Mergers & Acquisitions",
-      icon: Handshake,
-      url: "/mergers-acquisitions"
+      name: "Flat-Fee Contract Review",
+      icon: FileEdit,
+      url: "/contract-review"
     }
   ];
 
