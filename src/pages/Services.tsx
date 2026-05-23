@@ -55,9 +55,12 @@ const Services = () => {
       name: "Employment",
       icon: Briefcase,
       url: "/employment"
-    },
+    }
+  ];
+
+  const fourthRowServices = [
     {
-      name: "Contract Review",
+      name: "Flat-Fee Contract Review",
       icon: FileEdit,
       url: "/contract-review"
     }
@@ -131,9 +134,29 @@ const Services = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {thirdRowServices.map((service, index) => (
-                <Link 
+                <Link
                   to={service.url}
-                  key={service.name} 
+                  key={service.name}
+                  className="group relative bg-gray-50 border border-gray-200 rounded-lg p-6 text-center transition-all duration-300 hover:shadow-lg hover:border-brand-red hover:-translate-y-1"
+                >
+                  <div className="absolute inset-0 bg-gradient-to-br from-brand-red/5 to-transparent rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="relative">
+                    <div className="flex items-center justify-center w-12 h-12 bg-brand-red rounded-full mx-auto mb-3">
+                      <service.icon className="h-6 w-6 text-white" />
+                    </div>
+                    <div className="text-lg font-semibold text-gray-900">
+                      {service.name}
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {fourthRowServices.map((service, index) => (
+                <Link
+                  to={service.url}
+                  key={service.name}
                   className="group relative bg-gray-50 border border-gray-200 rounded-lg p-6 text-center transition-all duration-300 hover:shadow-lg hover:border-brand-red hover:-translate-y-1"
                 >
                   <div className="absolute inset-0 bg-gradient-to-br from-brand-red/5 to-transparent rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
