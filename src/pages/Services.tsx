@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { FileText, Shield, Scale, Building, Users, TrendingUp, Handshake, Briefcase, Gavel, Home } from "lucide-react";
+import { FileText, Shield, Scale, Building, Users, TrendingUp, Handshake, Briefcase, Gavel, Home, FileEdit } from "lucide-react";
 import { handleClioClick } from "@/lib/clioConversion";
 
 const Services = () => {
@@ -55,6 +55,11 @@ const Services = () => {
       name: "Employment",
       icon: Briefcase,
       url: "/employment"
+    },
+    {
+      name: "Contract Review",
+      icon: FileEdit,
+      url: "/contract-review"
     }
   ];
 
