@@ -11,10 +11,10 @@ const TermsOfService = () => (
       <p className="mb-4 text-gray-700">This Site provides general information about Scoreboard Legal, PLLC and its legal services. The content is for informational purposes only and does not create an attorney-client relationship.</p>
 
       <h2 className="text-2xl font-bold mt-8 mb-2 text-gray-900">2. No Attorney-Client Relationship</h2>
-      <p className="mb-4 text-gray-700">Use of this Site, including submitting any contact information or communications, does not establish an attorney-client relationship. Such a relationship is only formed after a formal written agreement is executed by both you and the Firm.</p>
+      <p className="mb-4 text-gray-700">Viewing this website, communicating with Scoreboard Legal, PLLC through this website, or submitting information through any contact form, intake form, or scheduling platform does not create an attorney-client relationship. Please do not send confidential or time-sensitive information until an attorney-client relationship has been formally established through a signed engagement agreement.</p>
 
       <h2 className="text-2xl font-bold mt-8 mb-2 text-gray-900">3. Legal Advice Disclaimer</h2>
-      <p className="mb-4 text-gray-700">Nothing on this Site constitutes legal advice, nor is it a substitute for consulting with a licensed attorney who can evaluate your specific circumstances.</p>
+      <p className="mb-4 text-gray-700">The information contained on this website is provided for general informational purposes only and should not be construed as legal advice or a substitute for obtaining legal advice regarding your specific matter.</p>
 
       <h2 className="text-2xl font-bold mt-8 mb-2 text-gray-900">4. Fee Disclaimer</h2>
       <p className="mb-4 text-gray-700">Any fees or costs mentioned on this Site are estimates only and are subject to change. Actual fees will be disclosed in a written fee agreement. You are responsible for all fees and costs associated with legal services provided by Scoreboard Legal, PLLC, as outlined in the engagement agreement.</p>
