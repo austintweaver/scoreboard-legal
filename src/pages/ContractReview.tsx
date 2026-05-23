@@ -96,49 +96,71 @@ const ContractReview = () => {
         </div>
       </section>
 
-      {/* What's Included Section */}
+      {/* How It Works Section */}
       <section className="bg-white py-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-8">
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-900 mb-6 text-center">
-              What's Included
+              How It Works
             </h2>
 
-            <div className="space-y-6">
-              <div className="border-l-4 border-brand-red pl-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  Intake & Scope Confirmation
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  We confirm the contract is within scope before the review begins.
-                </p>
-              </div>
+            <div className="max-w-3xl mx-auto">
+              <div className="space-y-6">
+                <div className="flex items-start space-x-4">
+                  <div className="w-12 h-12 bg-brand-red rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="text-white font-bold text-lg">1</span>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                      Submit Your Intake
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      Complete the intake form and submit your contract for scope confirmation.
+                    </p>
+                  </div>
+                </div>
 
-              <div className="border-l-4 border-brand-red pl-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  15-Minute Attorney Call
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  A licensed attorney connects with you to get background on the contract and understand your goals before the review begins.
-                </p>
-              </div>
+                <div className="flex items-start space-x-4">
+                  <div className="w-12 h-12 bg-brand-red rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="text-white font-bold text-lg">2</span>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                      15-Minute Attorney Call
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      A licensed attorney connects with you briefly to get background on the contract and understand your goals before the review begins.
+                    </p>
+                  </div>
+                </div>
 
-              <div className="border-l-4 border-brand-red pl-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  Full Attorney Review
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  One complete review of your contract by a licensed attorney.
-                </p>
-              </div>
+                <div className="flex items-start space-x-4">
+                  <div className="w-12 h-12 bg-brand-red rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="text-white font-bold text-lg">3</span>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                      Attorney Review
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      Your attorney reviews the contract and prepares a written redline with comments.
+                    </p>
+                  </div>
+                </div>
 
-              <div className="border-l-4 border-brand-red pl-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  Written Redline with Comments
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  You receive a marked-up version of your contract with attorney comments explaining what was flagged and why.
-                </p>
+                <div className="flex items-start space-x-4">
+                  <div className="w-12 h-12 bg-brand-red rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="text-white font-bold text-lg">4</span>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                      Receive Your Redline
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      You receive your marked-up contract within 5 business days.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -224,77 +246,6 @@ const ContractReview = () => {
                 <p className="text-gray-600 leading-relaxed">
                   All contracts submitted must be in English.
                 </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* How It Works Section */}
-      <section className="bg-white py-12">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-8">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-900 mb-6 text-center">
-              How It Works
-            </h2>
-
-            <div className="max-w-3xl mx-auto">
-              <div className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-brand-red rounded-full flex items-center justify-center flex-shrink-0">
-                    <span className="text-white font-bold text-lg">1</span>
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                      Submit Your Intake
-                    </h3>
-                    <p className="text-gray-600 leading-relaxed">
-                      Complete the intake form and submit your contract for scope confirmation.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-brand-red rounded-full flex items-center justify-center flex-shrink-0">
-                    <span className="text-white font-bold text-lg">2</span>
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                      15-Minute Attorney Call
-                    </h3>
-                    <p className="text-gray-600 leading-relaxed">
-                      A licensed attorney connects with you briefly to get background on the contract and understand your goals before the review begins.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-brand-red rounded-full flex items-center justify-center flex-shrink-0">
-                    <span className="text-white font-bold text-lg">3</span>
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                      Attorney Review
-                    </h3>
-                    <p className="text-gray-600 leading-relaxed">
-                      Your attorney reviews the contract and prepares a written redline with comments.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-brand-red rounded-full flex items-center justify-center flex-shrink-0">
-                    <span className="text-white font-bold text-lg">4</span>
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                      Receive Your Redline
-                    </h3>
-                    <p className="text-gray-600 leading-relaxed">
-                      You receive your marked-up contract within 5 business days.
-                    </p>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
