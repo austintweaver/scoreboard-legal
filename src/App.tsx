@@ -26,6 +26,7 @@ const RealEstate = lazy(() => import("./pages/RealEstate"));
 const EmergingCompaniesVentureFinancing = lazy(() => import("./pages/EmergingCompaniesVentureFinancing"));
 const MergersAcquisitions = lazy(() => import("./pages/MergersAcquisitions"));
 const Employment = lazy(() => import("./pages/Employment"));
+const ContractReview = lazy(() => import("./pages/ContractReview"));
 
 // Loading component for lazy-loaded routes
 const PageLoader = () => (
@@ -130,6 +131,7 @@ const App = () => {
                   <Route path="/emerging-companies-venture-financings" element={<EmergingCompaniesVentureFinancing />} />
                   <Route path="/mergers-acquisitions" element={<MergersAcquisitions />} />
                   <Route path="/employment" element={<Employment />} />
+                  <Route path="/contract-review" element={<ContractReview />} />
                   <Route path="*" element={<NotFound />} />
                 </Routes>
               </Suspense>
