@@ -115,7 +115,7 @@ const ContractReview = () => {
                       Submit Your Intake
                     </h3>
                     <p className="text-gray-600 leading-relaxed">
-                      Complete the intake form and submit your contract for scope confirmation.
+                      Complete the intake form and submit your contract for scope confirmation. Contracts must be submitted in Word format, must be in English, and may not exceed 10 pages based on standard formatting — 11 or 12-point font and one-inch margins. This offering covers a single contract only. Contracts exceeding 10 pages are accepted at our discretion for an additional fee of $50 per page beyond the 10-page limit.
                     </p>
                   </div>
                 </div>
@@ -126,10 +126,10 @@ const ContractReview = () => {
                   </div>
                   <div className="flex-1">
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                      15-Minute Attorney Call
+                      Intake Review
                     </h3>
                     <p className="text-gray-600 leading-relaxed">
-                      A licensed attorney connects with you briefly to get background on the contract and understand your goals before the review begins.
+                      We will review your submission within 2 business days. If your contract is within scope, we will send you a link to schedule your 15-minute Zoom call and a link to submit payment. Payment is due prior to the attorney review beginning.
                     </p>
                   </div>
                 </div>
@@ -140,10 +140,10 @@ const ContractReview = () => {
                   </div>
                   <div className="flex-1">
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                      Attorney Review
+                      15-Minute Zoom Call
                     </h3>
                     <p className="text-gray-600 leading-relaxed">
-                      Your attorney reviews the contract and prepares a written redline with comments.
+                      A member of our team will connect with you via Zoom to get background on the contract and understand your goals before the review begins. This is the only consultation included in this engagement.
                     </p>
                   </div>
                 </div>
@@ -154,15 +154,40 @@ const ContractReview = () => {
                   </div>
                   <div className="flex-1">
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                      Attorney Review & Redline
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      Your attorney reviews the contract and returns a written redline with comments within 3 business days of your Zoom call.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-4">
+                  <div className="w-12 h-12 bg-brand-red rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="text-white font-bold text-lg">5</span>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
                       Receive Your Redline
                     </h3>
                     <p className="text-gray-600 leading-relaxed">
-                      You receive your marked-up contract within 5 business days.
+                      You will receive a marked-up version of your contract with attorney comments. The redline and comments do not constitute a recommendation to sign or not sign the agreement. Any follow-up questions or additional consultation after the redline is returned will require a separate engagement. This engagement constitutes contract review and commentary only and does not create formal legal representation or an attorney-client relationship beyond the scope of this offering.
                     </p>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Expedited Review Note */}
+      <section className="bg-gray-50 py-8">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-brand-red/5 border border-brand-red/20 rounded-lg p-6">
+            <p className="text-gray-700 leading-relaxed">
+              <strong>Need it faster?</strong> Expedited review is available and covers all standard turnaround windows — including intake review and redline delivery. Expedited fees are based on required turnaround time and availability. Indicate that your request is expedited in the intake form and our team will reach out with the applicable fee along with your scheduling and payment links.
+            </p>
           </div>
         </div>
       </section>
@@ -227,15 +252,6 @@ const ContractReview = () => {
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
                   Intellectual property transfers and licensing deals are excluded due to their complexity.
-                </p>
-              </div>
-
-              <div className="border-l-4 border-brand-red pl-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  Contracts Requiring Interpretation of Another State's Statutes
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  This review does not constitute legal advice regarding the laws of any jurisdiction other than Illinois and Florida.
                 </p>
               </div>
 
