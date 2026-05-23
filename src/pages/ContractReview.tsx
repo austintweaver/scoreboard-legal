@@ -181,6 +181,19 @@ const ContractReview = () => {
         </div>
       </section>
 
+      {/* How It Works CTA */}
+      <section className="bg-white py-8">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <a
+            href="https://scoreboardlegal.cliogrow.com/intake/54241e64c761661243625875133ef0d0"
+            onClick={handleClioClick}
+            className="inline-block bg-brand-red hover:bg-green-800 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 text-lg"
+          >
+            Start Your Intake
+          </a>
+        </div>
+      </section>
+
       {/* Expedited Review Note */}
       <section className="bg-gray-50 py-8">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -265,6 +278,19 @@ const ContractReview = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* What's Not Included CTA */}
+      <section className="bg-white py-8">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <a
+            href="https://scoreboardlegal.cliogrow.com/intake/54241e64c761661243625875133ef0d0"
+            onClick={handleClioClick}
+            className="inline-block bg-brand-red hover:bg-green-800 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 text-lg"
+          >
+            Start Your Intake
+          </a>
         </div>
       </section>
 
@@ -413,11 +439,11 @@ const ContractReview = () => {
             Ready to get your contract reviewed?
           </h2>
           <a
-            href="https://scoreboardlegal.cliogrow.com/intake/b73c29a4a400707057c4c05ee6fd4ecc"
+            href="https://scoreboardlegal.cliogrow.com/intake/54241e64c761661243625875133ef0d0"
             onClick={handleClioClick}
             className="inline-block bg-brand-red hover:bg-green-800 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 text-lg"
           >
-            Book Your Review
+            Start Your Intake
           </a>
         </div>
       </section>
