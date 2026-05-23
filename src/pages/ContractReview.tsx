@@ -57,7 +57,7 @@ const ContractReview = () => {
       />
 
       {/* Header Section */}
-      <section className="bg-gradient-to-br from-gray-50 to-gray-100 text-gray-900 pt-20 pb-12">
+      <section className="bg-gradient-to-br from-gray-50 to-gray-100 text-gray-900 pt-16 pb-8">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl md:text-6xl font-heading font-bold mb-6">
             Flat-Fee <span className="text-brand-red">Contract Review</span>
@@ -80,7 +80,7 @@ const ContractReview = () => {
       </section>
 
       {/* Hero Section */}
-      <section className="bg-white py-8">
+      <section className="bg-white py-6">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto mb-4">
@@ -89,7 +89,7 @@ const ContractReview = () => {
             <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto mb-4">
               For $500, Scoreboard Legal will do exactly that — intake and scope confirmation, a 15-minute Zoom call, a full attorney review, and a written redline with comments returned within 3 business days of your call. Flat fee. No hourly billing. No open-ended engagement.
             </p>
-            <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto mb-6">
+            <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto mb-4">
               Contracts must be submitted in Word format, in English, and may not exceed 10 pages. If you need negotiation support, additional review rounds, or follow-on advice after the redline is returned, we'll scope that separately so you know the cost before we start.
             </p>
             <a
@@ -104,15 +104,15 @@ const ContractReview = () => {
       </section>
 
       {/* How It Works Section */}
-      <section className="bg-white py-12">
+      <section className="bg-white py-8">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-8">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-900 mb-6 text-center">
+          <div className="mb-6">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-900 mb-4 text-center">
               How It Works
             </h2>
 
             <div className="max-w-3xl mx-auto">
-              <div className="space-y-6">
+              <div className="space-y-4">
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-brand-red rounded-full flex items-center justify-center flex-shrink-0">
                     <span className="text-white font-bold text-lg">1</span>
@@ -189,7 +189,7 @@ const ContractReview = () => {
       </section>
 
       {/* How It Works CTA */}
-      <section className="bg-white py-8">
+      <section className="bg-white py-4">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <a
             href="https://scoreboardlegal.cliogrow.com/intake/54241e64c761661243625875133ef0d0"
@@ -202,7 +202,7 @@ const ContractReview = () => {
       </section>
 
       {/* Expedited Review Note */}
-      <section className="bg-gray-50 py-8">
+      <section className="bg-gray-50 py-6">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-brand-red/5 border border-brand-red/20 rounded-lg p-6">
             <p className="text-gray-700 leading-relaxed">
@@ -213,14 +213,14 @@ const ContractReview = () => {
       </section>
 
       {/* What's Not Included Section */}
-      <section className="bg-white py-12">
+      <section className="bg-white py-8">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-8">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-900 mb-6 text-center">
+          <div className="mb-6">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-900 mb-4 text-center">
               What's Not Included
             </h2>
 
-            <div className="space-y-6">
+            <div className="space-y-4">
               <div className="border-l-4 border-brand-red pl-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   Opinion Letters
@@ -289,7 +289,7 @@ const ContractReview = () => {
       </section>
 
       {/* What's Not Included CTA */}
-      <section className="bg-white py-8">
+      <section className="bg-white py-4">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <a
             href="https://scoreboardlegal.cliogrow.com/intake/54241e64c761661243625875133ef0d0"
@@ -302,9 +302,9 @@ const ContractReview = () => {
       </section>
 
       {/* Related Services Section */}
-      <section className="bg-white py-12">
+      <section className="bg-white py-8">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl md:text-3xl font-heading font-bold text-gray-900 mb-8 text-center">
+          <h2 className="text-2xl md:text-3xl font-heading font-bold text-gray-900 mb-6 text-center">
             Related Services
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -346,15 +346,15 @@ const ContractReview = () => {
       </section>
 
       {/* Our Approach Section */}
-      <section className="bg-gray-50 py-12">
+      <section className="bg-gray-50 py-8">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-8">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-900 mb-6 text-center">
+          <div className="mb-6">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-900 mb-4 text-center">
               Our Perspective
             </h2>
 
             <div className="max-w-3xl mx-auto">
-              <div className="space-y-6">
+              <div className="space-y-4">
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-brand-red rounded-full flex items-center justify-center flex-shrink-0">
                     <span className="text-white font-bold text-lg">1</span>
@@ -389,9 +389,9 @@ const ContractReview = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="bg-white py-16">
+      <section className="bg-white py-12">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-900 mb-8 text-center">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-900 mb-6 text-center">
             Frequently Asked Questions
           </h2>
           <Accordion type="single" collapsible className="bg-gray-50 rounded-xl border border-gray-200 px-6">
@@ -440,9 +440,9 @@ const ContractReview = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-br from-gray-50 to-gray-100">
+      <section className="py-12 bg-gradient-to-br from-gray-50 to-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-5xl font-heading font-bold text-gray-900 mb-8">
+          <h2 className="text-4xl md:text-5xl font-heading font-bold text-gray-900 mb-6">
             Ready to get your contract reviewed?
           </h2>
           <a
@@ -456,7 +456,7 @@ const ContractReview = () => {
       </section>
 
       {/* Page-Level Disclaimer */}
-      <section className="py-8 bg-gray-50 border-t border-gray-200">
+      <section className="py-4 bg-gray-50 border-t border-gray-200">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-xs text-gray-500 leading-relaxed">
             Attorney advertising. Contract review services do not constitute legal advice regarding the laws of any jurisdiction. Results may vary.
