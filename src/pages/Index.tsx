@@ -252,7 +252,7 @@ const Index = () => {
                   </p>
                 </Link>
               ) : (
-                <div key={index} className="hidden lg:block"></div>
+                <div key={index}></div>
               )
             ))}
           </div>
