@@ -251,7 +251,9 @@ const Index = () => {
                     {service.desc}
                   </p>
                 </Link>
-              ) : null
+              ) : (
+                <div key={index} className="hidden lg:block"></div>
+              )
             ))}
           </div>
         </div>
