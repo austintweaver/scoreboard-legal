@@ -192,7 +192,7 @@ const Index = () => {
       </section>
 
       {/* Who We Work With */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-heading font-bold text-gray-900 mb-4">
@@ -222,7 +222,7 @@ const Index = () => {
       </section>
 
       {/* How We Help */}
-      <section className="bg-gray-50 py-24">
+      <section className="bg-gray-50 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-heading font-bold text-gray-900 mb-4">
@@ -286,7 +286,7 @@ const Index = () => {
       </section>
 
       {/* Business-Minded Legal Counsel */}
-      <section className="bg-neutral-900 py-24">
+      <section className="bg-neutral-900 py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mb-8">
             Business-Minded Legal Counsel
@@ -307,7 +307,7 @@ const Index = () => {
       </section>
 
       {/* Representative Matters */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-heading font-bold text-gray-900 mb-4">
@@ -338,7 +338,7 @@ const Index = () => {
       </section>
 
       {/* Our Values */}
-      <section className="bg-gray-50 py-24">
+      <section className="bg-gray-50 py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-heading font-bold text-gray-900 mb-4">
@@ -387,7 +387,7 @@ const Index = () => {
       </section>
 
       {/* Industry Experience */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-heading font-bold text-gray-900 mb-4">
@@ -411,7 +411,7 @@ const Index = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="bg-gray-50 py-24">
+      <section className="bg-gray-50 py-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-heading font-bold text-gray-900 mb-4">
@@ -434,7 +434,7 @@ const Index = () => {
       </section>
 
       {/* Final CTA */}
-      <section className="py-24 bg-brand-red">
+      <section className="py-16 bg-brand-red">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">
             Let's Get To Work
