@@ -100,14 +100,13 @@ const Index = () => {
       url: "/real-estate",
       icon: Home,
     },
-    null,
     {
       title: "Flat-Fee Contract Review",
       desc: "Transparent contract review with a written redline and attorney commentary for a single flat fee.",
       url: "/contract-review",
       icon: FileEdit,
+      center: true,
     },
-    null,
   ];
 
   const industries = [
@@ -236,7 +235,7 @@ const Index = () => {
                 <Link
                   key={service.title || index}
                   to={service.url}
-                  className="group relative bg-white border border-gray-200 rounded-xl p-6 transition-all duration-300 hover:shadow-lg hover:border-brand-red/30 hover:-translate-y-1"
+                  className={`group relative bg-white border border-gray-200 rounded-xl p-6 transition-all duration-300 hover:shadow-lg hover:border-brand-red/30 hover:-translate-y-1 ${service.center ? 'lg:col-start-2' : ''}`}
                 >
                   <div className="flex items-start justify-between mb-4">
                     <div className="inline-flex items-center justify-center w-10 h-10 bg-brand-red/10 rounded-lg group-hover:bg-brand-red/20 transition-colors duration-300">
@@ -251,9 +250,7 @@ const Index = () => {
                     {service.desc}
                   </p>
                 </Link>
-              ) : (
-                <div key={index}></div>
-              )
+              ) : null
             ))}
           </div>
         </div>
