@@ -28,6 +28,7 @@ import {
   PenTool,
   ArrowRight,
   Target,
+  FileEdit,
 } from "lucide-react";
 import { useState } from "react";
 import { handleClioClick } from "@/lib/clioConversion";
@@ -74,6 +75,12 @@ const Index = () => {
       desc: "Strategic guidance through acquisitions, sales, and complex transactions.",
       url: "/mergers-acquisitions",
       icon: Handshake,
+    },
+    {
+      title: "Flat-Fee Contract Review",
+      desc: "Transparent contract review with a written redline and attorney commentary for a single flat fee.",
+      url: "/contract-review",
+      icon: FileEdit,
     },
     {
       title: "Employment",
