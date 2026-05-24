@@ -77,12 +77,6 @@ const Index = () => {
       icon: Handshake,
     },
     {
-      title: "Flat-Fee Contract Review",
-      desc: "Transparent contract review with a written redline and attorney commentary for a single flat fee.",
-      url: "/contract-review",
-      icon: FileEdit,
-    },
-    {
       title: "Employment",
       desc: "Workforce agreements, policies, and compliance for growing teams.",
       url: "/employment",
@@ -106,6 +100,14 @@ const Index = () => {
       url: "/real-estate",
       icon: Home,
     },
+    null,
+    {
+      title: "Flat-Fee Contract Review",
+      desc: "Transparent contract review with a written redline and attorney commentary for a single flat fee.",
+      url: "/contract-review",
+      icon: FileEdit,
+    },
+    null,
   ];
 
   const industries = [
@@ -229,25 +231,27 @@ const Index = () => {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {services.map((service) => (
-              <Link
-                key={service.title}
-                to={service.url}
-                className="group relative bg-white border border-gray-200 rounded-xl p-6 transition-all duration-300 hover:shadow-lg hover:border-brand-red/30 hover:-translate-y-1"
-              >
-                <div className="flex items-start justify-between mb-4">
-                  <div className="inline-flex items-center justify-center w-10 h-10 bg-brand-red/10 rounded-lg group-hover:bg-brand-red/20 transition-colors duration-300">
-                    <service.icon className="h-5 w-5 text-brand-red" />
+            {services.map((service, index) => (
+              service ? (
+                <Link
+                  key={service.title || index}
+                  to={service.url}
+                  className="group relative bg-white border border-gray-200 rounded-xl p-6 transition-all duration-300 hover:shadow-lg hover:border-brand-red/30 hover:-translate-y-1"
+                >
+                  <div className="flex items-start justify-between mb-4">
+                    <div className="inline-flex items-center justify-center w-10 h-10 bg-brand-red/10 rounded-lg group-hover:bg-brand-red/20 transition-colors duration-300">
+                      <service.icon className="h-5 w-5 text-brand-red" />
+                    </div>
+                    <ArrowRight className="h-5 w-5 text-gray-300 group-hover:text-brand-red transition-colors duration-300" />
                   </div>
-                  <ArrowRight className="h-5 w-5 text-gray-300 group-hover:text-brand-red transition-colors duration-300" />
-                </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-brand-red transition-colors duration-300">
-                  {service.title}
-                </h3>
-                <p className="text-sm text-gray-600 leading-relaxed">
-                  {service.desc}
-                </p>
-              </Link>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-brand-red transition-colors duration-300">
+                    {service.title}
+                  </h3>
+                  <p className="text-sm text-gray-600 leading-relaxed">
+                    {service.desc}
+                  </p>
+                </Link>
+              ) : null
             ))}
           </div>
         </div>
