@@ -100,6 +100,9 @@ const Index = () => {
       url: "/real-estate",
       icon: Home,
     },
+  ];
+
+  const fourthRowServices = [
     null,
     {
       title: "Flat-Fee Contract Review",
@@ -231,7 +234,30 @@ const Index = () => {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {services.map((service, index) => (
+            {services.map((service) => (
+              <Link
+                key={service.title}
+                to={service.url}
+                className="group relative bg-white border border-gray-200 rounded-xl p-6 transition-all duration-300 hover:shadow-lg hover:border-brand-red/30 hover:-translate-y-1"
+              >
+                <div className="flex items-start justify-between mb-4">
+                  <div className="inline-flex items-center justify-center w-10 h-10 bg-brand-red/10 rounded-lg group-hover:bg-brand-red/20 transition-colors duration-300">
+                    <service.icon className="h-5 w-5 text-brand-red" />
+                  </div>
+                  <ArrowRight className="h-5 w-5 text-gray-300 group-hover:text-brand-red transition-colors duration-300" />
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-brand-red transition-colors duration-300">
+                  {service.title}
+                </h3>
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  {service.desc}
+                </p>
+              </Link>
+            ))}
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+            {fourthRowServices.map((service, index) => (
               service ? (
                 <Link
                   key={service.title || index}
@@ -252,9 +278,7 @@ const Index = () => {
                   </p>
                 </Link>
               ) : (
-                <div key={`placeholder-${index}`} className="hidden lg:block invisible">
-                  <div className="h-full"></div>
-                </div>
+                <div key={`placeholder-${index}`} className="hidden lg:block"></div>
               )
             ))}
           </div>
