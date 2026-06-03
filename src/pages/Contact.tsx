@@ -22,7 +22,7 @@ const Contact = () => {
               Book a Consultation
             </h2>
             <p className="text-gray-600 mb-8">
-              Click below to access our secure booking system and schedule your consultation.
+              Click below to access our booking link or give us a call!
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a 
