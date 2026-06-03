@@ -190,7 +190,7 @@ const Index = () => {
             <a href="tel:+16303878326">
               <Button
                 size="lg"
-                className="bg-brand-red hover:bg-brand-red/90 text-white font-semibold px-10 py-6 text-lg rounded-lg transition-all duration-300 shadow-lg"
+                className="bg-black hover:bg-neutral-800 text-white font-semibold px-10 py-6 text-lg rounded-lg transition-all duration-300 shadow-lg border border-white/20"
               >
                 (630) 387-TEAM
               </Button>
