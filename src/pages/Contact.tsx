@@ -1,4 +1,5 @@
 import { handleClioClick } from "@/lib/clioConversion";
+import { Button } from "@/components/ui/button";
 
 const Contact = () => {
 
@@ -23,13 +24,23 @@ const Contact = () => {
             <p className="text-gray-600 mb-8">
               Click below to access our secure booking system and schedule your consultation.
             </p>
-            <a 
-              href="https://scoreboardlegal.cliogrow.com/book"
-              onClick={handleClioClick}
-              className="inline-block bg-brand-red hover:bg-green-800 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 text-lg"
-            >
-              Open Booking System
-            </a>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <a 
+                href="https://scoreboardlegal.cliogrow.com/book"
+                onClick={handleClioClick}
+                className="inline-block bg-brand-red hover:bg-green-800 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 text-lg"
+              >
+                Open Booking System
+              </a>
+              <a href="tel:+16303878326">
+                <Button
+                  size="lg"
+                  className="bg-black hover:bg-neutral-800 text-white font-semibold px-8 py-4 text-lg rounded-lg transition-all duration-300 shadow-lg border border-gray-200"
+                >
+                  (630) 387-TEAM
+                </Button>
+              </a>
+            </div>
             <p className="text-sm text-gray-500 mt-4">
               This will open the booking page in a new tab
             </p>
