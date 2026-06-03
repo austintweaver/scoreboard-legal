@@ -9,6 +9,13 @@ import {
 } from "@/components/ui/accordion";
 
 const ContractReview = () => {
+  const handleContractReviewClick = (e) => {
+    // Trigger Google Ads conversion event
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('event', 'conversion', {'send_to': 'AW-18170107582/mo-dCOjRqLgcEL6tl9hD'});
+    }
+    handleClioClick(e);
+  };
   return (
     <div className="min-h-screen pt-16">
       {/* Structured Data for SEO */}
@@ -94,7 +101,7 @@ const ContractReview = () => {
             </p>
             <a
               href="https://scoreboardlegal.cliogrow.com/intake/54241e64c761661243625875133ef0d0"
-              onClick={handleClioClick}
+              onClick={handleContractReviewClick}
               className="inline-block bg-brand-red hover:bg-green-800 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 text-lg"
             >
               Start Your Intake
@@ -193,7 +200,7 @@ const ContractReview = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <a
             href="https://scoreboardlegal.cliogrow.com/intake/54241e64c761661243625875133ef0d0"
-            onClick={handleClioClick}
+            onClick={handleContractReviewClick}
             className="inline-block bg-brand-red hover:bg-green-800 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 text-lg"
           >
             Start Your Intake
@@ -293,7 +300,7 @@ const ContractReview = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <a
             href="https://scoreboardlegal.cliogrow.com/intake/54241e64c761661243625875133ef0d0"
-            onClick={handleClioClick}
+            onClick={handleContractReviewClick}
             className="inline-block bg-brand-red hover:bg-green-800 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 text-lg"
           >
             Start Your Intake
@@ -447,7 +454,7 @@ const ContractReview = () => {
           </h2>
           <a
             href="https://scoreboardlegal.cliogrow.com/intake/54241e64c761661243625875133ef0d0"
-            onClick={handleClioClick}
+            onClick={handleContractReviewClick}
             className="inline-block bg-brand-red hover:bg-green-800 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 text-lg"
           >
             Start Your Intake

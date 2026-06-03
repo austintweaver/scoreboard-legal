@@ -2,6 +2,12 @@ import { handleClioClick } from "@/lib/clioConversion";
 import { Button } from "@/components/ui/button";
 
 const Contact = () => {
+  const handlePhoneClick = (e) => {
+    // Trigger Google Ads conversion event for phone call
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('event', 'conversion', {'send_to': 'AW-18170107582/F9XWCKT3v7gcEL6tl9hD'});
+    }
+  };
 
   return (
     <div className="min-h-screen pt-16">
@@ -34,6 +40,7 @@ const Contact = () => {
               </a>
               <a 
                 href="tel:+16303878326"
+                onClick={handlePhoneClick}
                 className="inline-block bg-black hover:bg-neutral-800 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 text-lg leading-none"
               >
                 (630) 387-TEAM

@@ -34,6 +34,12 @@ import { useState } from "react";
 import { handleClioClick } from "@/lib/clioConversion";
 
 const Index = () => {
+  const handlePhoneClick = (e) => {
+    // Trigger Google Ads conversion event for phone call
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('event', 'conversion', {'send_to': 'AW-18170107582/F9XWCKT3v7gcEL6tl9hD'});
+    }
+  };
   const clientTypes = [
     { icon: UserCog, label: "Founders & Entrepreneurs" },
     { icon: Rocket, label: "Startups & Emerging Companies" },
@@ -187,7 +193,7 @@ const Index = () => {
                 Explore Services
               </Button>
             </Link>
-            <a href="tel:+16303878326">
+            <a href="tel:+16303878326" onClick={handlePhoneClick}>
               <Button
                 size="lg"
                 className="bg-black hover:bg-neutral-800 text-white font-semibold px-10 py-6 text-lg rounded-lg transition-all duration-300 shadow-lg border border-white/20"
