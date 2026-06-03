@@ -187,6 +187,14 @@ const Index = () => {
                 Explore Services
               </Button>
             </Link>
+            <a href="tel:+16303878326">
+              <Button
+                size="lg"
+                className="bg-brand-red hover:bg-brand-red/90 text-white font-semibold px-10 py-6 text-lg rounded-lg transition-all duration-300 shadow-lg"
+              >
+                (630) 387-TEAM
+              </Button>
+            </a>
           </div>
         </div>
       </section>
