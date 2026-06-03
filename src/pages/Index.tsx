@@ -169,7 +169,7 @@ const Index = () => {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="https://scoreboardlegal.cliogrow.com/intake/b73c29a4a400707057c4c05ee6fd4ecc"
+              href="https://scoreboardlegal.cliogrow.com/book"
               onClick={handleClioClick}
             >
               <Button
@@ -444,7 +444,7 @@ const Index = () => {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="https://scoreboardlegal.cliogrow.com/intake/b73c29a4a400707057c4c05ee6fd4ecc"
+              href="https://scoreboardlegal.cliogrow.com/book"
               onClick={handleClioClick}
             >
               <Button

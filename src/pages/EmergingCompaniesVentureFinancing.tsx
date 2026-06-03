@@ -359,7 +359,7 @@ const EmergingCompaniesVentureFinancing = () => {
             Schedule a consultation to explore how we can support your startup or growth-stage business with strategic legal guidance.
           </p>
           <a
-            href="https://scoreboardlegal.cliogrow.com/intake/b73c29a4a400707057c4c05ee6fd4ecc"
+            href="https://scoreboardlegal.cliogrow.com/book"
             onClick={handleClioClick}
             className="inline-block bg-brand-red hover:bg-green-800 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 text-lg"
           >
