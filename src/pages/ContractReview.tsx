@@ -14,7 +14,7 @@ const ContractReview = () => {
     if (typeof window !== 'undefined' && window.gtag) {
       window.gtag('event', 'conversion', {'send_to': 'AW-18170107582/mo-dCOjRqLgcEL6tl9hD'});
     }
-    handleClioClick(e);
+    // Don't prevent default - let the browser handle the navigation with target="_blank"
   };
   return (
     <div className="min-h-screen pt-16">
@@ -101,6 +101,8 @@ const ContractReview = () => {
             </p>
             <a
               href="https://scoreboardlegal.cliogrow.com/intake/54241e64c761661243625875133ef0d0"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={handleContractReviewClick}
               className="inline-block bg-brand-red hover:bg-green-800 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 text-lg"
             >
