@@ -32,13 +32,11 @@ const Contact = () => {
               >
                 Open Booking System
               </a>
-              <a href="tel:+16303878326">
-                <Button
-                  size="lg"
-                  className="bg-black hover:bg-neutral-800 text-white font-semibold px-8 py-4 text-lg rounded-lg transition-all duration-300 shadow-lg border border-gray-200"
-                >
-                  (630) 387-TEAM
-                </Button>
+              <a 
+                href="tel:+16303878326"
+                className="inline-block bg-black hover:bg-neutral-800 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 text-lg leading-none"
+              >
+                (630) 387-TEAM
               </a>
             </div>
             <p className="text-sm text-gray-500 mt-4">
