@@ -2,30 +2,10 @@ import { Button } from "@/components/ui/button";
 import { Target, Rocket, Shield, Briefcase, Trophy, FileText, Users, Building2, Scale, TrendingUp, Clapperboard } from "lucide-react";
 import { useEffect } from "react";
 import { handleClioClick } from "@/lib/clioConversion";
+import SEO from "@/components/SEO";
 
 const Team = () => {
-  useEffect(() => {
-    document.title = "Austin Weaver | Founder & Principal Attorney | Scoreboard Legal";
-    
-    // Update meta description
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute(
-        "content",
-        "Austin Weaver is a transactional attorney and business operator advising businesses, founders, executives, athletes, creators, private clients, and growth-stage organizations on commercial transactions, venture financings, sponsorships, media rights, corporate governance, and strategic legal matters."
-      );
-    }
-
-    return () => {
-      // Cleanup: restore original meta description on unmount
-      if (metaDescription) {
-        metaDescription.setAttribute(
-          "content",
-          "Scoreboard Legal provides practical business and transactional legal counsel for founders, businesses, operators, athletes, creators, and growth-stage companies across commercial transactions, venture financings, contracts, employment matters, and strategic business operations."
-        );
-      }
-    };
-  }, []);
+  // Per-page SEO is handled by the SEO component below.
   const representativeExperience = [
     { icon: FileText, text: "Commercial transactions and strategic partnerships" },
     { icon: TrendingUp, text: "Venture financing and growth-stage business matters" },
