@@ -1,11 +1,13 @@
 import React from "react";
+import SEO from "@/components/SEO";
 
 const TermsOfService = () => (
   <div className="min-h-screen pt-16 bg-white">
+    <SEO title="Terms of Service | Scoreboard Legal" description="Scoreboard Legal Terms of Service." path="/terms-of-service" noindex />
     <section className="max-w-3xl mx-auto px-4 py-16">
       <h1 className="text-4xl font-heading font-bold mb-6 text-brand-red">Terms of Service</h1>
       <p className="text-gray-600 mb-2"><strong>Effective Date:</strong> July 21, 2025</p>
-      <p className="mb-6 text-gray-700">Welcome to Scoreboard Legal, PLLC’s website (“Site”). Scoreboard Legal, PLLC (“Firm,” “we,” “us,” or “our”) is a Florida professional limited liability company providing legal services. By accessing or using this Site, you agree to these Terms of Service and our <a href="/privacy-policy" className="text-brand-red underline">Privacy Policy</a>. Please read them carefully.</p>
+      <p className="mb-6 text-gray-700">Welcome to Scoreboard Legal, PLLC's website ("Site"). Scoreboard Legal, PLLC ("Firm," "we," "us," or "our") is a Florida professional limited liability company providing legal services. By accessing or using this Site, you agree to these Terms of Service and our <a href="/privacy-policy" className="text-brand-red underline">Privacy Policy</a>. Please read them carefully.</p>
 
       <h2 className="text-2xl font-bold mt-8 mb-2 text-gray-900">1. Use of the Site</h2>
       <p className="mb-4 text-gray-700">This Site provides general information about Scoreboard Legal, PLLC and its legal services. The content is for informational purposes only and does not create an attorney-client relationship.</p>
@@ -38,7 +40,7 @@ const TermsOfService = () => (
       <p className="mb-4 text-gray-700">Scoreboard Legal, PLLC shall not be liable for any damages arising out of your use or inability to use the Site, including indirect, incidental, or consequential damages.</p>
 
       <h2 className="text-2xl font-bold mt-8 mb-2 text-gray-900">11. Dispute Resolution</h2>
-      <p className="mb-4 text-gray-700">Any dispute arising out of or relating to these Terms or the use of the Site shall be resolved through binding arbitration in accordance with the rules of the American Arbitration Association, held in the State of Florida. This provision shall not limit the Firm’s right to seek injunctive relief in a court of competent jurisdiction.</p>
+      <p className="mb-4 text-gray-700">Any dispute arising out of or relating to these Terms or the use of the Site shall be resolved through binding arbitration in accordance with the rules of the American Arbitration Association, held in the State of Florida. This provision shall not limit the Firm's right to seek injunctive relief in a court of competent jurisdiction.</p>
 
       <h2 className="text-2xl font-bold mt-8 mb-2 text-gray-900">12. Changes to These Terms</h2>
       <p className="mb-4 text-gray-700">We reserve the right to modify these Terms at any time. Updated versions will be posted on this page with the revised effective date. Your continued use of the Site after changes indicates your acceptance.</p>
@@ -56,4 +58,4 @@ const TermsOfService = () => (
   </div>
 );
 
-export default TermsOfService; 
+export default TermsOfService;
