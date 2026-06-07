@@ -7,10 +7,12 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import SEO from "@/components/SEO";
 
 const CorporateFormationGovernance = () => {
   return (
     <div className="min-h-screen pt-16">
+      <SEO title={"Business Formation Attorney Illinois | Scoreboard Legal"} description={"Form your LLC, corporation, or partnership with Scoreboard Legal. Illinois business formation and governance counsel for startups and established companies."} path={"/corporate-formation-governance"} />
       {/* Structured Data for SEO */}
       <script
         type="application/ld+json"

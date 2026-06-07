@@ -7,10 +7,12 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import SEO from "@/components/SEO";
 
 const IntellectualProperty = () => {
   return (
     <div className="min-h-screen pt-16">
+      <SEO title={"Intellectual Property Attorney Illinois | Scoreboard Legal"} description={"Protect your brand and IP with Scoreboard Legal. Illinois IP counsel for trademarks, licensing, and IP strategy for businesses, athletes, and creators."} path={"/intellectual-property"} />
       {/* Structured Data for SEO */}
       <script
         type="application/ld+json"

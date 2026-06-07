@@ -7,10 +7,12 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import SEO from "@/components/SEO";
 
 const Employment = () => {
   return (
     <div className="min-h-screen pt-16">
+      <SEO title={"Employment Law Attorney Illinois | Scoreboard Legal"} description={"Illinois employment law counsel for businesses. Draft and review offer letters, NDAs, non-competes, severance agreements, and employee policies."} path={"/employment"} />
       {/* Structured Data for SEO */}
       <script
         type="application/ld+json"

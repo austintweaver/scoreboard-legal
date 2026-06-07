@@ -7,10 +7,12 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import SEO from "@/components/SEO";
 
 const RealEstate = () => {
   return (
     <div className="min-h-screen pt-16">
+      <SEO title={"Commercial Real Estate Attorney Illinois | Scoreboard Legal"} description={"Illinois commercial real estate legal counsel. Purchase agreements, lease review, title matters, and transactional real estate support for businesses."} path={"/real-estate"} />
       {/* Structured Data for SEO */}
       <script
         type="application/ld+json"

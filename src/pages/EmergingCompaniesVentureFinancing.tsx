@@ -7,10 +7,12 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import SEO from "@/components/SEO";
 
 const EmergingCompaniesVentureFinancing = () => {
   return (
     <div className="min-h-screen pt-16">
+      <SEO title={"Startup & Venture Finance Lawyer Illinois | Scoreboard Legal"} description={"Legal counsel for emerging companies and venture-backed startups in Illinois. SAFEs, convertible notes, equity rounds, and investor agreements."} path={"/emerging-companies-venture-financings"} />
       {/* Structured Data for SEO */}
       <script
         type="application/ld+json"

@@ -7,6 +7,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import SEO from "@/components/SEO";
 
 const ContractReview = () => {
   const handleContractReviewClick = (e) => {
@@ -22,6 +23,7 @@ const ContractReview = () => {
   };
   return (
     <div className="min-h-screen pt-16">
+      <SEO title={"Contract Review Attorney Illinois | Scoreboard Legal"} description={"Flat-fee contract review by an Illinois business attorney. NDAs, vendor agreements, employment contracts, and more. Fast turnaround for businesses and founders."} path={"/contract-review"} />
       {/* Structured Data for SEO */}
       <script
         type="application/ld+json"

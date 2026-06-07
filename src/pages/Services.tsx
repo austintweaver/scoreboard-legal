@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { FileText, Shield, Scale, Building, Users, TrendingUp, Handshake, Briefcase, Gavel, Home, FileEdit } from "lucide-react";
 import { handleClioClick } from "@/lib/clioConversion";
+import SEO from "@/components/SEO";
 
 const Services = () => {
   const firstRowServices = [
@@ -70,6 +71,11 @@ const Services = () => {
 
   return (
     <div className="min-h-screen pt-16">
+      <SEO
+        title="Legal Services | Business & Transactional Law | Scoreboard Legal"
+        description="Explore Scoreboard Legal's full range of business and transactional legal services for Illinois companies, startups, athletes, and entrepreneurs."
+        path="/services"
+      />
       {/* Header Section */}
       <section className="bg-gradient-to-br from-gray-50 to-gray-100 text-gray-900 pt-20 pb-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

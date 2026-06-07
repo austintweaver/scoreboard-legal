@@ -7,10 +7,12 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import SEO from "@/components/SEO";
 
 const CommercialTransactions = () => {
   return (
     <div className="min-h-screen pt-16">
+      <SEO title={"Commercial Transaction Lawyer Illinois | Scoreboard Legal"} description={"Illinois commercial transaction attorney helping businesses structure, negotiate, and close deals. Vendor agreements, licensing, distribution, and more."} path={"/commercial-transactions"} />
       {/* Structured Data for SEO */}
       <script
         type="application/ld+json"

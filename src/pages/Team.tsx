@@ -2,30 +2,10 @@ import { Button } from "@/components/ui/button";
 import { Target, Rocket, Shield, Briefcase, Trophy, FileText, Users, Building2, Scale, TrendingUp, Clapperboard } from "lucide-react";
 import { useEffect } from "react";
 import { handleClioClick } from "@/lib/clioConversion";
+import SEO from "@/components/SEO";
 
 const Team = () => {
-  useEffect(() => {
-    document.title = "Austin Weaver | Founder & Principal Attorney | Scoreboard Legal";
-    
-    // Update meta description
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute(
-        "content",
-        "Austin Weaver is a transactional attorney and business operator advising businesses, founders, executives, athletes, creators, private clients, and growth-stage organizations on commercial transactions, venture financings, sponsorships, media rights, corporate governance, and strategic legal matters."
-      );
-    }
-
-    return () => {
-      // Cleanup: restore original meta description on unmount
-      if (metaDescription) {
-        metaDescription.setAttribute(
-          "content",
-          "Scoreboard Legal provides practical business and transactional legal counsel for founders, businesses, operators, athletes, creators, and growth-stage companies across commercial transactions, venture financings, contracts, employment matters, and strategic business operations."
-        );
-      }
-    };
-  }, []);
+  // Per-page SEO is handled by the SEO component below.
   const representativeExperience = [
     { icon: FileText, text: "Commercial transactions and strategic partnerships" },
     { icon: TrendingUp, text: "Venture financing and growth-stage business matters" },
@@ -39,6 +19,11 @@ const Team = () => {
 
   return (
     <div className="min-h-screen pt-16">
+      <SEO
+        title="Our Team | Illinois Business Attorneys | Scoreboard Legal"
+        description="Meet the attorneys at Scoreboard Legal — Illinois-licensed business, transactional, and sports entertainment law counsel for founders and businesses."
+        path="/team"
+      />
       {/* Hero / Intro Section */}
       <section className="bg-neutral-900 py-12">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">

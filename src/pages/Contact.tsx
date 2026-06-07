@@ -1,5 +1,6 @@
 import { handleClioClick } from "@/lib/clioConversion";
 import { Button } from "@/components/ui/button";
+import SEO from "@/components/SEO";
 
 const Contact = () => {
   const handlePhoneClick = (e) => {
@@ -15,6 +16,11 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen pt-16">
+      <SEO
+        title="Contact Scoreboard Legal | Illinois Business Attorney"
+        description="Get in touch with Scoreboard Legal to discuss your business or transactional legal needs. Serving clients throughout Illinois."
+        path="/contact"
+      />
       {/* Header Section */}
       <section className="bg-gradient-to-br from-gray-50 to-gray-100 text-gray-900 pt-20 pb-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
