@@ -41,6 +41,8 @@ const homeJsonLd = {
   "description": "Business, transactional, and sports entertainment law firm serving clients in Illinois.",
   "url": "https://scoreboardlegal.com",
   "logo": "https://www.scoreboardlegal.com/assets/optimized/blacklogolegal-1200.png",
+  "telephone": "630-387-9836",
+  "email": "contact@scoreboardlegal.com",
   "address": {
     "@type": "PostalAddress",
     "addressRegion": "IL",
