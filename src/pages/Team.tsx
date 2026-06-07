@@ -19,6 +19,11 @@ const Team = () => {
 
   return (
     <div className="min-h-screen pt-16">
+      <SEO
+        title="Our Team | Illinois Business Attorneys | Scoreboard Legal"
+        description="Meet the attorneys at Scoreboard Legal — Illinois-licensed business, transactional, and sports entertainment law counsel for founders and businesses."
+        path="/team"
+      />
       {/* Hero / Intro Section */}
       <section className="bg-neutral-900 py-12">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
