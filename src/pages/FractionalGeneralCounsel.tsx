@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { handleClioClick } from "@/lib/clioConversion";
 import {
+import SEO from "@/components/SEO";
   Accordion,
   AccordionContent,
   AccordionItem,
@@ -11,6 +12,7 @@ import {
 const FractionalGeneralCounsel = () => {
   return (
     <div className="min-h-screen pt-16">
+      <SEO title={"Fractional General Counsel Illinois | Scoreboard Legal"} description={"On-demand general counsel for Illinois businesses that need experienced legal support without the cost of in-house counsel. Flexible and scalable."} path={"/fractional-general-counsel"} />
       {/* Structured Data for SEO */}
       <script
         type="application/ld+json"

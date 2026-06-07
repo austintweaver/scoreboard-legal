@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { handleClioClick } from "@/lib/clioConversion";
 import {
+import SEO from "@/components/SEO";
   Accordion,
   AccordionContent,
   AccordionItem,
@@ -11,6 +12,7 @@ import {
 const Employment = () => {
   return (
     <div className="min-h-screen pt-16">
+      <SEO title={"Employment Law Attorney Illinois | Scoreboard Legal"} description={"Illinois employment law counsel for businesses. Draft and review offer letters, NDAs, non-competes, severance agreements, and employee policies."} path={"/employment"} />
       {/* Structured Data for SEO */}
       <script
         type="application/ld+json"

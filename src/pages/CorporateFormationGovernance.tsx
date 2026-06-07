@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { handleClioClick } from "@/lib/clioConversion";
 import {
+import SEO from "@/components/SEO";
   Accordion,
   AccordionContent,
   AccordionItem,
@@ -11,6 +12,7 @@ import {
 const CorporateFormationGovernance = () => {
   return (
     <div className="min-h-screen pt-16">
+      <SEO title={"Business Formation Attorney Illinois | Scoreboard Legal"} description={"Form your LLC, corporation, or partnership with Scoreboard Legal. Illinois business formation and governance counsel for startups and established companies."} path={"/corporate-formation-governance"} />
       {/* Structured Data for SEO */}
       <script
         type="application/ld+json"

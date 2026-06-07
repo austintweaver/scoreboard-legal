@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { handleClioClick } from "@/lib/clioConversion";
 import {
+import SEO from "@/components/SEO";
   Accordion,
   AccordionContent,
   AccordionItem,
@@ -11,6 +12,7 @@ import {
 const EmergingCompaniesVentureFinancing = () => {
   return (
     <div className="min-h-screen pt-16">
+      <SEO title={"Startup & Venture Finance Lawyer Illinois | Scoreboard Legal"} description={"Legal counsel for emerging companies and venture-backed startups in Illinois. SAFEs, convertible notes, equity rounds, and investor agreements."} path={"/emerging-companies-venture-financings"} />
       {/* Structured Data for SEO */}
       <script
         type="application/ld+json"

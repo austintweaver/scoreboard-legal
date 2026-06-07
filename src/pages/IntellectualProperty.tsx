@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { handleClioClick } from "@/lib/clioConversion";
 import {
+import SEO from "@/components/SEO";
   Accordion,
   AccordionContent,
   AccordionItem,
@@ -11,6 +12,7 @@ import {
 const IntellectualProperty = () => {
   return (
     <div className="min-h-screen pt-16">
+      <SEO title={"Intellectual Property Attorney Illinois | Scoreboard Legal"} description={"Protect your brand and IP with Scoreboard Legal. Illinois IP counsel for trademarks, licensing, and IP strategy for businesses, athletes, and creators."} path={"/intellectual-property"} />
       {/* Structured Data for SEO */}
       <script
         type="application/ld+json"
