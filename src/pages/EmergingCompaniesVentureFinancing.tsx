@@ -2,12 +2,12 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { handleClioClick } from "@/lib/clioConversion";
 import {
-import SEO from "@/components/SEO";
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import SEO from "@/components/SEO";
 
 const EmergingCompaniesVentureFinancing = () => {
   return (
