@@ -5,7 +5,11 @@ const Contact = () => {
   const handlePhoneClick = (e) => {
     // Trigger Google Ads conversion event for phone call
     if (typeof window !== 'undefined' && window.gtag) {
-      window.gtag('event', 'conversion', {'send_to': 'AW-18170107582/F9XWCKT3v7gcEL6tl9hD'});
+      window.gtag('event', 'conversion', {
+        'send_to': 'AW-18170107582/F9XWCKT3v7gcEL6tl9hD',
+        'value': 250.0,
+        'currency': 'USD'
+      });
     }
   };
 
