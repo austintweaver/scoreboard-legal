@@ -12,7 +12,11 @@ const ContractReview = () => {
   const handleContractReviewClick = (e) => {
     // Trigger Google Ads conversion event
     if (typeof window !== 'undefined' && window.gtag) {
-      window.gtag('event', 'conversion', {'send_to': 'AW-18170107582/mo-dCOjRqLgcEL6tl9hD'});
+      window.gtag('event', 'conversion', {
+        'send_to': 'AW-18170107582/mo-dCOjRqLgcEL6tl9hD',
+        'value': 500.0,
+        'currency': 'USD'
+      });
     }
     // Don't prevent default - let the browser handle the navigation with target="_blank"
   };
