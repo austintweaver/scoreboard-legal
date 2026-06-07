@@ -32,6 +32,28 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import { handleClioClick } from "@/lib/clioConversion";
+import SEO from "@/components/SEO";
+
+const homeJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "LegalService",
+  "name": "Scoreboard Legal",
+  "description": "Business, transactional, and sports entertainment law firm serving clients in Illinois.",
+  "url": "https://scoreboardlegal.com",
+  "logo": "https://www.scoreboardlegal.com/assets/optimized/blacklogolegal-1200.png",
+  "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "IL",
+    "addressCountry": "US"
+  },
+  "areaServed": { "@type": "State", "name": "Illinois" },
+  "knowsAbout": [
+    "Business Law","Contract Review","Corporate Formation","Mergers and Acquisitions",
+    "Sports Entertainment Law","Venture Finance","Employment Law","Intellectual Property",
+    "Commercial Real Estate","Fractional General Counsel"
+  ],
+  "sameAs": ["https://twitter.com/ScoreboardLegal"]
+};
 
 const Index = () => {
   const handlePhoneClick = (e) => {
@@ -155,6 +177,12 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Business & Sports Entertainment Law | Scoreboard Legal | Illinois"
+        description="Practical business and transactional legal counsel for founders, businesses, athletes, and creators in Illinois. Contracts, venture finance, M&A, and more."
+        path="/"
+        jsonLd={homeJsonLd}
+      />
       {/* Hero Section */}
       <section
         className="relative min-h-screen flex items-center justify-center bg-black bg-cover bg-center bg-scroll overflow-hidden"
