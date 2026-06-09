@@ -247,10 +247,10 @@ const ContractReview = () => {
 
               <div className="border-l-4 border-brand-red pl-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  Real Estate Purchase Agreements
+                  Real Estate Purchase Agreements & Commercial Leases
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Property acquisition contracts are outside the scope of this offering.
+                  Property acquisition contracts and commercial leases are outside the scope of this offering.
                 </p>
               </div>
 
@@ -447,7 +447,7 @@ const ContractReview = () => {
                 What contracts are excluded from this offering?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 leading-relaxed pb-5">
-                This offering does not cover opinion letters, real estate purchase agreements, settlement agreements, active litigation matters, multi-party agreements, IP assignments and licensing agreements, or non-English language contracts.
+                This offering does not cover opinion letters, real estate purchase agreements and commercial leases, settlement agreements, active litigation matters, multi-party agreements, IP assignments and licensing agreements, or non-English language contracts.
               </AccordionContent>
             </AccordionItem>
           </Accordion>

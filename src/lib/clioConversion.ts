@@ -1,9 +1,10 @@
-// Google Ads conversion tracking for Clio booking link clicks.
+// Google Ads + Meta Pixel conversion tracking for Clio booking link clicks.
 // Used as an onClick handler on any <a href="https://scoreboardlegal.cliogrow.com/book"> link.
 
 declare global {
   interface Window {
     gtag?: (...args: unknown[]) => void;
+    fbq?: (...args: unknown[]) => void;
   }
 }
 
@@ -11,11 +12,15 @@ const CONVERSION_SEND_TO = "AW-18170107582/2w3iCPXXkLEcEL6tl9hD";
 const BOOKING_URL = "https://scoreboardlegal.cliogrow.com/book";
 
 export function handleClioClick(e: React.MouseEvent<HTMLAnchorElement>) {
-  // Let modifier-clicks / middle-clicks behave normally (open in new tab, etc.)
   if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
 
   e.preventDefault();
   const href = e.currentTarget.getAttribute("href") || BOOKING_URL;
+
+  // Fire Meta Pixel Lead event on click
+  if (typeof window.fbq === "function") {
+    window.fbq("track", "Lead", { value: 500, currency: "USD" });
+  }
 
   const go = () => {
     window.location.href = href;
@@ -40,6 +45,5 @@ export function handleClioClick(e: React.MouseEvent<HTMLAnchorElement>) {
     event_callback: navigateOnce,
   });
 
-  // Fallback in case gtag never fires the callback (blocked, slow, etc.)
   setTimeout(navigateOnce, 1500);
 }

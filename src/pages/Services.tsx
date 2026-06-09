@@ -1,11 +1,29 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { FileText, Shield, Scale, Building, Users, TrendingUp, Handshake, Briefcase, Gavel, Home, FileEdit } from "lucide-react";
+import { FileText, Shield, Scale, Building, Users, TrendingUp, Handshake, Briefcase, Gavel, Home, FileEdit, Trophy } from "lucide-react";
 import { handleClioClick } from "@/lib/clioConversion";
 import SEO from "@/components/SEO";
 
 const Services = () => {
   const firstRowServices = [
+    {
+      name: "Legal Membership",
+      icon: Scale,
+      url: "/membership"
+    },
+    {
+      name: "Flat-Fee Contract Review",
+      icon: FileEdit,
+      url: "/contract-review"
+    },
+    {
+      name: "GAME Plan",
+      icon: Trophy,
+      url: "/game-plan"
+    }
+  ];
+
+  const secondRowServices = [
     {
       name: "Fractional General Counsel",
       icon: Users,
@@ -23,7 +41,7 @@ const Services = () => {
     }
   ];
 
-  const secondRowServices = [
+  const thirdRowServices = [
     {
       name: "Corporate Formation & Governance",
       icon: Building,
@@ -41,7 +59,7 @@ const Services = () => {
     }
   ];
 
-  const thirdRowServices = [
+  const fourthRowServices = [
     {
       name: "Emerging Companies & Venture Financings",
       icon: TrendingUp,
@@ -57,16 +75,6 @@ const Services = () => {
       icon: Briefcase,
       url: "/employment"
     }
-  ];
-
-  const fourthRowServices = [
-    null,
-    {
-      name: "Flat-Fee Contract Review",
-      icon: FileEdit,
-      url: "/contract-review"
-    },
-    null
   ];
 
   return (
@@ -188,51 +196,7 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="bg-gray-50 rounded-2xl p-8 md:p-12">
-            <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-900 mb-4">
-                The GAME Plan
-              </h2>
-              <p className="text-lg text-gray-700 mb-4">
-                A subscription built for the competitor in every room.
-              </p>
-              <p className="text-lg text-gray-700 mb-8">
-                For athletes, coaches, administrators, entertainers, and creators who deserve expert legal and business guidance without the traditional barriers.
-              </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 text-gray-700 mb-10">
-                <div className="group">
-                  <div className="flex items-center justify-center w-16 h-16 bg-brand-red rounded-full mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <span className="text-white text-2xl font-bold">G</span>
-                  </div>
-                  <div className="font-semibold text-gray-900 text-xl mb-2">Guidance</div>
-                  <div className="text-gray-600">Expert advice to help navigate your journey.</div>
-                </div>
-                <div className="group">
-                  <div className="flex items-center justify-center w-16 h-16 bg-brand-red rounded-full mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <span className="text-white text-2xl font-bold">A</span>
-                  </div>
-                  <div className="font-semibold text-gray-900 text-xl mb-2">Advocacy</div>
-                  <div className="text-gray-600">Protecting your interests and rights.</div>
-                </div>
-                <div className="group">
-                  <div className="flex items-center justify-center w-16 h-16 bg-brand-red rounded-full mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <span className="text-white text-2xl font-bold">M</span>
-                  </div>
-                  <div className="font-semibold text-gray-900 text-xl mb-2">Management</div>
-                  <div className="text-gray-600">Professional oversight of your business matters.</div>
-                </div>
-                <div className="group">
-                  <div className="flex items-center justify-center w-16 h-16 bg-brand-red rounded-full mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <span className="text-white text-2xl font-bold">E</span>
-                  </div>
-                  <div className="font-semibold text-gray-900 text-xl mb-2">Execution</div>
-                  <div className="text-gray-600">Implementation of strategies for your success.</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-                  </div>
+        </div>
       </section>
 
       {/* CTA Section */}

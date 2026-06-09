@@ -20,6 +20,7 @@ const Navigation = () => {
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "Services", path: "/services" },
+    { name: "Membership", path: "/membership" },
     { name: "Austin Weaver", path: "/team" },
     { name: "Contact", path: "/contact" }
   ];
@@ -47,10 +48,10 @@ const Navigation = () => {
 
           {/* Dropdown menu button */}
           <div className="flex items-center">
-            <Button 
-              variant="ghost" 
-              size="sm" 
-              onClick={() => setIsOpen(!isOpen)} 
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => setIsOpen(!isOpen)}
               className={`${isHome && !isScrolled ? "text-white" : "text-gray-900"} hover:text-brand-red p-2 transition-all duration-300 transform hover:scale-110`}
             >
               <div className="relative w-6 h-6 flex flex-col justify-center items-center">

@@ -37,7 +37,7 @@ const Footer = () => {
           <p className="text-xs text-gray-400 mt-4 max-w-3xl mx-auto">
             © 2025 Scoreboard Legal. All rights reserved.
           </p>
-  
+
         </div>
       </div>
     </footer>
