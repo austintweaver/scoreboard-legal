@@ -86,7 +86,7 @@ const GamePlan = () => {
               Month-to-month. No long-term commitment. Cancel anytime.
             </p>
             <a
-              href="https://scoreboardlegal.cliogrow.com/intake/54241e64c761661243625875133ef0d0"
+              href="https://form.typeform.com/to/yfg59KJQ"
               target="_blank"
               rel="noopener noreferrer"
               onClick={handleGamePlanClick}
@@ -132,7 +132,7 @@ const GamePlan = () => {
                 ))}
               </ul>
               <a
-                href="https://scoreboardlegal.cliogrow.com/intake/54241e64c761661243625875133ef0d0"
+                href="https://form.typeform.com/to/yfg59KJQ"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={handleGamePlanClick}
@@ -168,7 +168,7 @@ const GamePlan = () => {
                 ))}
               </ul>
               <a
-                href="https://scoreboardlegal.cliogrow.com/intake/54241e64c761661243625875133ef0d0"
+                href="https://form.typeform.com/to/yfg59KJQ"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={handleGamePlanClick}
@@ -206,7 +206,7 @@ const GamePlan = () => {
                 ))}
               </ul>
               <a
-                href="https://scoreboardlegal.cliogrow.com/intake/54241e64c761661243625875133ef0d0"
+                href="https://form.typeform.com/to/yfg59KJQ"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={handleGamePlanClick}

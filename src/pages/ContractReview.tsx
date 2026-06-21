@@ -106,7 +106,7 @@ const ContractReview = () => {
               Contracts must be submitted in Word format, in English, and may not exceed 10 pages. If you need negotiation support, additional review rounds, or follow-on advice after the redline is returned, we'll scope that separately so you know the cost before we start.
             </p>
             <a
-              href="https://scoreboardlegal.cliogrow.com/intake/54241e64c761661243625875133ef0d0"
+              href="https://form.typeform.com/to/YVdTkpWD"
               target="_blank"
               rel="noopener noreferrer"
               onClick={handleContractReviewClick}

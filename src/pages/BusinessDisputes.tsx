@@ -330,9 +330,8 @@ const BusinessDisputes = () => {
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
             Schedule a consultation to explore strategic dispute resolution options and how we can help protect your business interests while maintaining operational focus.
           </p>
-          <a 
-            href="https://scoreboardlegal.cliogrow.com/book"
-            onClick={handleClioClick}
+          <a
+            href="/contact"
             className="inline-block bg-brand-red hover:bg-green-800 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 text-lg"
           >
             Book a Call

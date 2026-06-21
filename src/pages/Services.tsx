@@ -210,8 +210,7 @@ const Services = () => {
             No billable hours. No surprises. Just transparent, flat-fee legal services when you need them.
           </p>
           <a
-            href="https://scoreboardlegal.cliogrow.com/book"
-            onClick={handleClioClick}
+            href="/contact"
             className="inline-block bg-brand-red hover:bg-green-800 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 text-lg"
           >
             Get Started Today
