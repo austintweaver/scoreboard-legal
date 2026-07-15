@@ -46,10 +46,10 @@ const Contact = () => {
                 </a>
               </p>
               <a 
-                href="tel:+16303878326"
+                href="tel:+16303879836"
                 className="inline-block bg-black hover:bg-neutral-800 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 text-lg leading-none"
               >
-                (630) 387-TEAM
+                (630) 387-9836
               </a>
             </div>
           </div>
