@@ -34,6 +34,9 @@ const Footer = () => {
         <p className="text-xs text-gray-900 mt-4 max-w-3xl mx-auto">
             <span className="font-bold">Disclaimer:</span> Scoreboard Legal, PLLC is a Florida professional limited liability company. Attorneys of the firm are licensed to practice law in Florida and Illinois. The information contained on this website is provided for general informational purposes only and should not be construed as legal advice or a substitute for obtaining legal advice regarding your specific matter. Viewing this website, communicating with Scoreboard Legal, PLLC through this website, or submitting information through any contact form, intake form, or scheduling platform does not create an attorney-client relationship. Please do not send confidential or time-sensitive information until an attorney-client relationship has been formally established through a signed engagement agreement.
           </p>
+          <p className="text-xs text-gray-900 mt-4 max-w-3xl mx-auto">
+            1730 Park Street, Suite 218, Naperville, IL 60563
+          </p>
           <p className="text-xs text-gray-400 mt-4 max-w-3xl mx-auto">
             © 2025 Scoreboard Legal. All rights reserved.
           </p>
